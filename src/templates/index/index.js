@@ -19,7 +19,10 @@ const IndexPage = ({ data, pageContext }) => {
       <Layout>
         { 
           pageContext.pageNumber === 0 
-            ? <Hero  imageSrc={ defaultHero } { ...siteMetadata } /> 
+            ? <Hero  
+                largeSize
+                imageSrc={ defaultHero } 
+                { ...siteMetadata } /> 
             : null 
         }
         <Container>
