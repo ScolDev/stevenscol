@@ -1,0 +1,37 @@
+@import '../../common/variables.sass'
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss'
+
+body
+  background-color: $bgColor
+  color: $fontColor
+  min-height: 100vh
+  & *
+    color: inherit
+    &::selection
+      color: $selectedTextColor
+      background: $selectedTextBg
+
+.HighContrast
+  color: inherit
+  background-color: $bgColorContrast
+
+.Main
+  display: flex
+  flex-wrap: wrap
+  height: 100%
+  margin: 0 auto
+  min-height: 100vh
+  padding-top: $headerHeight
+  width: 100%
+
+.Main-container
+  height: 100%
+  margin: 0 auto
+  width: 100%
+
+.Container
+  background-color: $bgColor
+  
+  .container
+    padding: 0
+

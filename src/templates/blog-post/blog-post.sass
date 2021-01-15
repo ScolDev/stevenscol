@@ -1,0 +1,66 @@
+@import '../../common/variables.sass'
+
+.BlogPost
+  background-color: $bgColorContrast
+  padding: 0 $postSidePaddingLarge
+  margin: 0
+
+  @media(max-width: 991px)
+    padding: 0 $postSidePaddingSmall
+
+  &-content
+    padding: 1.5em 0
+    line-height: 1.45em
+    margin-top: 30px
+
+    &::first-letter
+      font-size: 4em
+
+  &-tags
+    margin-bottom: 1em
+    padding-left: 0
+    padding-right: 0
+    a
+      @include button-round($secundary)
+      color: $secundary
+      border-color: $secundary
+
+  blockquote
+    font-size: 150%
+    font-style: italic
+    border-color: inherit
+
+  &-footer
+    display: flex
+    justify-content: space-between
+    margin: 2em 0
+    width: 100%
+    a
+      @include button-round
+  
+  &-comments
+    width: 100%
+  
+p code
+  color: $primary
+  font-size: 70%
+  backgroundColor: $postCodeBgColor
+  display: inline
+  padding: 3px
+
+pre
+  backgroundColor: $postCodeBgColor !important
+  margin: 0 ($postSidePaddingLarge * -1) 1em ($postSidePaddingLarge * -1) !important
+
+  @media(max-width: 991px)
+    margin: 0 ($postSidePaddingSmall * -1) 1em ($postSidePaddingSmall * -1) !important
+
+  code
+    display: block
+    font-size: 70%
+    backgroundColor: $postCodeBgColor
+    width: 100%
+    font-weight: bold
+
+  
+  

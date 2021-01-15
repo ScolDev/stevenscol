@@ -1,6 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: "stevenscol",
+    title: 'StevensCol',
+    url: 'https://stevenscol.netlify.app',
+    siteUrl: 'https://stevenscol.netlify.app',
+    heroTitle: '"Estúpido como un zorro."',
+    author: 'Stevens Pineda',
+    description: 'Un punto de entrada a los trabajos, pensamientos y temas variados que deseo compartir en este mi sitio web personal.',
+    blogPostPrefixPath: '/blog',
+    blogPostsPaginatePrefixPath: '/blog/page',
+    social: [
+      'github#https://github.com/StevensCol',
+      'twitter#http://twitter.com/stevenspineda',
+      'instagram#https://instagram.com/stevenscls',
+      'email#stevenspineda@gmail.com'
+    ]
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -11,22 +24,22 @@ module.exports = {
       },
     },
     "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/assets/images/icon.png",
       },
     },
     "gatsby-plugin-mdx",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/assets/images/",
       },
       __key: "images",
     },
@@ -37,6 +50,24 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: []
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'stevenscol'
+      }
     },
   ],
 };

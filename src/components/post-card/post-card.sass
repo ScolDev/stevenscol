@@ -1,0 +1,86 @@
+@import '../../common/variables.sass'
+
+$coverSize: 200px
+$coverHeightMobile: 180px
+
+.PostCard
+  box-sizing: border-box
+  width: 100%
+  margin-bottom: 1rem
+  transition: border .5s
+
+  @media (min-width: 991px)
+    border-left: 2px solid $primary
+
+  .PostCard-wrap
+    padding: 0rem
+    padding-bottom: 0
+    box-sizing: border-box
+
+    @media (max-width: 991px)
+      padding: 0
+
+  .PostCard-content
+    display: grid
+    grid-template-columns: $coverSize auto
+    // display: flex
+    @media (max-width: 991px)
+      grid-template-columns: 100%
+      grid-template-rows: $coverHeightMobile
+
+  .PostCard-image
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $secundary
+    height: 160px
+    position: relative
+    width: $coverSize
+
+    .PostCard-publishdata
+      background-color: $heroBackgroundColor
+      height: 35px
+      padding: 0 0.6rem
+      position: absolute
+      bottom: 0
+      text-align: center
+      width: 100%
+
+      em
+        font-size: 0.75rem
+
+      @media (max-width: 991px)
+        padding: 0 .5rem .5rem .5rem
+
+    span
+      color: white
+      font-size: 4em
+      font-weight: 900
+
+      &:hover
+        color: white
+
+    @media (max-width: 991px)
+      width: 100%
+      height: $coverHeightMobile
+
+    img
+      object-fit: cover
+      margin: 0
+
+  .PostCard-info
+    padding: 0.6rem
+    width: 100%
+
+  .PostCard-title
+    color: $primary
+    font-size: 1.1rem
+    
+  .PostCard-excerpt
+    color: $fontColor
+    font-size: 0.9rem
+    p
+      margin: 0
+    
+  a
+    text-decoration: none

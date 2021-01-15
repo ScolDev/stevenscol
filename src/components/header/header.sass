@@ -1,0 +1,38 @@
+@import '../../common/variables.sass'
+
+.Header
+  background-color: $bgColorContrast
+  border-bottom: 2px $primary solid
+  color: inherit
+  height: $headerHeight
+  line-height: $headerHeight
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 500
+
+.Header-content
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 15px
+  line-height: $headerHeight
+  height: inherit
+  h1
+    margin: 0
+
+.Header-logo
+  width: $logoWidth
+  height: $headerHeight
+
+  .Icon
+    color: $primary
+    padding: 8px 0
+    height: $headerHeight
+    width: 100%
+
+
+

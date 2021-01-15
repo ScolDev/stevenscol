@@ -1,0 +1,57 @@
+$primary: #b92f10
+$secundary: #af155a
+
+$primaryHighLight: #d96a51
+$bgColor: #16213e
+$bgColorContrast: #1a1a2e
+$fontColor: #b6b6b9
+
+$selectedTextColor: #eee
+$selectedTextBg: #40407080
+
+$iconWidth: 1em
+$headerHeight: 50px
+$logoWidth: 150px
+$footerHeight: 100px
+
+$heroHeight: 380px
+$heroTextColor: #e2e2e2
+$heroContentWidth: 1000px
+$heroBackgroundColor: rgba(0, 0, 0, .75)
+
+$socialMediaHeroHeight: 40px
+$socialMediaHeroWidth: 300px
+
+$buttonMinWidth: 30px
+$buttonBorderSize: 2px
+$buttonPaddingWidth: 10px
+$buttonPaddingHeight: 6px
+$buttonTextColorHover: #090a0a
+
+$postSidePaddingLarge: 200px
+$postSidePaddingSmall: 0.8em
+$postCodeBgColor: #060609
+
+// Mixins
+
+@mixin button-round ($color: $primary)
+  border: $buttonBorderSize solid $color
+  border-radius: $buttonMinWidth - $buttonPaddingWidth
+  color: $color
+  font-size: 0.85rem
+  font-weight: bold
+  height: $buttonMinWidth
+  line-height: $buttonMinWidth - ($buttonBorderSize * 2)
+  margin: 0 5px
+  min-width: $buttonMinWidth
+  padding: $buttonPaddingHeight $buttonPaddingWidth
+  text-align: center
+  text-decoration: none
+
+  &:hover
+    //background-color: $secundary-high-light
+    //color: $buttonTextColorHover
+
+  &-active
+    background-color: $color
+    color: $buttonTextColorHover

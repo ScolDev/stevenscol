@@ -17,8 +17,11 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "bootstrap": "^4.5.3",
     "gatsby": "^2.26.1",
+    "gatsby-awesome-pagination": "^0.3.6",
     "gatsby-image": "^2.9.0",
+    "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-google-analytics": "^2.9.0",
     "gatsby-plugin-manifest": "^2.10.0",
     "gatsby-plugin-mdx": "^1.8.0",
@@ -27,11 +30,18 @@
     "gatsby-plugin-sass": "^3.0.0",
     "gatsby-plugin-sharp": "^2.12.0",
     "gatsby-plugin-sitemap": "^2.10.0",
+    "gatsby-plugin-typography": "^2.10.0",
     "gatsby-source-filesystem": "^2.9.0",
+    "gatsby-transformer-remark": "^2.14.0",
     "gatsby-transformer-sharp": "^2.10.0",
+    "prismjs": "^1.23.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.2"
+    "react-typography": "^0.16.19",
+    "sass": "^1.32.2",
+    "typography": "^0.16.19",
+    "typography-theme-irving": "^0.16.19",
+    "validate-mail": "^1.1.0"
   }
 }
