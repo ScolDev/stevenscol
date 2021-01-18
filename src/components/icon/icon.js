@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ICONS } from '../../common/constants'
+import { SVG } from '../../common/constants'
 
 import './icon.sass'
 
 const Icon = props => {
-  const icon = ICONS[props.icon] || ''
+  const icon = SVG[props.icon] || ''
 
   return (
     <div

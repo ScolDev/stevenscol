@@ -17,11 +17,20 @@
     height: $heroLargeHeight
 
   &-wrap
-    padding: 0
+    width: 100%
+    max-width: 900px
+    padding: 0 1em
 
   &-content
     text-align: center
     color: $heroTextColor
+
+  &-banner
+    width: 100%
+    .Icon
+      width: 100%
+      height: 100%
+      margin-bottom: 2em
 
   h1
     display: block
@@ -32,19 +41,20 @@
 
   .Hero-extra
     display: inline-block
-  .Hero-extra-content
-    background-color: $heroBackgroundColor
-    display: flex
-    align-items: center
-    justify-content: center
-    margin-top: 0.5rem
-    height: 2em
-    padding: 0 0.5rem
 
-    a 
-      color: inherit
-      margin: 0 0.5rem
-      padding: 0
+    &-content
+      background-color: $heroBackgroundColor
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-top: 0.5rem
+      height: 2em
+      padding: 0 0.5rem
+
+      a 
+        color: inherit
+        margin: 0 0.5rem
+        padding: 0
 
 .Hero-bottom-left
   align-items: flex-end

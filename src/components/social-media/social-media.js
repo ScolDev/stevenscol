@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import IconButton from '../icon-button/icon-button'
 
-import { ICONS } from '../../common/constants'
+import { SVG } from '../../common/constants'
 import './social-media.sass'
 
 function SocialMedia (props) {
@@ -14,7 +14,7 @@ function SocialMedia (props) {
           social.map(item => {
             const [name, url] = item.split('#')
 
-            return ICONS[name]
+            return SVG[name]
               ? <IconButton
                 key={name}
                 to={url}

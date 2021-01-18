@@ -20,6 +20,7 @@ const IndexPage = ({ data, pageContext }) => {
         { 
           pageContext.pageNumber === 0 
             ? <Hero  
+                forHome
                 largeSize
                 imageSrc={ defaultHero } 
                 { ...siteMetadata } /> 
@@ -43,7 +44,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
-        heroTitle
         social
         blogPostPrefixPath
         blogPostsPaginatePrefixPath
