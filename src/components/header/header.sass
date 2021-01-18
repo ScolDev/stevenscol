@@ -1,7 +1,7 @@
 @import '../../common/variables.sass'
 
 .Header
-  background-color: $bgColorContrast
+  background-color: $bgColorLight
   border-bottom: 2px $primary solid
   color: inherit
   height: $headerHeight
@@ -29,10 +29,14 @@
   height: $headerHeight
 
   .Icon
-    color: $primary
+    color: $fontColorForLight
     padding: 8px 0
     height: $headerHeight
     width: 100%
 
+body.darkMode
+  .Header
+    background-color: $bgColorDark
 
-
+    .Icon
+      color: $fontColorForDark

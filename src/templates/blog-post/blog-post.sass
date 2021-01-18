@@ -1,7 +1,11 @@
 @import '../../common/variables.sass'
 
+body.darkMode
+  .BlogPost
+    background-color: $bgColorDarkContrast
+
 .BlogPost
-  background-color: $bgColorContrast
+  background-color: $bgColorLightContrast
   padding: 0 $postSidePaddingLarge
   margin: 0
 
@@ -44,12 +48,12 @@
 p code
   color: $primary
   font-size: 70%
-  backgroundColor: $postCodeBgColor
+  background-color: $postCodeBgColor
   display: inline
   padding: 3px
 
 pre
-  backgroundColor: $postCodeBgColor !important
+  background-color: $postCodeBgColor !important
   margin: 0 ($postSidePaddingLarge * -1) 1em ($postSidePaddingLarge * -1) !important
 
   @media(max-width: 991px)
@@ -57,10 +61,12 @@ pre
 
   code
     display: block
-    font-size: 70%
-    backgroundColor: $postCodeBgColor
+    color: $postCOdeFontColor
+    font-size: 90%
+    background-color: $postCodeBgColor
     width: 100%
     font-weight: bold
+    padding: 0.5em 1em
 
   
   

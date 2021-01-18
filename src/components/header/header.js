@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import IconButton from '../icon-button/icon-button'
 import { ICONS } from '../../common/constants'
@@ -7,8 +7,17 @@ import logo from '../../assets/logo1.svg'
 
 import './header.sass'
 
-const Header = ({ title }) => (
-  <header>
+const Header = ({ title }) => {
+  useEffect(() => {
+    const names = document.body.className.split(' ')
+
+    if (names.includes('darkMode')) {
+      return
+    }
+
+    document.body.className += 'darkMode'
+  })
+  return <header>
     <div className='Header'>
       <div className='Header-content Section'>
         <div className='Header-logo'>
@@ -20,7 +29,7 @@ const Header = ({ title }) => (
       </div>
     </div>
   </header>
-)
+}
 
 Header.propTypes = {
   title: PropTypes.string

@@ -2,9 +2,10 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss'
 
 body
-  background-color: $bgColor
-  color: $fontColor
+  background-color: $bgColorLight
+  color: $fontColorForLight
   min-height: 100vh
+
   & *
     color: inherit
     &::selection
@@ -13,7 +14,8 @@ body
 
 .HighContrast
   color: inherit
-  background-color: $bgColorContrast
+  background-color: $bgColorLightContrast
+
 
 .Main
   display: flex
@@ -30,8 +32,18 @@ body
   width: 100%
 
 .Container
-  background-color: $bgColor
+  background-color: $bgColorLight
   
   .container
     padding: 0
 
+body.darkMode
+  background-color: $bgColorDark
+  color: $fontColorForDark
+
+  .HighContrast
+    color: inherit
+    background-color: $bgColorDarkContrast
+
+  .Container
+    background-color: $bgColorDark
