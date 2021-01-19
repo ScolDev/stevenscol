@@ -15,10 +15,18 @@ body.darkMode
   &-content
     padding: 1.5em 0
     line-height: 1.45em
-    margin-top: 30px
+    margin-top: 2rem
 
-    &::first-letter
-      font-size: 4em
+    &-html
+      margin-top: 4rem
+
+    &-html > :first-child::first-letter
+      float: left
+      font-weight: bold
+      font-size: 7rem
+      line-height: 4rem
+      height: 4rem
+      text-transform: uppercase
 
   &-tags
     margin-bottom: 1em
@@ -39,8 +47,11 @@ body.darkMode
     justify-content: space-between
     margin: 2em 0
     width: 100%
-    a
-      @include button-round
+
+    &-previousPost,
+    &-nextPost 
+      a
+        @include button-round
   
   &-comments
     width: 100%

@@ -28,48 +28,40 @@ const BlogPost = ({ data, pageContext }) => {
       <Seo title={contentPost.frontmatter.title} keywords={[]} />
       <Layout>
         <Hero 
-          heroTitle={contentPost.frontmatter.title} 
           image={contentPost.frontmatter.image} 
           alignToBottomLeft />
         <Container>
           <section className='BlogPost row justify-content-center'>
-            <section className='BlogPost-postinfo'>
-              <div />
-            </section>
-            <article
-              className='BlogPost-content col-lg-12'
-              dangerouslySetInnerHTML={{
-                __html: contentPost.html
-              }}
-            />
-            <article className='BlogPost-tags col-lg-12'>
-              <div>
-                <h3>Tags:</h3>
-              </div>
-              <div className='BlogPost-tags-content'>
-                {
-                  contentPost.tags ? contentPost.tags.map(tag => (
-                    <a href='#'>{tag.name}</a>
-                  ))
-                    : <i>No hay tags en este post.</i>
-                }
-              </div>
-            </article>
+            <div className="BlogPost-content col-lg-12">
+              <section className='BlogPost-postinfo'>
+                <h1>{ contentPost.frontmatter.title }</h1>
+                <div><em>Por: { site.siteMetadata.author }</em></div>
+                <div><em>Fecha: { contentPost.frontmatter.date }</em></div>
+              </section>
+              <article 
+                className="BlogPost-content-html"
+                dangerouslySetInnerHTML={{ __html: contentPost.html }} />
+              <article className='BlogPost-tags col-lg-12'>
+                <div>
+                  <h3>Tags:</h3>
+                </div>
+                <div className='BlogPost-tags-content'>
+                  {
+                    contentPost.tags ? contentPost.tags.map(tag => (
+                      <a href='#'>{tag.name}</a>
+                    ))
+                      : <i>No hay tags en este post.</i>
+                  }
+                </div>
+              </article>
+            </div>
             <div className='BlogPost-footer'>
-              {
-                previous.path ? (
-                  <div>
-                    <Link to={previous.path}>Anterior</Link>
-                  </div>
-                ) : null
-              }
-              {
-                next.path ? (
-                  <div>
-                    <Link to={next.path}>Siguiente</Link>
-                  </div>
-                ) : null
-              }
+              <div className="BlogPost-footer-previousPost">
+                { previous.path ? ( <div><Link to={ previous.path }>Anterior</Link></div> ) : null }
+              </div>
+              <div className="BlogPost-footer-nextPost">
+                { next.path ? ( <div><Link to={ next.path }>Siguiente</Link></div> ) : null }
+              </div>
             </div>
             <section className='BlogPost-comments'>
               <Disqus config={disqusConfig} />
