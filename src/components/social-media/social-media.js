@@ -17,9 +17,9 @@ function SocialMedia (props) {
             return SVG[name]
               ? <IconButton
                 key={name}
+                external
                 to={url}
-                icon={name}
-                />
+                icon={name} />
               : null
           })
         }

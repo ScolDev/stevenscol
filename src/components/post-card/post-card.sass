@@ -3,12 +3,16 @@
 $coverSize: 200px
 $coverHeightMobile: 180px
 
+body.darkMode
+  .PostCard
+    border: unset
+
 .PostCard
   box-sizing: border-box
   width: 100%
   margin-bottom: 1rem
   transition: border .5s
-  box-shadow: 2px 2px 5px #131313d0
+  border: 1px solid $secundary
 
   @media (min-width: 991px)
     border-left: 2px solid $primary

@@ -3,16 +3,14 @@ import { Link } from 'gatsby'
 import isValidMail from 'validate-mail'
 import Icon from '../icon/icon'
 
-const IconButton = props => {
-  const action = props.to || ''
+const IconButton = (props) => {
+  const { to, icon, external } = props
   return (
-    (action.startsWith('/'))
-      ? <Link to={action}>
-        <Icon {...props} />
-        </Link>
-      : <a href={isValidMail(action) ? `mailto:${action}` : action} target='blank'>
-        <Icon {...props} />
-        </a>
+    to ? (
+      external
+        ? <a target="_blank" href={ to }><Icon icon={ icon } /></a>
+        : <Link to={ to }><Icon icon={ icon } /></Link>
+    ) : <Icon icon={ icon } {...props} />
   )
 }
 

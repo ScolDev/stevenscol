@@ -10,6 +10,7 @@ const Icon = props => {
   return (
     <div
       className='Icon'
+      { ...props }
       dangerouslySetInnerHTML={{
         __html: icon
       }}

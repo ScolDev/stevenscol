@@ -5,7 +5,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   const prefixBlogPostUrl = '/blog'
-  const indexTemplate = path.resolve('src/templates/index/index.js')
+  const blogTemplate = path.resolve('src/templates/blog/blog.js')
   const postTemplate = path.resolve('src/templates/blog-post/blog-post.js')
 
   const result = await getAllPosts(graphql)
@@ -21,8 +21,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage,
     items: posts,
     itemsPerPage: 8,
-    pathPrefix: ({ pageNumber, numberOfPages }) => pageNumber === 0 ? '/' : '/blog/page',
-    component: indexTemplate
+    pathPrefix: ({ pageNumber, numberOfPages }) => pageNumber === 0 ? prefixBlogPostUrl : `${prefixBlogPostUrl}/page`,
+    component: blogTemplate
   })
 
   posts.forEach((post, index) => {
@@ -70,11 +70,4 @@ async function getAllPosts (graphql) {
         }
       }
     }`)
-}
-
-function getFilteredPostsByStatus (posts) {
-  return posts.filter(post => {
-    return process.env.NODE_ENV === 'development' ||
-      post.node.status === 'publish'
-  })
 }

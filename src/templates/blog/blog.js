@@ -3,40 +3,37 @@ import { graphql } from 'gatsby'
 
 import Layout from '../../components/layout/layout'
 import Seo from '../../components/seo/seo'
-import Hero from '../../components/hero/hero'
 import PostList from '../../components/post-list/post-list'
 import Container from '../../components/container/container'
-import defaultHero from '../../assets/images/hero.jpg'
-import './index.sass'
+import './blog.sass'
 
-const IndexPage = ({ data, pageContext }) => {
+const Blog = ({ data, pageContext }) => {
   const { siteMetadata } = data.site
+  const { pageNumber } = pageContext
   const posts = data.posts.edges
 
   return (
     <>
-      <Seo title='Inicio' />
+      <Seo title='Blog' />
       <Layout>
-        { 
-          pageContext.pageNumber === 0 
-            ? <Hero  
-                forHome
-                largeSize
-                imageSrc={ defaultHero } 
-                { ...siteMetadata } /> 
-            : null 
-        }
         <Container>
-          <PostList 
-            pageContext={ pageContext }
-            posts={ posts } />
+          <main className="Blog">
+            <section className="Blog-posts Section">
+              <header className='PostList-title'>
+                <h1>Página { pageNumber + 1 }</h1>
+              </header>
+              <PostList 
+                pageContext={ pageContext }
+                posts={ posts } />
+            </section>
+          </main>
         </Container>
       </Layout>
     </>
   )
 }
 
-export default IndexPage
+export default Blog
 
 export const pageQuery = graphql`
   query ($skip: Int!, $limit: Int!) {

@@ -1,20 +1,21 @@
-$primary: #ff7778
-$secundary: #57637a
+$primary: #d73049
+$secundary: #47536a
 
-$bgColorLight: #e8e8e8
+$bgColorLight: #c8c8c8
 $bgColorDark: #201a23
 $bgColorDarkContrast: #27222b
-$bgColorLightContrast: #e0e0e0
+$bgColorLightContrast: #dadada
 
-$fontColorForDark: #b6b6b9
-$fontColorForLight: #201414
+$fontLight: #c6c6c9a5
+$fontColorForDark: #b6b6b9a5
+$fontColorForLight: #352434e0
 
 $selectedTextColor: #eee
 $selectedTextBg: #40407080
 
 $iconWidth: 1em
 $headerHeight: 50px
-$logoWidth: 150px
+$logoWidth: 30px
 $footerHeight: 100px
 
 $heroHeight: 380px
@@ -35,9 +36,18 @@ $buttonTextColorHover: #090a0a
 $postSidePaddingLarge: 200px
 $postSidePaddingSmall: 0.8em
 $postCodeBgColor: #0a0a10d5
-$postCOdeFontColor: #d5d5d5b5
+$postCOdeFontColor: #d5d5d575
 
 // Mixins
+
+@mixin headlines ()
+  h1, h2
+    text-align: center
+  h1::before,
+  h2::before,
+  h1::after,
+  h2::after
+    content: " - "
 
 @mixin button-round ($color: $primary)
   border: $buttonBorderSize solid $color

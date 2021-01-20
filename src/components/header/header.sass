@@ -15,7 +15,7 @@
   &-content
     display: flex
     align-items: center
-    justify-content: center
+    justify-content: space-between
     width: 100%
     max-width: 1200px
     margin: 0 auto
@@ -24,11 +24,25 @@
     height: inherit
     h1
       margin: 0
+    nav
+      display: flex
+      align-items: center
+      a
+        display: inline-block
+        text-decoration: none
+        font-size: 0.9rem
+        padding: 0 20px
+      a:hover
+        color: $primary
+        text-decoration: underline
+      *
+        cursor: pointer
 
   &-logo
     width: $logoWidth
-    height: $headerHeight
 
+    .Icon:hover
+      color: $primary
     .Icon
       color: $fontColorForLight
       padding: 8px 0
@@ -39,5 +53,8 @@ body.darkMode
   .Header
     background-color: $bgColorDark
 
+    nav
+      a, .Icon
+        color: $primary
     .Icon
       color: $fontColorForDark
