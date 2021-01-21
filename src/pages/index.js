@@ -67,6 +67,13 @@ export const pageQuery = graphql`
             title
             status
             date(formatString: "MMMM DD, YYYY")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 500, fit: INSIDE) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

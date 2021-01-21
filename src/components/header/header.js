@@ -21,7 +21,6 @@ const Header = ({ title }) => {
 
   useEffect(() => {
     let userTheme = window.localStorage.getItem('theme') || theme
-    console.log('userTheme', userTheme)
 
     if (userTheme === 'dark') {
       document.body.classList.add('darkMode')

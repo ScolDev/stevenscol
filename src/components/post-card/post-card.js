@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
 import './post-card.sass'
 
@@ -17,8 +18,14 @@ function PostCard (props) {
             <div className='PostCard-image'>
               {
                 image
-                  ? <img src={image} width='100%' height='100%' alt='' />
-                  : <span>{title.charAt(0)}</span>
+                  ? (
+                    <Img
+                      style={{ height: "100%", width: "100%" }}
+                      fluid={ image.childImageSharp.fluid }
+                      objectFit="cover"
+                      objectPosition="50% 50%"
+                      alt={ title } />
+                  ) : <span>{title.charAt(0)}</span>
               }
               <div className='PostCard-publishdata'>
                 <em>{date}</em>
