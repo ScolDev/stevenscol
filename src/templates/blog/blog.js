@@ -53,14 +53,21 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          id
-          excerpt
           frontmatter {
             path
             title
             status
             date(formatString: "MMMM DD, YYYY")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 500, fit: INSIDE) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
+          id
+          excerpt
         }
       }
     }

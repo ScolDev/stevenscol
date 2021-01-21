@@ -56,7 +56,7 @@ function makeButton (buttonData) {
     <div key={buttonData.key}>
       <Link
         {...buttonData.props}
-        className={`${buttonData.props.className} ${buttonData.className || ''}`}
+        className={`round-button ${buttonData.props.className} ${buttonData.className || ''}`}
       >
         {buttonData.text}
       </Link>

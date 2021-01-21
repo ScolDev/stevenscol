@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: 'https://stevenscol.netlify.app',
     heroTitle: '"Estúpido como un zorro."',
     author: 'Stevens Pineda',
+    bio: 'Ingeniero de Sistemas y Computación, Desarrollador Javascript Full Stack, Autodidacta y Reverser de Pasión.',
     description: 'Un punto de entrada a los trabajos, pensamientos y temas variados que deseo compartir en este mi sitio web personal.',
     blogPostPrefixPath: '/blog',
     blogPostsPaginatePrefixPath: '/blog/page',
@@ -38,10 +39,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/assets/images/",
+        name: "assets",
+        path: "./src/assets/",
       },
-      __key: "images",
+      __key: "assets",
     },
     {
       resolve: "gatsby-source-filesystem",

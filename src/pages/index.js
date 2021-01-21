@@ -1,16 +1,18 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-
+import Img from 'gatsby-image'
 import Layout from '../components/layout/layout'
 import Seo from '../components/seo/seo'
 import Hero from '../components/hero/hero'
+import Me from '../components/me/me'
 import PostList from '../components/post-list/post-list'
 import Container from '../components/container/container'
 import defaultHero from '../assets/images/hero.jpg'
+
 import './index.sass'
 
 const IndexPage = ({ data, pageContext }) => {
-  const { siteMetadata } = data.site
+  const { siteMetadata} = data.site
   const posts = data.posts.edges
 
   return (
@@ -24,6 +26,12 @@ const IndexPage = ({ data, pageContext }) => {
           { ...siteMetadata } /> 
         <Container>
           <main className="Home">
+            <section className="Home-me Section">
+              <h2>Yo</h2>
+              <article className="Home-me-content-">
+                <Me />
+              </article>
+            </section>
             <section className="Home-posts Section">
               <h2>Últimos Posts</h2>
               <PostList 
@@ -31,7 +39,7 @@ const IndexPage = ({ data, pageContext }) => {
                 showPages={ false }
                 posts={ posts } />
                 <footer className="Home-posts-footer">
-                  <Link to='/blog'>Ver más...</Link>
+                  <Link to='/blog'>Ver todos</Link>
                 </footer>
             </section>
           </main>
@@ -45,6 +53,13 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
+    profilePhoto: file(relativePath: { eq: "me.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, fit: INSIDE) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     site {
       siteMetadata {
         title

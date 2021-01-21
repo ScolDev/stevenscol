@@ -7,7 +7,7 @@ $bgColorDarkContrast: #27222b
 $bgColorLightContrast: #dadada
 
 $fontLight: #c6c6c9a5
-$fontColorForDark: #b6b6b9a5
+$fontColorForDark: #b6b6b9c5
 $fontColorForLight: #352434e0
 
 $selectedTextColor: #eee
@@ -16,13 +16,13 @@ $selectedTextBg: #40407080
 $iconWidth: 1em
 $headerHeight: 50px
 $logoWidth: 30px
-$footerHeight: 100px
+$footerHeight: 150px
 
 $heroHeight: 380px
 $heroLargeHeight: 75vh
 $heroTextColor: #e2e2e2
 $heroContentWidth: 1000px
-$heroBackgroundColor: rgba(0, 0, 0, .55)
+$heroBackgroundColor: rgba(0, 0, 0, 0.3)
 
 $socialMediaHeroHeight: 40px
 $socialMediaHeroWidth: 300px
@@ -49,7 +49,7 @@ $postCOdeFontColor: #d5d5d575
   h2::after
     content: " - "
 
-@mixin button-round ($color: $primary)
+@mixin round-button ($color: $primary)
   border: $buttonBorderSize solid $color
   border-radius: $buttonMinWidth - $buttonPaddingWidth
   color: $color
@@ -62,10 +62,6 @@ $postCOdeFontColor: #d5d5d575
   padding: $buttonPaddingHeight $buttonPaddingWidth
   text-align: center
   text-decoration: none
-
-  &:hover
-    //background-color: $secundary-high-light
-    //color: $buttonTextColorHover
 
   &-active
     background-color: $color
