@@ -29,7 +29,7 @@ const IndexPage = ({ data, pageContext }) => {
             <section className="Home-me Section">
               <h2>Yo</h2>
               <article className="Home-me-content-">
-                <Me />
+                <Me widget />
               </article>
             </section>
             <section className="Home-posts Section">

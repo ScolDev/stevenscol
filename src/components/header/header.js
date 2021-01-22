@@ -36,6 +36,7 @@ const Header = ({ title }) => {
           <IconButton to='/' icon='logo' />
         </div>
         <nav>
+          <Link to='/profile'>Perfil</Link>
           <Link to='/blog'>Blog</Link>
           <IconButton onClick={ () => toggleDarkMode() } icon={ theme === 'dark' ? 'sun' : 'moon' } />
         </nav>

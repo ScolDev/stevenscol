@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import PropTypes, { number } from 'prop-types'
 import PostCard from '../post-card/post-card'
 import Paginator from '../paginator/paginator'
@@ -14,6 +15,18 @@ function PostList ({ posts, pageContext }) {
         <div className='PostList-items'>
           {posts.map(post => <PostCard key={post.node.id} post={post.node} />)}
         </div>
+        {
+          numberOfPages ? (
+            <div style={{ textAlign: 'right' }}>
+              <Link 
+                style={{ textDecoration: 'line-through' }}
+                to="https://amerikanocls.blogspot.com" 
+                target="_blank">
+                  *Legacy Blog
+              </Link>
+            </div>
+          ) : null
+        }
         <Paginator
           pageNumber={pageNumber}
           numberOfPages={numberOfPages}
