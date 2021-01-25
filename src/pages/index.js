@@ -62,7 +62,6 @@ export const pageQuery = graphql`
     }
     site {
       siteMetadata {
-        title
         author
         social
         blogPostPrefixPath
@@ -79,8 +78,8 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
             path
-            title
             status
+            title
             date(formatString: "MMMM DD, YYYY")
             image {
               childImageSharp {

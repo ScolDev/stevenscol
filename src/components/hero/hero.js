@@ -8,7 +8,7 @@ import './hero.sass'
 function Hero (props) {
   const { 
     forHome,
-    heroTitle, 
+    title, 
     social, 
     imageSrc, 
     image, 
@@ -19,19 +19,17 @@ function Hero (props) {
 
   const heroClass = [
     'Hero',
-    alignToBottomLeft ? 'Hero-bottom-left' : '',
+    alignToBottomLeft ? 'bottomLeft' : '',
     largeSize ? 'largeHero': mediumSize ? 'mediumHero' : ''
-  ]
+  ].join(' ')
 
-  const heroClassWrap = `Hero-wrap ${alignToBottomLeft ? 'Hero-bottom-left-wrap container' : ''}`
-  
   const style = {
     backgroundImage: `url(${ imageSrc || image?.childImageSharp?.fluid?.src })`
   }
 
   return (
-    <div className={ heroClass.join(' ') } style={style}>
-      <div className={heroClassWrap}>
+    <div className={ heroClass } style={style}>
+      <div className='Hero-wrap container'>
         <div className='Hero-content'>
           { forHome 
             ? (
@@ -40,7 +38,7 @@ function Hero (props) {
               </div>
             ) : null
           }
-          { heroTitle ? <h1>{heroTitle}</h1> : null }
+          { title ? <h1>{title}</h1> : null }
           {
             forHome && social ? (
               <div className='Hero-extra'>
@@ -58,7 +56,7 @@ function Hero (props) {
 
 Hero.propTypes = {
   forHome: PropTypes.bool,
-  heroTitle: PropTypes.string,
+  title: PropTypes.string,
   social: PropTypes.array,
   alignToBottomLeft: PropTypes.bool,
   largeSize: PropTypes.bool,

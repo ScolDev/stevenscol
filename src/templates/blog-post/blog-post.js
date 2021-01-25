@@ -82,7 +82,6 @@ export const pageQuery = graphql`
         title
         url
         author
-        heroTitle
         social
       }
     }

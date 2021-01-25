@@ -25,7 +25,7 @@ function PostCard (props) {
                       objectFit="cover"
                       objectPosition="50% 50%"
                       alt={ title } />
-                  ) : <span>{title.charAt(0)}</span>
+                  ) : <span>{title ? title.charAt(0) : '' }</span>
               }
               <div className='PostCard-publishdata'>
                 <em>{date}</em>
