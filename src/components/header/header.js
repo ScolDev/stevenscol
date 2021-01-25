@@ -10,24 +10,23 @@ import './header.sass'
 const Header = ({ title }) => {
   const [ theme, setTheme ] = useState('dark')
 
-  const toggleDarkMode = () => {
+  const toggledark = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(newTheme)
+    
     window.localStorage.setItem('theme', newTheme)
-
-    console.log(newTheme)
-    // setTheme(savedtheme)
+    setTheme(newTheme)
   }
 
   useEffect(() => {
     let userTheme = window.localStorage.getItem('theme') || theme
+    setTheme(userTheme)
 
     if (userTheme === 'dark') {
-      document.body.classList.add('darkMode')
+      document.body.classList.add('dark')
     } else {
-      document.body.classList.remove('darkMode')
+      document.body.classList.remove('dark')
     }
-  })
+  }, [theme])
 
   return <header>
     <div className='Header'>
@@ -38,7 +37,7 @@ const Header = ({ title }) => {
         <nav>
           <Link to='/profile'>Perfil</Link>
           <Link to='/blog'>Blog</Link>
-          <IconButton onClick={ () => toggleDarkMode() } icon={ theme === 'dark' ? 'sun' : 'moon' } />
+          <IconButton onClick={ () => toggledark() } icon={ theme === 'dark' ? 'sun' : 'moon' } />
         </nav>
       </div>
     </div>
