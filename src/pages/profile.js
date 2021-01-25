@@ -18,7 +18,7 @@ const ProfilePage = ({ data, pageContext }) => {
     <>
       <Seo title='Perfil' />
       <Layout>
-        <Hero imageSrc={ profileCover } /> 
+        <Hero mediumSize imageSrc={ profileCover } /> 
         <Container>
           <main className="Profile">
             <section className="Profile-me Section">

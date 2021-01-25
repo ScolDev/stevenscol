@@ -12,14 +12,15 @@ function Hero (props) {
     social, 
     imageSrc, 
     image, 
-    largeSize, 
+    largeSize,
+    mediumSize,
     alignToBottomLeft 
   } = props
 
   const heroClass = [
     'Hero',
     alignToBottomLeft ? 'Hero-bottom-left' : '',
-    largeSize ? 'largeHero': ''
+    largeSize ? 'largeHero': mediumSize ? 'mediumHero' : ''
   ]
 
   const heroClassWrap = `Hero-wrap ${alignToBottomLeft ? 'Hero-bottom-left-wrap container' : ''}`
@@ -60,13 +61,15 @@ Hero.propTypes = {
   heroTitle: PropTypes.string,
   social: PropTypes.array,
   alignToBottomLeft: PropTypes.bool,
-  largeSize: PropTypes.bool
+  largeSize: PropTypes.bool,
+  mediumSize: PropTypes.bool,
 }
 
 Hero.defaultProps = {
   forHome: false,
   alignToBottomLeft: false,
-  largeSize: false
+  largeSize: false,
+  mediumSize: false,
 }
 
 export default Hero

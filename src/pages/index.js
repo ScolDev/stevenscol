@@ -39,7 +39,7 @@ const IndexPage = ({ data, pageContext }) => {
                 showPages={ false }
                 posts={ posts } />
                 <footer className="Home-posts-footer">
-                  <Link to='/blog'>Ver todos</Link>
+                  <Link to='/blog' className="round-button">Ver todos</Link>
                 </footer>
             </section>
           </main>

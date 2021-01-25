@@ -16,7 +16,7 @@ function Paginator (props) {
 
   for (let pageIndex = interval.start; pageIndex <= interval.end; pageIndex++) {
     const buttonInfo = getButtonInfo(pageIndex + 1)
-    const activeClass = pageNumber === pageIndex ? 'Paginator-button-active' : ''
+    const activeClass = pageNumber === pageIndex ? 'round-button-active' : ''
 
     const buttonData = {
       props: buttonInfo,
