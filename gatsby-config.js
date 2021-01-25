@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'StevensCol',
-    url: 'https://stevenscol.netlify.app',
-    siteUrl: 'https://stevenscol.netlify.app',
+    url: 'https://stevenscol.co',
+    siteUrl: 'https://stevenscol.co',
     heroTitle: '"Estúpido como un zorro."',
     author: 'Stevens Pineda',
     bio: 'Ingeniero de Sistemas y Computación, Desarrollador Web Full Stack en Javascript, Autodidacta y Reverser de Pasión.',
@@ -15,7 +15,7 @@ module.exports = {
       'github#https://github.com/StevensCol',
       'twitter#http://twitter.com/stevenspineda',
       'instagram#https://instagram.com/stevenscls',
-      'email#mailto:stevenspineda@gmail.com'
+      'email#mailto:yo@stevenscol.co'
     ]
   },
   plugins: [
