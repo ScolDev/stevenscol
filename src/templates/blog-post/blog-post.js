@@ -17,7 +17,7 @@ const BlogPost = ({ data, pageContext }) => {
 
   const disqusConfig = {
     url: `${site.siteMetadata.url}${typeof window !== 'undefined' ? window.location.pathname : ''}`,
-    identifier: `${contentPost.id}`,
+    identifier: `${contentPost.frontmatter.path}`,
     title: contentPost.frontmatter.title
   }
 
