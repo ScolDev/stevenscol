@@ -26,10 +26,11 @@ const BlogPost = ({ data, pageContext }) => {
   return (
     <>
       <Seo
+        article
         title={ contentPost.frontmatter.title }
         description={ contentPost.excerpt }
-        image={ contentPost.frontmatter.image.childImageSharp.fluid.src } 
-        keywords={[]} />
+        image={ contentPost.frontmatter.image.childImageSharp.fluid.src } />
+        
       <Layout>
         <Hero 
           image={contentPost.frontmatter.image} 

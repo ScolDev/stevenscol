@@ -3,46 +3,42 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-function Seo ({ description, lang, meta, image, keywords, title }) {
+import bannerImage from '../../assets/images/banner.jpg'
+
+function Seo (props) {
+  const { 
+    title, 
+    description, 
+    image, 
+    lang, 
+    meta, 
+    keywords, 
+    article 
+  } = props
+
+  const bannerUrl = image || bannerImage
+  
   return (
     <StaticQuery
-      query={detailsQuery}
-      render={data => {
+    query={detailsQuery}
+    render={data => {
         const metaDescription = description || data.site.siteMetadata.description
+        
         return (
           <Helmet
             htmlAttributes={{ lang }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
-              {
-                name: 'description',
-                content: metaDescription
-              }, {
-                property: 'og:title',
-                content: title
-              }, {
-                property: 'og:description',
-                content: metaDescription
-              }, {
-                property: 'og:type',
-                content: 'website'
-              }, {
-                property: 'og:image',
-                content: image
-              }, {
-                name: 'twitter:card',
-                content: 'summary'
-              }, {
-                name: 'twitter:creator',
-                content: data.site.siteMetadata.author
-              }, {
-                name: 'twitter:title',
-                content: title
-              }, {
-                name: 'twitter:description',
-                content: metaDescription
-              }
+              { name: 'description',content: metaDescription },
+               { property: 'og:title',content: title },
+               { property: 'og:description',content: metaDescription },
+               { property: 'og:type',content: article ? 'article' : 'website' },
+               { property: 'og:image',content: bannerUrl },
+               { name: 'twitter:card',content: 'summary' },
+               { name: 'twitter:creator',content: data.site.siteMetadata.author },
+               { name: 'twitter:title',content: title },
+               { name: 'twitter:description',content: metaDescription }
             ]
               .concat(
                 keywords.length > 0 ? {
@@ -61,7 +57,8 @@ function Seo ({ description, lang, meta, image, keywords, title }) {
 Seo.defaultProps = {
   lang: 'es',
   meta: [],
-  keywords: []
+  keywords: [],
+  article: false
 }
 
 Seo.propTypes = {
@@ -69,7 +66,10 @@ Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  article: PropTypes.bool,
 }
 
 export default Seo
