@@ -52,4 +52,12 @@ No lo comenté con ninguna persona ese mismo dia porqué no quería generar alg�
 
 El siguiente paso fue empezar a buscar la ayuda médica requerida del caso y pensando en lo tortuoso y desgastante que podría ser acudir al sistema de salud contributivo, lo primero que hice era buscar ayuda profesional privada con oftalmología.
 
+## Rueda de la fortuna
+
+Todo empezó a complicarse por diversas razones. Los síntomas se hacían más frecuentes, los apagones en el ojo derecho eran más notorios y el miedo iba en crecimiento. Era una situación a la cual no sabía como enfrentar, ya que no había mucho que estuviera en mis manos por hacer, nada más que depender de ayuda médica especializada y esperar. Y sí eso fué lo que pasó, una gran espera.
+
+Acudíendo a más de 10 especialistas desde Oftalmólogos, Retinólogos, Neurólogos y por supuesto Neurocirujanos, la triste realidad era que no sabían a que atribuir los síntomas. Los éxamenes eran correctos sin ningún tipo de anomalías, principalmente hidrocefalia, la cual estaba primera en la lista de busqueda.
+
+WIP
+
 ![Texto alternativo.](hero.jpg)
