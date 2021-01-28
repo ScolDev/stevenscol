@@ -58,6 +58,32 @@ Todo empezó a complicarse por diversas razones. Los síntomas se hacían más f
 
 Acudíendo a más de 10 especialistas desde Oftalmólogos, Retinólogos, Neurólogos y por supuesto Neurocirujanos, la triste realidad era que no sabían a que atribuir los síntomas. Los éxamenes eran correctos sin ningún tipo de anomalías, principalmente hidrocefalia, la cual estaba primera en la lista de busqueda.
 
-WIP
+Los éxamenes iban y venían y las conclusiones inciertas, realmente era una situación desesperante y el tiempo no daba a espera, y así fué. El paso siguiente en la serie de irregularidades que estaba presentando mi visión era que los apagones cesaron, pero dejaron una gran secuela en su camino. Gran parte de mi ojo derecho perdió su capacidad visual, en pocas palabras, un gran porcentaje quedo "a ciegas".
 
-![Texto alternativo.](hero.jpg)
+Por obsequio de un familiar al que guardo profundo aprecio y respeto, pude ir a una de las clínicas más prestigiosas del país, en la ciudad de Bogotá, en busqueda de una solución al problema, la *Clínica Barraquer*, un lugar maravilloso en el que deposité quizás una de mis últimas esperanzas, por el prestigio que esta ostentaba en temas de salud ocular.
+
+Sin poner nunca en duda la labor de los expertos y especialistas que iba conociendo a lo largo de todo este trayecto, la impotencia era enorme al ver que en esta otra *estación* no hubo respuesta a la causa del problema principal. Solo me repetían las cosas que ya sabía y que estaba viviendo en persona: *Mi visión estaba en caída libre*.
+
+Ya escaseaban las opciones y el ir y venir de los centros de salud sin ningún parte alentador era lo que más arañaba en mi ser. Mi ojo derecho fué perdiendo su utilidad por obvias razones, era una penumbra, la poca luz que entraba no era la suficiente para distinguir las cosas del mundo real. El desconsuelo era inmenso.
+
+A raíz de que solo estaba utilizando mayormente mi ojo izquierod, empecé a notar cierta irregularidad (cómo para variar 😞). Había un sector del ojo que empezó a perder visión, en este caso no se produjeron los síntomas del ojo derecho mediante apagones, sino que el daño en este caso era fijo, es decir, solo un sector en particular perdió su éstimulo visual.
+
+El espacio afectado en el ojo izquierdo, estaba ubicado levemente por encima del punto o centro de visión. Esto trajo otra serie de problemas, primero el conflicto emocional, de verdad no me creía lo que estaba ocurriendo, ni mucho menos sabía que hacer con la situación, pese a que no extrapolaba estas emociones, ni a mis familiares ni amigos, dentro de mí habia una lucha y un caos total. El segundo problema era obvio, me estaba quedando *CIEGO*.
+
+## La Ciencia como una luz en la oscuridad
+
+Así como subtitula uno de mis libros favoritos de *Carl Sagan, El Mundo y Sus Demonios*, había una luz en tanta oscuridad. Mi mayor temor era que mi perdida de la capacidad visual siguiera en aumento y llegar al punto de perderla por completo. *"Afortunadamente"* no seguí notando más avance con la situación.
+
+En aquel momento, estaba trabajando en Celuweb SAS, una empresa dedicada al desarrollo de aplicaciones móviles para fuerza de ventas, en la ciudad de Armenia, Quindío, Y debo decir que allí recibí uno de los mas grandes apoyos jamás recibidos en mi vida.
+
+Durante todo el proceso de busqueda de una solución a mi problema de salud visual, y quizás otro aspecto más, las obligaciones como empresa fueron muy bien cumplidas y no solo eso, también recibí otro obsequio, esta vez, pude ir a la ciudad de Medellín, a una clínica también reconocida por sus oficios en atención médica visual. El objetivo era acudir a una consulta con una Neuro-oftalmologa, que gozaba de buena reputación.
+
+*NOTA: Al momento de escribir este post, no recuerdo el nombre de la clínica, ni de la especialista en cuestión (Normal en mí), pero cuando tenga disponible de nuevo la información, será actualizado como se debe*
+
+Sabía que iba a ser mi última estación de obtener los mismas respuestas que los demás especialistas que logré conocer. Y es que de verdad ya no habían más opciones a mi alcance.
+
+En esta consulta en particular, la especialista tras realizar una serie de exámenes, solicitó amablemente mediante una orden médica, la pronta realización de una [Punción Lumbar](https://es.wikipedia.org/wiki/Punci%C3%B3n_lumbar), procedimiento mediante el cual se podría obtener a ciencia cierta como estaba actualmente la presión interna en mi cabeza. Sospecha que tuvo la especialista, debido a la sintomatología presentada e historial clínico personal, la hidrocefalía y todo lo demás que ya mencioné.
+
+Es un poco frustrante darme cuenta, que el procedimiento que solicitó la especialista, bien pudo haber sido solicitado con anterioridad por los especialistas visitados con anterioridad. No quiero entrar en temas de negligencia médica ni nada por el estilo, pero si reconozco que esto será algo que retumbará fuerte en mí, y ahí quedará como un: *"Y si hubieran..."*
+
+La visita a Medellín concluye con la orden del procedimiento, y es en Armenía dónde con el apoyo de siempre de mi Madre, iniciamos otra nueva travesía en busca de aquella respuesta que me ha sido esquiva...
