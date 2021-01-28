@@ -109,7 +109,7 @@ export const query = graphql`
       edges {
         node {
         childImageSharp {
-            fluid(maxWidth: 100, quality: 50) {
+            fluid(maxWidth: 100, quality: 60) {
               ...GatsbyImageSharpFluid
             }
           }

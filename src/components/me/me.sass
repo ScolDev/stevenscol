@@ -14,13 +14,16 @@ $photoSize: 200px
     display: flex
     flex-direction: column
     align-items: center
-    max-width: $size
 
   &-photo
     position: absolute
     transform: translateY(-220px)
     min-width: $photoSize
+    min-height: $photoSize
+
     img
+      width: $photoSize !important
+      height: $photoSize !important
       color: $primary
       border: 4px solid $primary
       border-radius: $photoSize / 2
@@ -38,8 +41,8 @@ $photoSize: 200px
       &-item
         margin-top: 20px
       &-img
-        height: 35px
-        width: 35px
+        height: 55px
+        width: 55px
         margin: 0 0.5rem
 
 .Me.widget

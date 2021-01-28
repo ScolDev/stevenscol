@@ -89,8 +89,8 @@ function getInterval ({ pageNumber, numberOfPages, numberOfButtons }) {
 }
 
 Paginator.propTypes = {
-  pageNumber: PropTypes.number.isRequired,
-  numberOfPages: PropTypes.number.isRequired,
+  pageNumber: PropTypes.number,
+  numberOfPages: PropTypes.number,
   numberOfButtons: PropTypes.number
 }
 
