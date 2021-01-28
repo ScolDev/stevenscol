@@ -8,7 +8,7 @@ import { SVG } from '../../common/constants'
 import './header.sass'
 
 const Header = ({ title }) => {
-  const [ theme, setTheme ] = useState('dark')
+  const [ theme, setTheme ] = useState('light')
 
   const toggledark = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark'
