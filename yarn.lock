@@ -6363,13 +6363,13 @@ gatsby-plugin-disqus@^1.2.2:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.2.2.tgz#d10e72c2ac0f7205abd7dda2e8cb4ecc0743a824"
   integrity sha512-RWiU8Jtg94kVphjBnxqnF+0txyJ3eZN/9vw/VlMgz0mor1FwULkiiiOyNXAJxbX6tFqYmypnmfa+edQWX/rMpQ==
 
-gatsby-plugin-google-analytics@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.9.0.tgz#2256c06a78b58232a1012a7458921c1c24922f53"
-  integrity sha512-Zgiwn4GSJDyO0145pbpP8Ri0guAqCbJOPOxDH+jONasxVrSnEP6KCGDshxi0Cl31DkfebpVpTs+0MDRKvhQ/Qw==
+gatsby-plugin-google-gtag@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.7.0.tgz#322f1d7cdefa4e9c45a77ad70e569685369944d4"
+  integrity sha512-9BvJRlHHknQaoOsPiZQJrZ3IuBP1iuj701kFIYzUQV0BA/3sDDEn2MeiAsyjguhR8+bJ6bYZZXHjX/UAEhD8Lw==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    minimatch "3.0.4"
+    minimatch "^3.0.4"
 
 gatsby-plugin-manifest@^2.10.0:
   version "2.10.0"

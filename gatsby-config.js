@@ -21,9 +21,11 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-plugin-google-gtag",
       options: {
-        trackingId: "G-7LTQBMZYJR",
+        trackingIds: [
+          "G-7LTQBMZYJR"
+        ],
       },
     },
     "gatsby-plugin-sharp",
