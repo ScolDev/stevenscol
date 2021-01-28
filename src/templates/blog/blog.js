@@ -53,6 +53,8 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          id
+          excerpt
           frontmatter {
             path
             title
@@ -66,8 +68,6 @@ export const pageQuery = graphql`
               }
             }
           }
-          id
-          excerpt
         }
       }
     }

@@ -22,10 +22,14 @@ const BlogPost = ({ data, pageContext }) => {
   }
 
   useEffect(() => { Prism.highlightAll() })
-
+  console.log(contentPost.frontmatter.image)
   return (
     <>
-      <Seo title={contentPost.frontmatter.title} keywords={[]} />
+      <Seo
+        title={ contentPost.frontmatter.title }
+        description={ contentPost.excerpt }
+        image={ contentPost.frontmatter.image.childImageSharp.fluid.src } 
+        keywords={[]} />
       <Layout>
         <Hero 
           image={contentPost.frontmatter.image} 
@@ -87,6 +91,7 @@ export const pageQuery = graphql`
     }
     contentPost: markdownRemark( frontmatter: { path: { eq: $path_ } }) {
       id
+      excerpt
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
