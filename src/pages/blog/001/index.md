@@ -1,14 +1,16 @@
 ---
-path: "/001-como-afronto-mi-perdida-de-vision"
+path: "/001-viviendo-con-una-perdida-de-vision"
 date: 2021-01-26
-title: "¿Cómo afronto mi pérdida de visión de más de un 60%?"
+title: "Viviendo con una pérdida de visión de mas del 60%"
 status: "publish"
 image: ./hero.jpg
 tags: ["personal"]
 ---
-En un principio tenia planeado nombrar este primer artículo de mi blog, con el titulo de "¿Cómo superé mi pérdida de ..." pero pensándolo un poco, podría sonar un poco pretencioso y a la vez algo engañoso para mí mismo, si tengo en cuenta, que mi estado actual, el cual mencionaré en brevedad, no ha sido superada del todo, y que por el contrario debido a la magnitud del suceso para mi vida, hay momentos y situaciones en las que considero que aún no lo he superado en su totalidad. Además porqué desconozco el futuro, y no se cómo reaccione a lo que este traiga. Pues bien considero que una mejor palabra para acompañar este tiulo sería "afrontar", porqué denota para mí, una lucha constante, siempre buscando dar lo mejor de si.
+En un principio tenía planeado nombrar este primer artículo de mi blog, con el título de "¿Cómo superé mi pérdida de visión?" pero pensándolo un poco, podría parecer pretencioso y a la vez algo engañoso para mí mismo. Teniendo en cuenta que mi estado actual, que por momentos y situaciones de mi vida no ha sido superado en su totalidad; además, porque desconozco mi posible reacción a lo que el futuro me presente. Pues bien considero que una mejor palabra para acompañar este tíulo sea "viviendo" porque denota para mí, una lucha constante, donde siempre busco dar lo mejor de mí.
 
-Quiero iniciar mi blog personal narrando un poco el evento inoportuno de mi vida que me llevó a perder casi el 70% de mi capacidad visual, y cómo poco a poco y con muchas dificultades principalmente emocionales, fuí encontrando uno o varios caminos quizás, que me llevaron a un punto el cual nunca imaginé poder alcanzar. Conseguí con esto entonces, poder llevar una vida normal, no igual a como era antes, pero si con algunos "hacks" aprendidos que hacen mas ligera la carga del problema.
+Antes de empezar a escribir que pasó exactamente y como fueron ocurriendo los diferentes hechos alrededor del tema, quiero dejar claro, que pese a que es un tema muy personal, desde un principio he querido dejarlo plasmado de alguna manera y una de las mejores alternativas que he encontrado, es mediante un texto y aprovecho esta ocasión para retomar viejos psatiempos como es el grandioso hábito de la escritura.
+
+Quiero iniciar este blog narrando un poco el evento inoportuno de mi vida que me llevó a perder casi el 70% de mi capacidad visual, y cómo poco a poco y con muchas dificultades principalmente emocionales, fuí encontrando uno o varios caminos quizás, que me llevaron a un punto el cual nunca imaginé poder alcanzar. Conseguí con esto entonces, poder llevar una vida normal, no igual a como era antes, pero si con algunos "hacks" aprendidos que hacen mas ligera la carga del problema.
 
 De niño siempre contaba con algún que otro sueño por cumplir, y actualmente como cualquier otro ser humano los sigo teniendo. Las experiencias me han moldeado desde entonces y quizás ya no sean los mismos sueños de chico, pero sigo teniendo otros por alcanzar y muchos otros que he logrado presenciar. Lo más probable es que todos nosotros siempre tengamos algún ideal que nos empuje a querer darlo tooo para llegar ahí, sin importar que tan dificil se nos presente el camino.
 
@@ -21,8 +23,6 @@ Stephen Hawking
 Soy Robert Stevens, y en mis últimos 15 años aproximadamente me he dedicado a ser desarrollador de software, primero motivado por una gran pasión y luego acompañado de una profesión. Soy Ingeniero de Sistemas y Computación, egresado de la Universidad del Quindio, y he logrado brindar mis conocimientos a la industria del software, ejerciendo cargos afines con esta profesión. Tengo el placer de contar con una Mamá que supo darlo todo para sacar adelante a sus dos hijos, y la cual siempre admiraré por su gran labor como Madre, tengo un hermano mellizo al que respeto y admiro mucho, y al que literalmente por anécdotas de la vida, le debo la misma. Tengo un hermoso fiel amigo de cuatro patas 🐶 llamado Canelo y pertenezco a una gran familia, a la cual desde siempre he querido mucho.
 
 Si bien, en estos momentos desempeño normalmente mis actividades como Desarrollador de Sofrware y llevo una vida común y corriente, con sus limitantes y todo, esto es debido a la resiliencia alcanzada hasta el momento para levantarme de una etapa muy dificil en mi vida, marcada por el acontecimiento de haber perdido gran parte de mi capacidad visual.
-
-Antes de empezar a escribir que pasó exactamente y como fueron ocurriendo los diferentes hechos al rededor del tema, quiero dejar claro, que pese a que es un tema muy personal, desde un principio he querido dejarlo plasmado de alguna manera, y una de las mejores alternativas que he encontrado, es mediante un texto, y aprovecho esta ocasión para retomar viejos gustos y pasatiempos, como es el grandioso hábito de la escritura.
 
 > “No son las cosas que nos pasan las que nos hacen sufrir, sino lo que nos decimos sobre estas cosas”.
 <br><br>
