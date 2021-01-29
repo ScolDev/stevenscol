@@ -1,40 +1,40 @@
 ---
 path: "/001-viviendo-con-una-perdida-de-vision"
 date: 2021-01-26
-title: "Viviendo con una pérdida de visión de mas del 60%"
+title: "Viviendo con una pérdida de visión de más del 60%"
 status: "publish"
 image: ./hero.jpg
 tags: ["personal"]
 ---
-En un principio tenía planeado nombrar este primer artículo de mi blog, con el título de "¿Cómo superé mi pérdida de visión?" pero pensándolo un poco, podría parecer pretencioso y a la vez algo engañoso para mí mismo. Teniendo en cuenta que mi estado actual, que por momentos y situaciones de mi vida no ha sido superado en su totalidad; además, porque desconozco mi posible reacción a lo que el futuro me presente. Pues bien considero que una mejor palabra para acompañar este tíulo sea "viviendo" porque denota para mí, una lucha constante, donde siempre busco dar lo mejor de mí.
+En un principio tenía planeado nombrar este primer artículo de mi blog, con el título de "¿Cómo superé mi pérdida de visión?" pero pensándolo un poco, podría parecer pretencioso y a la vez algo engañoso para mí mismo. Teniendo en cuenta que mi estado actual, que por momentos y situaciones de mi vida no ha sido superado en su totalidad, además, porque desconozco mi posible reacción a lo que el futuro me presente. Pues bien considero que una mejor palabra para acompañar este tíulo sea "viviendo" porque denota para mí, una lucha constante, donde siempre busco dar lo mejor de mí.
 
 Antes de empezar a escribir que pasó exactamente y como fueron ocurriendo los diferentes hechos alrededor del tema, quiero dejar claro, que pese a que es un tema muy personal, desde un principio he querido dejarlo plasmado de alguna manera y una de las mejores alternativas que he encontrado, es mediante un texto y aprovecho esta ocasión para retomar viejos psatiempos como es el grandioso hábito de la escritura.
 
-Quiero iniciar este blog narrando un poco el evento inoportuno de mi vida que me llevó a perder casi el 70% de mi capacidad visual, y cómo poco a poco y con muchas dificultades principalmente emocionales, fuí encontrando uno o varios caminos quizás, que me llevaron a un punto el cual nunca imaginé poder alcanzar. Conseguí con esto entonces, poder llevar una vida normal, no igual a como era antes, pero si con algunos "hacks" aprendidos que hacen mas ligera la carga del problema.
+En los primeros artículos de este blog quiero narrar en primer lugar, como el evento inoportuno de perder casi el 70% de mi capacidad visual cambio mi vida para siempre. En segundo lugar, describir como poco a poco fui superando las dificultades, principalmente las de carácter emocional, médico y los retos para volver a tener una vida lo más normal posible, aprendiendo algunos *"hacks"* que hacen mi carga un poco más ligera.
 
-De niño siempre contaba con algún que otro sueño por cumplir, y actualmente como cualquier otro ser humano los sigo teniendo. Las experiencias me han moldeado desde entonces y quizás ya no sean los mismos sueños de chico, pero sigo teniendo otros por alcanzar y muchos otros que he logrado presenciar. Lo más probable es que todos nosotros siempre tengamos algún ideal que nos empuje a querer darlo tooo para llegar ahí, sin importar que tan dificil se nos presente el camino.
+## Contexto
 
-Es Aquí donde el hecho de tener siempre un ideal se convirtió en una de las fuerzas motoras más grandes que tuve, junto al apoyo intrinseco de toda mi familia, para poder reponerme a la debacle que represento para mi vida emocional y profesional el perder aproximadamente un 70% de mi capacidad visual.
+De niño siempre contaba con algún que otro sueño por cumplir y actualmente como cualquier otro ser humano los sigo teniendo. Las experiencias me han moldeado desde entonces y quizás ya no sean los mismos sueños de chico, pero sigo teniendo otros por alcanzar y muchos otros que he logrado presenciar. Lo más probable es que todos nosotros siempre tengamos algún ideal que nos empuje a querer darlo tooo para llegar ahí, sin importar que tan difícil sea el camino.
+
+Es aquí donde el hecho de tener siempre un ideal se convirtió en una de las fuerzas que impulsa mi día a día, junto con el apoyo intrínseco de toda mi familia y amigos más cercanos, para poder reponerme de la pérdida de mi capaciadad visual de casi un 70%, que represento un cambio drástico en mi vida emocional y profesional.
 
 > “Soñé que iba a ser ejecutado. De repente me di cuenta de que había muchas cosas que valía la pena que podía hacer, si me dieran un respiro"
 <br><br>
 Stephen Hawking
 
-Soy Robert Stevens, y en mis últimos 15 años aproximadamente me he dedicado a ser desarrollador de software, primero motivado por una gran pasión y luego acompañado de una profesión. Soy Ingeniero de Sistemas y Computación, egresado de la Universidad del Quindio, y he logrado brindar mis conocimientos a la industria del software, ejerciendo cargos afines con esta profesión. Tengo el placer de contar con una Mamá que supo darlo todo para sacar adelante a sus dos hijos, y la cual siempre admiraré por su gran labor como Madre, tengo un hermano mellizo al que respeto y admiro mucho, y al que literalmente por anécdotas de la vida, le debo la misma. Tengo un hermoso fiel amigo de cuatro patas 🐶 llamado Canelo y pertenezco a una gran familia, a la cual desde siempre he querido mucho.
+Soy Robert Stevens y en mis últimos 15 años aproximadamente me he dedicado a ser desarrollador de software, primero motivado por una gran pasión y luego acompañado de una profesión. Soy Ingeniero de Sistemas y Computación, egresado de la Universidad del Quindio, logrando brindar mis conocimientos a la industria del software, ejerciendo cargos afines con esta profesión. Tengo el placer de contar con una mamá que supo darlo todo para sacar adelante a sus dos hijos y la cual siempre admiraré por su gran labor como madre, tengo un hermano mellizo al que admiro, respeto y al que literalmente por anécdotas de la vida, le debo la misma. Tengo un hermoso fiel amigo de cuatro patas 🐶 llamado Canelo y pertenezco a una gran familia, a la cual desde siempre he querido mucho.
 
-Si bien, en estos momentos desempeño normalmente mis actividades como Desarrollador de Sofrware y llevo una vida común y corriente, con sus limitantes y todo, esto es debido a la resiliencia alcanzada hasta el momento para levantarme de una etapa muy dificil en mi vida, marcada por el acontecimiento de haber perdido gran parte de mi capacidad visual.
+Si bien, en estos momentos desempeño normalmente mis actividades como Desarrollador de Sofrware, gracias a la resiliencia alcanzada hasta el momento que ha logrado levantarme de una etapa muy difícil en mi vida, marcada por el acontecimiento de haber perdido gran parte de mi capacidad visual.
 
 > “No son las cosas que nos pasan las que nos hacen sufrir, sino lo que nos decimos sobre estas cosas”.
 <br><br>
 Epícteto
 
-## Un Agridulce 2016
+## Un agridulce 2016
 
 El 2016 había comenzado de una manera grandiosa, y es que en aquel entonces había logrado alcanzar un par de sueños, el más memorable quizás para mí fue haber conocido el mar, y sí, sé que como muchas otras personas, este es uno de esos sueños por cumplir y para otras quizás sea algo trivial, pero en aquel momento ya había hecho el "check" en mi propia lista... ¡Era un año genial!
 
 En esos momentos sentia que las cosas marchaban muy bien a consideración muy personal, de igual manera fue el año en el cual conseguí mi titulo profesional como Ingeniero de Sistemas después de una tortuosa espera, en la que se habia postergado un par de años, aún habiendo terminado de cursar todos los créditos. Y por supuesto fue el año en el que adopté y conocí a mi fiel amigo Canelo, un fábuloso perro que me ha brindado una compañía que más adelante se iba a convertir en una ayuda sin igual, para enfrentar la crisis emocional que llevaría el evento de mi pérdida visual.
-
-## Contexto
 
 Con el fin de no ahondar bastante en detalles, la razón principal por la cual las cosas ocurrieron de esta manera, es debido a que desde muy pequeño, aproximadamente un año de edad, sufrí un accidente, el cual derivó en una anomalía conocida como *[Hidrocefalia](https://es.wikipedia.org/wiki/Hidrocefalia)*, y la manera de tratarla es mediante una *derivación ventriculoperitoneal*.
 
@@ -70,7 +70,7 @@ A raíz de que solo estaba utilizando mayormente mi ojo izquierod, empecé a not
 
 El espacio afectado en el ojo izquierdo, estaba ubicado levemente por encima del punto o centro de visión. Esto trajo otra serie de problemas, primero el conflicto emocional, de verdad no me creía lo que estaba ocurriendo, ni mucho menos sabía que hacer con la situación, pese a que no extrapolaba estas emociones, ni a mis familiares ni amigos, dentro de mí habia una lucha y un caos total. El segundo problema era obvio, me estaba quedando *CIEGO*.
 
-## La Ciencia como una luz en la oscuridad
+## La ciencia como una luz en la oscuridad
 
 Así como subtitula uno de mis libros favoritos de *Carl Sagan, El Mundo y Sus Demonios*, había una luz en tanta oscuridad. Mi mayor temor era que mi perdida de la capacidad visual siguiera en aumento y llegar al punto de perderla por completo. *"Afortunadamente"* no seguí notando más avance con la situación.
 
