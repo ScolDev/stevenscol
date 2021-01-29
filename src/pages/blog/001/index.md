@@ -46,6 +46,10 @@ En los años previos al 2016, una de las molestias más comunes que presentaba, 
 
 Fueron muchas las ocasiones en las que acudí al médico sin recibir un parte satisfactorio por las molestias que iba presentando. Posteriormente durante el mismo año 2016, mientras jugaba videojuegos (uno de mis pasatiempos favoritos hasta aquel entonces), de manera instantanea mi ojo derecho se apagó sin más, quedando a oscurás. Inevitablemente el susto fue inmenso, así que suspendi lo que estaba haciendo y me quedé inmóvil pensando en la extrañez del suceso y temeroso de que algo grave estuviera ocurriendo en ese preciso momento.
 
+<p align="center">
+  <img alt="Apagón" src="https://media.giphy.com/media/H7rgfu3CGdGTlhOMTj/giphy.gif" />
+</p>
+
 Mi sorpresa fue notar que pasado unos cuantos segundos, el ojo empezaba a recobrar su luz y por ende su capacidad visual; este proceso ocurria de manera paulatina hasta quedar nuevamente en su estado "natural".
 
 No lo comenté con ninguna persona ese mismo dia porqué no quería generar algún tipo de alarma (gran error), pero al día siguiente cuando volvió a suceder, claramente mis peores temores fueron surgiendo nuevamente y es aquí donde doy aviso, en ese entonces a mi madre de lo que me estaba pasando.
