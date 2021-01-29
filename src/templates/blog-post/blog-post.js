@@ -21,8 +21,7 @@ const BlogPost = ({ data, pageContext }) => {
     title: contentPost.frontmatter.title
   }
 
-  useEffect(() => { Prism.highlightAll() })
-  console.log(contentPost.frontmatter.image)
+  useEffect(() => {  Prism.highlightAll() })
   return (
     <>
       <Seo

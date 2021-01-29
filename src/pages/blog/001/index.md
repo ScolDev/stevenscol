@@ -44,13 +44,13 @@ En los años previos al 2016, una de las molestias más comunes que presentaba, 
 
 ## Apagones
 
-Fueron muchas las ocasiones en las que acudia al médico por las molestias mencionadas, sin recibir un parte mas específico y controlado, hasta que cierto dia del año 2016, mientras jugaba videojuegos, instantaneamente mi ojo derecho se apagó sin más, quedando solo a oscurás. Inevitablemente el susto fué inmenso por lo ocurrido, así que suspendi lo que estaba haciendo en el momento y me quedé inmóvil pensando que podría estar pasando y temeroso de que algo grave estuviera ocurriendo en ese preciso momento.
+Fueron muchas las ocasiones en las que acudí al médico sin recibir un parte satisfactorio por las molestias que iba presentando. Posteriormente durante el mismo año 2016, mientras jugaba videojuegos (uno de mis pasatiempos favoritos hasta aquel entonces), de manera instantanea mi ojo derecho se apagó sin más, quedando a oscurás. Inevitablemente el susto fue inmenso, así que suspendi lo que estaba haciendo y me quedé inmóvil pensando en la extrañez del suceso y temeroso de que algo grave estuviera ocurriendo en ese preciso momento.
 
-Mi sorpresa fue notar que pasado unos cuantos segundos, el ojo empezaba a recobrar su luz y por ende su capacidad visual, este proceso ocurria de manera paulatina hasta quedar nuevamente a su estado "natural".
+Mi sorpresa fue notar que pasado unos cuantos segundos, el ojo empezaba a recobrar su luz y por ende su capacidad visual; este proceso ocurria de manera paulatina hasta quedar nuevamente en su estado "natural".
 
-No lo comenté con ninguna persona ese mismo dia porqué no quería generar algún tipo de alarma. Pero al día siguiente cuando volvió a suceder, claramente mis peores temores fueron surgiendo nuevamente y es aquí donde doy a viso en ese entonces a mi Madre de lo que me estaba pasando.
+No lo comenté con ninguna persona ese mismo dia porqué no quería generar algún tipo de alarma (gran error), pero al día siguiente cuando volvió a suceder, claramente mis peores temores fueron surgiendo nuevamente y es aquí donde doy aviso, en ese entonces a mi madre de lo que me estaba pasando.
 
-El siguiente paso fue empezar a buscar la ayuda médica requerida del caso y pensando en lo tortuoso y desgastante que podría ser acudir al sistema de salud contributivo, lo primero que hice era buscar ayuda profesional privada con oftalmología.
+El siguiente paso fue empezar a buscar la ayuda médica requerida del caso. Pensando en lo tortuoso y demorado que podría ser acudir al sistema de salud contributivo, lo primero que hice fue buscar ayuda profesional privada con oftalmología.
 
 ## Rueda de la fortuna
 
