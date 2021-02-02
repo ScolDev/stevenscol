@@ -21,8 +21,9 @@ function Seo (props) {
   return (
     <StaticQuery
     query={detailsQuery}
-    render={data => {
+    render={ data => {
         const metaDescription = description || data.site.siteMetadata.description
+        const ogImage = data.site.siteMetadata.url + bannerImage
         
         return (
           <Helmet
@@ -34,8 +35,8 @@ function Seo (props) {
                { property: 'og:title',content: title },
                { property: 'og:description',content: metaDescription },
                { property: 'og:type',content: article ? 'article' : 'website' },
-               { property: 'og:image',content: bannerUrl },
-               { property: 'twitter:image',content: bannerUrl },
+               { property: 'og:image',content: ogImage },
+               { property: 'twitter:image',content: ogImage },
                { name: 'twitter:card',content: 'summary' },
                { name: 'twitter:creator',content: data.site.siteMetadata.author },
                { name: 'twitter:title',content: title },
@@ -82,6 +83,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        url
       }
     }
   }
