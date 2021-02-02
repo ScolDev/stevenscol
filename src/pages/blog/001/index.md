@@ -1,7 +1,7 @@
 ---
 path: "/001-viviendo-con-una-perdida-de-vision"
 date: 2021-01-26
-title: "Viviendo con una pérdida de visión de más del 60%"
+title: "Viviendo con una pérdida de visión de más del 60%: Primera Parte"
 status: "publish"
 image: ./hero.jpg
 tags: ["personal"]
