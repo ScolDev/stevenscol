@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import bannerImage from '../../assets/images/banner.jpg'
+import siteBanner from '../../assets/images/banner.jpg'
 
 function Seo (props) {
   const { 
@@ -16,17 +16,17 @@ function Seo (props) {
     article 
   } = props
 
-  const bannerUrl = image || bannerImage
+  const heroImage = image || siteBanner
   
   return (
     <StaticQuery
     query={detailsQuery}
     render={ data => {
-        const { title: siteName, twitterID } = data.site.siteMetadata
+        const { title: siteName, url, twitterID } = data.site.siteMetadata
         const siteDescription = description || data.site.siteMetadata.description
 
         const ogTitle = `${title} | ${siteName}`
-        const ogImage = data.site.siteMetadata.url + bannerImage
+        const ogImage = url + heroImage
         
         return (
           <Helmet
