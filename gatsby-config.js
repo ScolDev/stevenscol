@@ -8,7 +8,8 @@ module.exports = {
     bio: 'Ingeniero de Sistemas y Computación, Desarrollador Web Full Stack en Javascript, Autodidacta y Reverser de Pasión.',
     skills: '- Javascript - Node.js - Html - CSS - React - Gatsby - Angular - Git - Responsive Design - Java - Android Development - Assembler - Reversing - Shell Scripting - Self Taught -',
     experience: 'Más de 5 años de experiencia laboral en diferentes compañias de software. Diseño y construcción de aplicaciones web (Fronted y Backend), desarrollo de aplicaciones móviles para Android, prácticas y documentación de análisis en ingeniería inversa de software como pasatiempo, entre otras.',
-    description: 'Un punto de entrada a los trabajos, pensamientos y temas variados que deseo compartir en este mi sitio web personal.',
+    description: 'Punto de encuentro de trabajos personales y documentación de mis aprendizajes.',
+    twitterID: '@StevensPineda',
     blogPostPrefixPath: '/blog',
     blogPostsPaginatePrefixPath: '/blog/page',
     social: [

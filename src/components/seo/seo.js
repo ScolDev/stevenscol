@@ -22,26 +22,28 @@ function Seo (props) {
     <StaticQuery
     query={detailsQuery}
     render={ data => {
-        const metaDescription = description || data.site.siteMetadata.description
+        const { title: siteName, twitterID } = data.site.siteMetadata
+        const siteDescription = description || data.site.siteMetadata.description
+
+        const ogTitle = `${title} | ${siteName}`
         const ogImage = data.site.siteMetadata.url + bannerImage
         
         return (
           <Helmet
             htmlAttributes={{ lang }}
-            title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            title={ ogTitle }
             meta={[
-              { name: 'description', content: metaDescription },
-              { property: 'og:title', content: title },
-              { property: 'og:description', content: metaDescription },
+              { name: 'description', content: siteDescription },
+              { property: 'og:title', content: ogTitle },
+              { property: 'og:description', content: siteDescription },
               { property: 'og:type', content: article ? 'article' : 'website' },
               { property: 'og:image', content: ogImage },
               { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'twitter:image', content: ogImage },
-              { name: 'twitter:creator', content: '@StevensPineda' },
-              { name: 'twitter:site', content: '@StevensPineda' },
-              { name: 'twitter:title', content: title },
-              { name: 'twitter:description', content: metaDescription }
+              { name: 'twitter:creator', content: twitterID },
+              { name: 'twitter:site', content: twitterID },
+              { name: 'twitter:title', content: ogTitle },
+              { name: 'twitter:description', content: siteDescription }
             ]
               .concat(
                 keywords.length > 0 ? {
@@ -85,6 +87,7 @@ const detailsQuery = graphql`
         description
         author
         url
+        twitterID
       }
     }
   }
