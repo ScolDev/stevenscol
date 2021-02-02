@@ -89,3 +89,4 @@ En esta consulta en particular, tras efectuar una serie de exámenes, la especia
 Es un poco frustrante darme cuenta, que el procedimiento que solicitó la especialista, bien pudo haber sido solicitado con anterioridad por los especialistas a los que acudí. No quiero entrar en temas de posibles negligencias médicas, ni nada por el estilo, pero si reconozco que esto será algo que retumbará fuerte en mí y ahí quedará como un: *"Y si desde antes hubieran..."*
 
 La visita a Medellín concluyó con la orden del procedimiento, y es en Armenía dónde nuevamente con el apoyo de mi Madre, iniciamos otra nueva travesía en busca de aquella respuesta que me ha sido esquiva...
+
