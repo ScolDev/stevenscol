@@ -34,7 +34,7 @@ function Seo (props) {
               { name: 'description', content: metaDescription },
               { property: 'og:title', content: title },
               { property: 'og:description', content: metaDescription },
-              { property: 'og:type', content: 'website' },
+              { property: 'og:type', content: article ? 'article' : 'website' },
               { property: 'og:image', content: ogImage },
               { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'twitter:image', content: ogImage },
