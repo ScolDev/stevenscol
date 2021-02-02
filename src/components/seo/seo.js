@@ -35,9 +35,9 @@ function Seo (props) {
                { property: 'og:title',content: title },
                { property: 'og:description',content: metaDescription },
                { property: 'og:type',content: article ? 'article' : 'website' },
-               { property: 'og:image:src',content: ogImage },
-               { property: 'twitter:image',content: ogImage },
-               { name: 'twitter:card',content: 'summary' },
+               { property: 'og:image',content: ogImage },
+               { property: 'twitter:image:src',content: ogImage },
+               { name: 'twitter:card',content: 'summary_large_image' },
                { name: 'twitter:creator',content: data.site.siteMetadata.author },
                { name: 'twitter:title',content: title },
                { name: 'twitter:description',content: metaDescription }
