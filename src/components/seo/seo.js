@@ -16,7 +16,8 @@ function Seo (props) {
     article 
   } = props
 
-  const bannerUrl = image || bannerImage
+  // const bannerUrl = image || bannerImage
+  const bannerUrl = bannerImage
   
   return (
     <StaticQuery
