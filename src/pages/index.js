@@ -27,7 +27,6 @@ const IndexPage = ({ data, pageContext }) => {
         <Container>
           <main className="Home">
             <section className="Home-me Section">
-              <h2>Yo</h2>
               <article className="Home-me-content-">
                 <Me widget />
               </article>
