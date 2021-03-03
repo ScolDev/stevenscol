@@ -1,6 +1,6 @@
 ---
   path: "/002/viviendo-con-una-perdida-de-vision-segunda-parte"
-  date: 2021-02-15
+  date: 2021-03-02
   title: "Viviendo con una pérdida de visión de más del 60%: Segunda Parte"
   status: "publish"
   image: ./hero.jpg
