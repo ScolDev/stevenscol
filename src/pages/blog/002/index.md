@@ -14,7 +14,7 @@
 Es inevitable no detenerme a recordar y dejar entre escritos, el camino que tuve que recorrer, desde los detalles más puntuales como lo fueron los procesos médicos y la busqueda de noticias y respuestas alentadoras a la situación, así como esas pequeñas batallas mentales y retos técnicos vinculados al proceso de superación de esta crísis personal, o como lo veo hoy en dia, mi salida a esta maquina criogénica en la que estuve encerrado alrededor de 4 años, para salir y enfrentarme a un nuevo mundo donde las cosas realmente cambiaron para mí, o al menos, la necesidad de enfrentarlas desde una perspectiva diferente.
 
 <p align="center">
-  <img alt="Congelado" src="http://olegif.com/bin/gifs/00/36/56.gif" />
+  <img alt="Congelado" src="https://media1.tenor.com/images/456033660a0b04e6eb4e127b6ed05214/tenor.gif" />
 </p>
 
 ## Entrada de emergencia
