@@ -32,7 +32,7 @@ const BlogPost = ({ data, pageContext }) => {
         
       <Layout>
         <Hero 
-          image={contentPost.frontmatter.image} 
+          image={ contentPost.frontmatter.image } 
           alignToBottomLeft />
         <Container>
           <section className='BlogPost row justify-content-center'>
