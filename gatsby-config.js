@@ -15,7 +15,7 @@ module.exports = {
     social: [
       'github#https://github.com/StevensCol',
       'twitter#http://twitter.com/stevenspineda',
-      'instagram#https://instagram.com/stevenscls',
+      'instagram#https://instagram.com/stevenscol_dev',
       'email#mailto:yo@stevenscol.co'
     ]
   },
