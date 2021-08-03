@@ -6,6 +6,13 @@ status: "publish"
 image: ./hero.jpg
 tags: ["personal"]
 ---
+> Este artículo es la primera parte de mi narración de los sucesos ocurridos durante el periodo en el cual perdí gran parte de mi capacidad visual.
+<br>
+<br>
+[Leer Segunda Parte](/blog/002-viviendo-con-una-perdida-de-vision-segunda-parte)
+<br>
+[Leer Tercera Parte](/blog/003-viviendo-con-una-perdida-de-vision-tercera-parte)
+
 En un principio tenía planeado nombrar este primer artículo de mi blog, con el título de "¿Cómo superé mi pérdida de visión?" pero pensándolo un poco, podría parecer pretencioso y a la vez algo engañoso para mí mismo. Teniendo en cuenta que mi estado actual, que por momentos y situaciones de mi vida no ha sido superado en su totalidad, además, porque desconozco mi posible reacción a lo que el futuro me presente. Pues bien considero que una mejor palabra para acompañar este tíulo sea "viviendo" porque denota para mí, una lucha constante, donde siempre busco dar lo mejor de mí.
 
 Antes de empezar a escribir que pasó exactamente y como fueron ocurriendo los diferentes hechos alrededor del tema, quiero dejar claro, que pese a que es un tema muy personal, desde un principio he querido dejarlo plasmado de alguna manera y una de las mejores alternativas que he encontrado, es mediante un texto y aprovecho esta ocasión para retomar viejos psatiempos como es el grandioso hábito de la escritura.

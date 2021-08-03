@@ -1,5 +1,5 @@
 ---
-  path: "/002/viviendo-con-una-perdida-de-vision-segunda-parte"
+  path: "/002-viviendo-con-una-perdida-de-vision-segunda-parte"
   date: 2021-03-02
   title: "Viviendo con una pérdida de visión de más del 60%: Segunda Parte"
   status: "publish"
@@ -10,6 +10,8 @@
 <br>
 <br>
 [Leer Primera Parte](/blog/001-viviendo-con-una-perdida-de-vision)
+<br>
+[Leer Tercera Parte](/blog/003-viviendo-con-una-perdida-de-vision-tercera-parte)
 
 Es inevitable no detenerme a recordar y dejar entre escritos, el camino que tuve que recorrer, desde los detalles más puntuales como lo fueron los procesos médicos y la búsqueda de noticias y respuestas alentadoras a la situación, así como esas pequeñas batallas mentales y retos técnicos vinculados al proceso de superación de esta crísis personal, o como lo veo hoy en día, mi salida a esta máquina criogénica en la que estuve encerrado alrededor de 4 años, para salir y enfrentarme a un nuevo mundo donde las cosas realmente cambiaron para mí, o al menos, la necesidad de enfrentarlas desde una perspectiva diferente.
 
