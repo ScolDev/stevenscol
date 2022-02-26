@@ -1,16 +1,28 @@
 @import '../../common/variables.sass'
 
+:root
+  --postSidePadding: 100px
+  --postCodeBgColor: #0a0a1dd5
+  --postCodeForegroundColor: #d5d5d575
+
+
 body.dark
   .BlogPost
     background-color: $bgColorDarkContrast
 
 .BlogPost
-  background-color: $bgColorLightContrast
-  padding: 0 $postSidePaddingLarge
-  margin: 0
+  @media (max-width: 991px)
+    --postSidePadding: 1.2em
 
-  @media(max-width: 991px)
-    padding: 0 $postSidePaddingSmall
+  @media (max-width: 576px)
+    --postSidePadding: 0.7em
+    .container
+      max-width: unset
+
+
+  background-color: $bgColorLightContrast
+  padding: 0 var(--postSidePadding)
+  margin: 0
 
   &-content
     padding: 1.5em 0
@@ -52,38 +64,34 @@ body.dark
     width: 100%
 
     &-previousPost,
-    &-nextPost 
+    &-nextPost
       a
         @include round-button
-  
+
   &-comments
     width: 100%
 
   h2, h3
     margin-top: 3rem
-  
+
 p code
   color: $primary
   font-size: 70%
-  background-color: $postCodeBgColor
+  background-color: var(--postCodeBgColor)
   display: inline
   padding: 3px
 
 pre
-  background-color: $postCodeBgColor !important
-  margin: 0 ($postSidePaddingLarge * -1) 1em ($postSidePaddingLarge * -1) !important
-
-  @media(max-width: 991px)
-    margin: 0 ($postSidePaddingSmall * -1) 1em ($postSidePaddingSmall * -1) !important
+  background-color: var(--postCodeBgColor) !important
+  margin: 0 calc(--postSidePadding * -1) 1em calc(--postSidePadding * -1) !important
 
   code
     display: block
-    color: $postCOdeFontColor
+    color: var(--postCodeForegroundColor)
     font-size: 90%
-    background-color: $postCodeBgColor
+    background-color: var(--postCodeBgColor)
     width: 100%
     font-weight: bold
     padding: 0.5em 1em
 
-  
-  
+
