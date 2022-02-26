@@ -6,21 +6,21 @@ import SocialMedia from '../social-media/social-media'
 import './hero.sass'
 
 function Hero (props) {
-  const { 
+  const {
     forHome,
-    title, 
-    social, 
-    imageSrc, 
-    image, 
+    title,
+    social,
+    imageSrc,
+    image,
     largeSize,
     mediumSize,
-    alignToBottomLeft 
+    alignToBottomLeft
   } = props
 
   const heroClass = [
     'Hero',
     alignToBottomLeft ? 'bottomLeft' : '',
-    largeSize ? 'largeHero': mediumSize ? 'mediumHero' : ''
+    largeSize ? 'largeHero': 'mediumHero'
   ].join(' ')
 
   const style = {
@@ -31,7 +31,7 @@ function Hero (props) {
     <div className={ heroClass } style={style}>
       <div className='Hero-wrap container'>
         <div className='Hero-content'>
-          { forHome 
+          { forHome
             ? (
               <div className="Hero-banner">
                 <Icon icon='banner' />

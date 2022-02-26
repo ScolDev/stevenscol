@@ -22,7 +22,7 @@ const Blog = ({ data, pageContext }) => {
               <header className='PostList-title'>
                 <h1>Página { pageNumber + 1 }</h1>
               </header>
-              <PostList 
+              <PostList
                 pageContext={ pageContext }
                 posts={ posts } />
             </section>

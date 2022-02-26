@@ -8,11 +8,11 @@ import { SVG } from '../../common/constants'
 import './header.sass'
 
 const Header = ({ title }) => {
-  const [ theme, setTheme ] = useState('light')
+  const [ theme, setTheme ] = useState('dark')
 
   const toggledark = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark'
-    
+
     window.localStorage.setItem('theme', newTheme)
     setTheme(newTheme)
   }

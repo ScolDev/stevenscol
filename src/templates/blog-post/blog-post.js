@@ -29,12 +29,12 @@ const BlogPost = ({ data, pageContext }) => {
         title={ contentPost.frontmatter.title }
         description={ contentPost.excerpt }
         image={ contentPost.frontmatter.image.childImageSharp.fluid.src } />
-        
+
       <Layout>
-        <Hero 
-          image={ contentPost.frontmatter.image } 
-          alignToBottomLeft />
         <Container>
+          <Hero
+            image={ contentPost.frontmatter.image }
+            alignToBottomLeft />
           <section className='BlogPost row justify-content-center'>
             <div className="BlogPost-content col-lg-12">
               <section className='BlogPost-postinfo'>
@@ -42,7 +42,7 @@ const BlogPost = ({ data, pageContext }) => {
                 <div><em>Por: { site.siteMetadata.author }</em></div>
                 <div><em>Fecha: { contentPost.frontmatter.date }</em></div>
               </section>
-              <article 
+              <article
                 className="BlogPost-content-html"
                 dangerouslySetInnerHTML={{ __html: contentPost.html }} />
               <article className='BlogPost-tags col-lg-12'>
