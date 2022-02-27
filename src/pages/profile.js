@@ -18,7 +18,7 @@ const ProfilePage = ({ data, pageContext }) => {
     <>
       <Seo title='Perfil' />
       <Layout>
-        <Hero mediumSize imageSrc={ profileCover } /> 
+        <Hero mediumSize imageSrc={ profileCover } />
         <Container>
           <main className="Profile">
             <section className="Profile-me Section">
@@ -37,7 +37,7 @@ export default ProfilePage
 
 export const pageQuery = graphql`
   query {
-    profilePhoto: file(relativePath: { eq: "me.jpg" }) {
+    profilePhoto: file(relativePath: { eq: "me.png" }) {
       childImageSharp {
         fluid(maxWidth: 400, fit: INSIDE) {
           ...GatsbyImageSharpFluid

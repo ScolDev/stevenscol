@@ -5,9 +5,7 @@ function Container (props) {
   const { children } = props
   return (
     <div className='Container'>
-      <div className='container'>
-        {children}
-      </div>
+      {children}
     </div>
   )
 }

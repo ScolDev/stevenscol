@@ -22,7 +22,7 @@ const Me = ({ widget }) => {
                 {!widget ? (
                   <h1>{site.siteMetadata.author}</h1>
                 ) : (
-                  <h4>{site.siteMetadata.author}</h4>
+                  <h2>{site.siteMetadata.author}</h2>
                 )}
                 <p>{site.siteMetadata.bio}</p>
               </div>
@@ -94,7 +94,7 @@ export const query = graphql`
         experience
       }
     }
-    profilePhoto: file(relativePath: { eq: "images/me.jpg" }) {
+    profilePhoto: file(relativePath: { eq: "images/me.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid

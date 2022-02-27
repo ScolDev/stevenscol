@@ -2,7 +2,7 @@ import Typography from "typography";
 import alton from "typography-theme-alton";
 
 alton.baseFontSize = "20px";
-alton.scaleRatio = 2.3;
+alton.scaleRatio = 2.7;
 alton.headerFontFamily = ["Exo", "sans-serif"];
 alton.bodyFontFamily = ["Fira Mono", "Share Tech Mono"];
 

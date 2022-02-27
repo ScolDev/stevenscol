@@ -11,16 +11,16 @@ function PostList ({ posts, pageContext }) {
 
   return (
     <article className='PostList row justify-content-center'>
-      <section className='PostList-content col-lg-10'>
+      <section className='PostList-content col-lg-12'>
         <div className='PostList-items'>
           {posts.map(post => <PostCard key={post.node.id} post={post.node} />)}
         </div>
         {
           numberOfPages ? (
             <div style={{ textAlign: 'right' }}>
-              <Link 
+              <Link
                 style={{ textDecoration: 'line-through' }}
-                to="https://amerikanocls.blogspot.com" 
+                to="https://amerikanocls.blogspot.com"
                 target="_blank">
                   *Legacy Blog
               </Link>

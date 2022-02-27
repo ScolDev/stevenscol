@@ -41,8 +41,15 @@ body
   display: flex
   align-items: center
   flex-direction: column
-  margin-top: 3.5rem
+  margin-top: 3.5rem !important
   flex: 1
+  padding: 10px
+  max-width: 1140px
+  margin: 0 auto
+
+  @media(max-width: 576px)
+    &
+      padding: 0px
 
 .round-button
   @include round-button

@@ -14,6 +14,17 @@ function PostCard (props) {
     <article className='PostCard'>
       <div className='HighContrast PostCard-wrap'>
         <div className='PostCard-content'>
+          <div className='PostCard-info'>
+            <Link to={pathToBlogPost}>
+              <h4 className='PostCard-title'>{title}</h4>
+            </Link>
+            <span className="PostCard-date">
+              <em>{date}</em>
+            </span>
+            {/* <div className='PostCard-excerpt'
+              dangerouslySetInnerHTML={{ __html: excerpt }}
+            /> */}
+          </div>
           <Link to={pathToBlogPost}>
             <div className='PostCard-image'>
               {
@@ -27,20 +38,8 @@ function PostCard (props) {
                       alt={ title } />
                   ) : <span>{title ? title.charAt(0) : '' }</span>
               }
-              <div className='PostCard-publishdata'>
-                <em>{date}</em>
-              </div>
             </div>
           </Link>
-          <div className='PostCard-info'>
-            <Link to={pathToBlogPost}>
-              <h3 className='PostCard-title'>{title}</h3>
-            </Link>
-            <div
-              className='PostCard-excerpt'
-              dangerouslySetInnerHTML={{ __html: excerpt }}
-            />
-          </div>
         </div>
       </div>
     </article>

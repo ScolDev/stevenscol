@@ -1,9 +1,9 @@
-$primary: #d73049
+$primary: #EC5858
 $secundary: #47536a
 
 $bgColorLight: #cacaca
 $bgColorDark: #202029
-$bgColorDarkContrast: #1c1c26
+$bgColorDarkContrast: #19191d
 $bgColorLightContrast: #dadada
 
 $fontLight: #c6c6c9a5
@@ -45,16 +45,16 @@ $buttonPaddingHeight: 6px
     content: " - "
 
 @mixin round-button ($color: $primary)
+  display: inline-block
   border: $buttonBorderSize solid $color
   border-radius: $buttonMinWidth - $buttonPaddingWidth
   color: $color
-  font-size: 0.85rem
+  font-size: 1rem
+  line-height: 1.5rem
   font-weight: bold
-  height: $buttonMinWidth
-  line-height: $buttonMinWidth - ($buttonBorderSize * 2)
   margin: 0 5px
   min-width: $buttonMinWidth
-  padding: $buttonPaddingHeight $buttonPaddingWidth
+  padding: 0.5rem 0.8rem
   text-align: center
   text-decoration: none
 

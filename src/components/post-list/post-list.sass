@@ -1,4 +1,15 @@
 .PostList
   padding: 2rem 0
   width: 100%
-  
+
+  &-items
+    display: grid
+    grid-template-columns: 33% 33% 33%
+    grid-gap: 1rem
+
+  @media(max-width: 820px)
+    &-items
+      grid-template-columns: 100%
+      grid-gap: unset
+
+

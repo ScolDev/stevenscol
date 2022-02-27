@@ -19,11 +19,11 @@ const IndexPage = ({ data, pageContext }) => {
     <>
       <Seo title='Inicio' />
       <Layout>
-        <Hero  
+        <Hero
           forHome
           largeSize
-          imageSrc={ defaultHero } 
-          { ...siteMetadata } /> 
+          imageSrc={ defaultHero }
+          { ...siteMetadata } />
         <Container>
           <main className="Home">
             <section className="Home-me Section">
@@ -33,7 +33,7 @@ const IndexPage = ({ data, pageContext }) => {
             </section>
             <section className="Home-posts Section">
               <h2>Últimos Posts</h2>
-              <PostList 
+              <PostList
                 pageContext={ pageContext }
                 showPages={ false }
                 posts={ posts } />
@@ -52,7 +52,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    profilePhoto: file(relativePath: { eq: "me.jpg" }) {
+    profilePhoto: file(relativePath: { eq: "me.png" }) {
       childImageSharp {
         fluid(maxWidth: 400, fit: INSIDE) {
           ...GatsbyImageSharpFluid
