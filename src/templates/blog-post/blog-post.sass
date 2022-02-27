@@ -1,25 +1,27 @@
 @import '../../common/variables.sass'
 
 :root
-  --postSidePadding: 100px
+  --postSidePadding: 130px
   --postCodeBgColor: #0a0a1dd5
   --postCodeForegroundColor: #d5d5d575
 
+@media (max-width: 992px)
+  :root
+    --postSidePadding: 2.2em
+  .container
+    max-width: 90%
+
+@media (max-width: 768px)
+  :root
+    --postSidePadding: 0.7em
+  .container
+    max-width: 100%
 
 body.dark
   .BlogPost
     background-color: $bgColorDarkContrast
 
 .BlogPost
-  @media (max-width: 991px)
-    --postSidePadding: 1.2em
-
-  @media (max-width: 576px)
-    --postSidePadding: 0.7em
-    .container
-      max-width: unset
-
-
   background-color: $bgColorLightContrast
   padding: 0 var(--postSidePadding)
   margin: 0

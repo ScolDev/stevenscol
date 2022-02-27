@@ -9,13 +9,13 @@ module.exports = {
     skills: '- Javascript - Node.js - Html - CSS - React - Gatsby - Angular - Git - Responsive Design - Java - Android Development - Assembler - Reversing - Shell Scripting - Self Taught -',
     experience: 'Más de 5 años de experiencia laboral en diferentes compañias de software. Diseño y construcción de aplicaciones web (Fronted y Backend), desarrollo de aplicaciones móviles para Android, prácticas y documentación de análisis en ingeniería inversa de software como pasatiempo, entre otras.',
     description: 'Punto de encuentro de trabajos personales y documentación de mis aprendizajes.',
-    twitterID: '@StevensPineda',
+    twitterID: '@Scol_Dev',
     blogPostPrefixPath: '/blog',
     blogPostsPaginatePrefixPath: '/blog/page',
     social: [
       'github#https://github.com/StevensCol',
-      'twitter#http://twitter.com/stevenspineda',
-      'instagram#https://instagram.com/stevenscol_dev',
+      'youtube#https://youtube.com/c/ScolDev',
+      'twitter#http://twitter.com/Scol_Dev',
       'email#mailto:yo@stevenscol.co'
     ]
   },

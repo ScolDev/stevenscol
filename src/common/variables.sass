@@ -2,8 +2,8 @@ $primary: #d73049
 $secundary: #47536a
 
 $bgColorLight: #cacaca
-$bgColorDark: #151518
-$bgColorDarkContrast: #19191b
+$bgColorDark: #202029
+$bgColorDarkContrast: #1c1c26
 $bgColorLightContrast: #dadada
 
 $fontLight: #c6c6c9a5
@@ -32,7 +32,6 @@ $buttonMinWidth: 30px
 $buttonBorderSize: 2px
 $buttonPaddingWidth: 10px
 $buttonPaddingHeight: 6px
-$buttonTextColorHover: #090a0a
 
 // Mixins
 
@@ -59,6 +58,9 @@ $buttonTextColorHover: #090a0a
   text-align: center
   text-decoration: none
 
+  &:hover
+    border-color: $secundary
+    color: $secundary
   &-active
     background-color: $color
-    color: $buttonTextColorHover
+    color: $secundary

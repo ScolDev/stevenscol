@@ -1,11 +1,18 @@
-import Typography from 'typography'
-import irvingTheme from 'typography-theme-irving'
+import Typography from "typography";
+import alton from "typography-theme-alton";
 
-irvingTheme.baseFontSize = '25px'
-irvingTheme.scaleRatio = 1.5
+alton.baseFontSize = "20px";
+alton.scaleRatio = 2.3;
+alton.headerFontFamily = ["Exo", "sans-serif"];
+alton.bodyFontFamily = ["Fira Mono", "Share Tech Mono"];
 
-const typography = new Typography(
-  irvingTheme
-)
+const typography = new Typography({
+  ...alton,
+  googleFonts: [
+    { name: "Share Tech Mono", styles: ["400", "500", "600", "700"] },
+    { name: "Exo", styles: ["700"] },
+    { name: "Fira Mono", styles: ["400", "500", "700"] },
+  ],
+});
 
-export default typography
+export default typography;

@@ -42,8 +42,8 @@
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
     "sass": "^1.32.2",
-    "typography": "^0.16.19",
-    "typography-theme-irving": "^0.16.19",
+    "typography": "^0.16.21",
+    "typography-theme-alton": "^0.16.19",
     "validate-mail": "^1.1.0"
   }
 }

@@ -9,7 +9,7 @@ const Footer = props => {
   return (
     <footer className='Footer Section'>
       <div className='Footer-info'>
-        <span>Desarrollado con amor con Gatsby.js</span>
+        <span>Desarrollado con amor con Gatsby</span>
       </div>
       <div className='Footer-social-media'>
         <SocialMedia social={social} />
