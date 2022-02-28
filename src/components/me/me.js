@@ -18,7 +18,7 @@ const Me = ({ widget }) => {
               <div className="Me-photo">
                 <Img fluid={profilePhoto.childImageSharp.fluid} />
               </div>
-              <div className="Me-bio Me-block">
+              <div className="Me-bio">
                 {!widget ? (
                   <>
                     <h1>{site.siteMetadata.author}</h1>
@@ -48,7 +48,7 @@ const Me = ({ widget }) => {
               </div>
               {!widget ? (
                 <>
-                  <div className="Me-skills Me-block Section">
+                  <div className="Me-skills Section">
                     <h2>Skills</h2>
                     <p>{site.siteMetadata.skills}</p>
                     <div className="Me-skills-topics">
@@ -64,7 +64,7 @@ const Me = ({ widget }) => {
                       })}
                     </div>
                   </div>
-                  <div className="Me-skills Me-block Section">
+                  <div className="Me-skills Section">
                     <h2>Experiencia</h2>
                     <p>{site.siteMetadata.experience}</p>
                   </div>

@@ -30,7 +30,7 @@ function Hero (props) {
 
   return (
     <div className={ heroClass } style={style}>
-      <div className='Hero-wrap container'>
+      <div className='Hero-wrap'>
         <div className='Hero-content'>
           { forHome
             ? (
