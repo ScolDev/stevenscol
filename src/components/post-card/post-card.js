@@ -16,7 +16,7 @@ function PostCard (props) {
         <div className='PostCard-content'>
           <div className='PostCard-info'>
             <Link to={pathToBlogPost}>
-              <h4 className='PostCard-title'>{title}</h4>
+              <h3 className='PostCard-title'>{title}</h3>
             </Link>
             <span className="PostCard-date">
               <em>{date}</em>

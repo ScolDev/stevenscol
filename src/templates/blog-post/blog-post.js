@@ -32,11 +32,11 @@ const BlogPost = ({ data, pageContext }) => {
 
       <Layout>
         <Container>
-          <Hero
-            image={ contentPost.frontmatter.image }
-            alignToBottomLeft />
-          <section className='BlogPost row justify-content-center'>
-            <div className="BlogPost-content col-lg-12">
+          <section className='BlogPost justify-content-center'>
+            <Hero
+              image={ contentPost.frontmatter.image }
+              alignToBottomLeft />
+            <div className="BlogPost-content">
               <section className='BlogPost-postinfo'>
                 <h1>{ contentPost.frontmatter.title }</h1>
                 <div><em>Por: { site.siteMetadata.author }</em></div>
@@ -58,18 +58,18 @@ const BlogPost = ({ data, pageContext }) => {
                   }
                 </div>
               </article>
-            </div>
-            <div className='BlogPost-footer'>
-              <div className="BlogPost-footer-previousPost">
-                { previous.path ? ( <div><Link to={ previous.path }>Anterior</Link></div> ) : null }
+              <div className='BlogPost-footer'>
+                <div className="BlogPost-footer-previousPost">
+                  { previous.path ? ( <div><Link to={ previous.path }>Anterior</Link></div> ) : null }
+                </div>
+                <div className="BlogPost-footer-nextPost">
+                  { next.path ? ( <div><Link to={ next.path }>Siguiente</Link></div> ) : null }
+                </div>
               </div>
-              <div className="BlogPost-footer-nextPost">
-                { next.path ? ( <div><Link to={ next.path }>Siguiente</Link></div> ) : null }
-              </div>
+              <section className='BlogPost-comments'>
+                <Disqus config={disqusConfig} />
+              </section>
             </div>
-            <section className='BlogPost-comments'>
-              <Disqus config={disqusConfig} />
-            </section>
           </section>
         </Container>
       </Layout>

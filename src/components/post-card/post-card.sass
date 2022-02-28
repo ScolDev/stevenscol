@@ -7,11 +7,13 @@ body.dark
     border: unset
 
 .PostCard
+  transition: transform .3s
   box-sizing: border-box
   width: 100%
   margin-bottom: 1rem
-  transition: border .5s
-  border: 1px solid $secundary
+
+  &:hover
+    transform: scale(1.07)
 
   &-wrap
     padding: 0rem
@@ -40,7 +42,7 @@ body.dark
   &-date
     width: 100%
     color: #e0e0e0
-    font-weight: 900
+    text-op
     em
       font-size: 0.75rem
 
@@ -52,9 +54,9 @@ body.dark
   &-info
     padding: 1.2rem
     width: 100%
+    opacity: 0.9
 
   &-title
-    color: $primary
     font-size: 0.95rem
     overflow: hidden
     display: -webkit-box
