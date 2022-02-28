@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: 'https://stevenscol.co',
     heroTitle: '"Estúpido como un zorro."',
     author: 'Stevens Pineda',
+    nickname: 'ScolDev',
     bio: 'Ingeniero Fullstack Javascript, Reverser y Autodidacta desde tiempos inmemorables. Apasionado por los bytes 🔥',
     skills: 'Buenas prácticas en el desarrollo de software (Clean Code, TDD, Patrones de diseño). Principales tecnologías web Javascript (Nodejs, Angular, React). Proceso de desarrollo en equipos con las mejores prácticas y estrategias (Git, Gitflow, CI/CD). Comunicación acertiva y apasionado por el aprendizaje y la enseñanza.',
     experience: 'Más de 5 años de experiencia laboral en diferentes compañias de software. Diseño y construcción de aplicaciones web (Fronted y Backend), desarrollo de aplicaciones móviles para Android, prácticas y documentación de análisis en ingeniería inversa de software como pasatiempo, entre otras.',

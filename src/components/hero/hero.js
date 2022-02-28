@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Icon from '../icon/icon'
 import SocialMedia from '../social-media/social-media'
+import Me from '../me/me'
 
 import './hero.sass'
 
@@ -34,7 +35,7 @@ function Hero (props) {
           { forHome
             ? (
               <div className="Hero-banner">
-                <Icon icon='banner' />
+                <Me widget />
               </div>
             ) : null
           }
@@ -42,7 +43,7 @@ function Hero (props) {
           {
             forHome && social ? (
               <div className='Hero-extra'>
-                <div className='Hero-extra-content'>
+                <div className='Hero-extra-content white-box'>
                   <SocialMedia social={social} />
                 </div>
               </div>

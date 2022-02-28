@@ -20,18 +20,22 @@ const Me = ({ widget }) => {
               </div>
               <div className="Me-bio Me-block">
                 {!widget ? (
-                  <h1>{site.siteMetadata.author}</h1>
+                  <>
+                    <h1>{site.siteMetadata.author}</h1>
+                    <p>{site.siteMetadata.bio}</p>
+                  </>
                 ) : (
-                  <h2>{site.siteMetadata.author}</h2>
+                  <>
+                    <h2>{site.siteMetadata.nickname}</h2>
+                    <div className="Me-bio-content white-box">
+                      <p>{site.siteMetadata.bio}</p>
+                      <Link to="/profile">Ver perfil</Link>
+                    </div>
+                  </>
                 )}
-                <p>{site.siteMetadata.bio}</p>
               </div>
               <div className="Me-resume">
-                {widget ? (
-                  <Link to="/profile" className="round-button">
-                    Ver perfil
-                  </Link>
-                ) : (
+                {!widget ? (
                   <a
                     href={CV}
                     alt="Resume"
@@ -40,7 +44,7 @@ const Me = ({ widget }) => {
                   >
                     Descargar CV
                   </a>
-                )}
+                ) : ''}
               </div>
               {!widget ? (
                 <>
@@ -89,6 +93,7 @@ export const query = graphql`
     site {
       siteMetadata {
         author
+        nickname,
         bio
         skills
         experience

@@ -26,11 +26,6 @@ const IndexPage = ({ data, pageContext }) => {
           { ...siteMetadata } />
         <Container>
           <main className="Home">
-            <section className="Home-me Section">
-              <article className="Home-me-content-">
-                <Me widget />
-              </article>
-            </section>
             <section className="Home-posts Section">
               <h2>Últimos Posts</h2>
               <PostList
