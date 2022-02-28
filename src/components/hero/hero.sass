@@ -16,14 +16,16 @@
   &.largeHero
     height: $heroLargeHeight
 
+    @media(max-width: 992px)
+      height: 90vh
+
   &.mediumHero
     height: $heroMediumHeight
     background-attachment: unset
 
   &-wrap
     width: 100%
-    max-width: 900px
-    padding: 0 1em
+    max-width: 1140px
 
   &-content
     text-align: center
