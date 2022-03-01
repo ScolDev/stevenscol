@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: 'StevensCol',
@@ -27,7 +29,7 @@ module.exports = {
       resolve: `gatsby-source-youtube-v2`,
       options: {
         channelId: ['UCoCtdH3-_LtXtzbABowINiA'],
-        apiKey: 'AIzaSyBN8eUjrjLbF7yUSO-b5y5iOF4ZBfzwwNs',
+        apiKey: process.env.YOUTUBE_API_KEY,
         maxVideos: 3
       },
     },
