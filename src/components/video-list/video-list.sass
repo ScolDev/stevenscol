@@ -1,16 +1,16 @@
-.PostList
+.VideoList
   padding: 2rem 0
   width: 100%
 
   &-items
     display: grid
-    grid-template-columns: 33% 33% 33%
+    grid-template-columns: repeat(3, 1fr)
     grid-gap: 1rem
 
   @media(max-width: 820px)
     &-items
       grid-template-columns: 50% 50%
-      grid-gap: .5rem
+      grid-gap:2.5rem
 
   @media(max-width: 576px)
     &-items

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes, { number } from 'prop-types'
-import PostCard from '../post-card/post-card'
-import Paginator from '../paginator/paginator'
+import PostCard from '../post-card'
+import Paginator from '../paginator'
 
 import './post-list.sass'
 

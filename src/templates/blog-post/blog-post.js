@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
 import { graphql, Link } from 'gatsby'
 import Prism from 'prismjs'
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
-import Layout from '../../components/layout/layout'
-import Container from '../../components/container/container'
-import Seo from '../../components/seo/seo'
-import Hero from '../../components/hero/hero'
+import Layout from '../../components/layout'
+import Container from '../../components/container'
+import Seo from '../../components/seo'
+import Hero from '../../components/hero'
 import '../../common/prism-monokai.css'
 
 import './blog-post.sass'
@@ -66,9 +65,6 @@ const BlogPost = ({ data, pageContext }) => {
                   { next.path ? ( <div><Link to={ next.path }>Siguiente</Link></div> ) : null }
                 </div>
               </div>
-              <section className='BlogPost-comments'>
-                <Disqus config={disqusConfig} />
-              </section>
             </div>
           </section>
         </Container>

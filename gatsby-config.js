@@ -3,6 +3,7 @@ module.exports = {
     title: 'StevensCol',
     url: 'https://stevenscol.co',
     siteUrl: 'https://stevenscol.co',
+    youtubeChannel: 'https://youtube.com/c/ScolDev',
     heroTitle: '"Estúpido como un zorro."',
     author: 'Stevens Pineda',
     nickname: 'ScolDev',
@@ -22,6 +23,14 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-source-youtube-v2`,
+      options: {
+        channelId: ['UCoCtdH3-_LtXtzbABowINiA'],
+        apiKey: 'AIzaSyBN8eUjrjLbF7yUSO-b5y5iOF4ZBfzwwNs',
+        maxVideos: 3
+      },
+    },
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {

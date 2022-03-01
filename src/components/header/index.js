@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
 
-import IconButton from '../icon-button/icon-button'
+import IconButton from '../icon-button'
 import { SVG } from '../../common/constants'
 
 import './header.sass'

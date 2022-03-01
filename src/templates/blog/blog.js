@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../../components/layout/layout'
-import Seo from '../../components/seo/seo'
-import PostList from '../../components/post-list/post-list'
-import Container from '../../components/container/container'
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
+import PostList from '../../components/post-list'
+import Container from '../../components/container'
 import './blog.sass'
 
 const Blog = ({ data, pageContext }) => {

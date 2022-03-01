@@ -6,26 +6,23 @@ import Img from 'gatsby-image'
 import './post-card.sass'
 
 function PostCard (props) {
-  const { excerpt, frontmatter } = props.post
-  const { title, image, author, date, path } = frontmatter
+  const { frontmatter } = props.post
+  const { title, image, date, path } = frontmatter
 
-  const pathToBlogPost = `/blog${path}`
+  const pathtoblogpost = `/blog${path}`
   return (
     <article className='PostCard'>
       <div className='HighContrast PostCard-wrap'>
         <div className='PostCard-content'>
           <div className='PostCard-info'>
-            <Link to={pathToBlogPost}>
+            <Link to={pathtoblogpost}>
               <h3 className='PostCard-title'>{title}</h3>
             </Link>
             <span className="PostCard-date">
               <em>{date}</em>
             </span>
-            {/* <div className='PostCard-excerpt'
-              dangerouslySetInnerHTML={{ __html: excerpt }}
-            /> */}
           </div>
-          <Link to={pathToBlogPost}>
+          <Link to={pathtoblogpost}>
             <div className='PostCard-image'>
               {
                 image

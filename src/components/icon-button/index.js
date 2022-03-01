@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import isValidMail from 'validate-mail'
-import Icon from '../icon/icon'
+import Icon from '../icon'
 
 const IconButton = (props) => {
   const { to, icon, external } = props

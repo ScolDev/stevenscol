@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import IconButton from '../icon-button/icon-button'
+import IconButton from '../icon-button'
 
 import { SVG } from '../../common/constants'
 import './social-media.sass'

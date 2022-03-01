@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Icon from '../icon/icon'
-import SocialMedia from '../social-media/social-media'
-import Me from '../me/me'
+import Icon from '../icon'
+import SocialMedia from '../social-media'
+import Me from '../me'
 
 import './hero.sass'
 

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 import './paginator.sass'
-import { max } from 'moment'
 
 const blogPagePrefix = '/blog/page/'
 
