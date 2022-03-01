@@ -7,7 +7,6 @@ import Hero from '../components/hero'
 import Me from '../components/me'
 import PostList from '../components/post-list'
 import Container from '../components/container'
-import profileCover from '../assets/images/profile_cover.jpg'
 
 import './profile.sass'
 
@@ -18,7 +17,7 @@ const ProfilePage = ({ data, pageContext }) => {
     <>
       <Seo title='Perfil' />
       <Layout>
-        <Hero mediumSize imageSrc={ profileCover } />
+        {/* <Hero mediumSize imageSrc={ profileCover } /> */}
         <Container>
           <main className="Profile">
             <section className="Profile-me Section">
