@@ -17,7 +17,7 @@ module.exports = {
     blogPostPrefixPath: '/blog',
     blogPostsPaginatePrefixPath: '/blog/page',
     social: [
-      'github#https://github.com/StevensCol',
+      'github#https://github.com/ScolDev',
       'youtube#https://youtube.com/c/ScolDev',
       'twitter#http://twitter.com/Scol_Dev',
       'email#mailto:yo@stevenscol.co'
