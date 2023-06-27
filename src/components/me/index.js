@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
-import CV from "../../assets/resume.pdf";
+import CV from "../../assets/cv_robert_stevens_pineda_marin.pdf";
 import "./me.sass";
 
 const Me = ({ widget }) => {
