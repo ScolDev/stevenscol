@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import './post-card.sass'
 
@@ -27,9 +27,9 @@ function PostCard (props) {
               {
                 image
                   ? (
-                    <Img
+                    <GatsbyImage
+                      image={image.childImageSharp.gatsbyImageData}
                       style={{ height: "100%", width: "100%" }}
-                      fluid={ image.childImageSharp.fluid }
                       objectFit="cover"
                       objectPosition="50% 50%"
                       alt={ title } />
@@ -40,7 +40,7 @@ function PostCard (props) {
         </div>
       </div>
     </article>
-  )
+  );
 }
 
 PostCard.propTypes = {

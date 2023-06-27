@@ -8,7 +8,7 @@ module.exports = {
     youtubeChannel: 'https://youtube.com/c/ScolDev',
     heroTitle: '"Estúpido como un zorro."',
     author: 'Stevens Pineda',
-    nickname: 'ScolDev',
+    nickname: '@ScolDev',
     bio: 'Ingeniero Fullstack Javascript, Reverser y Autodidacta desde tiempos inmemorables. Apasionado por los bytes 🔥',
     skills: 'Buenas prácticas en el desarrollo de software (Clean Code, TDD, Patrones de diseño). Principales tecnologías web Javascript (Nodejs, Angular, React). Proceso de desarrollo en equipos con las mejores prácticas y estrategias (Git, Gitflow, CI/CD). Comunicación acertiva y apasionado por el aprendizaje y la enseñanza.',
     experience: 'Más de 5 años de experiencia laboral en diferentes compañias de software. Diseño y construcción de aplicaciones web (Fronted y Backend), desarrollo de aplicaciones móviles para Android, prácticas y documentación de análisis en ingeniería inversa de software como pasatiempo, entre otras.',
@@ -16,17 +16,18 @@ module.exports = {
     twitterID: '@Scol_Dev',
     blogPostPrefixPath: '/blog',
     blogPostsPaginatePrefixPath: '/blog/page',
+    slogan: "¡Estúpido como un zorro!",
     social: [
-      'github#https://github.com/ScolDev',
-      'youtube#https://youtube.com/c/ScolDev',
-      'twitter#http://twitter.com/Scol_Dev',
-      'email#mailto:yo@stevenscol.co'
+      { name: 'github', url: 'https://github.com/ScolDev' },
+      { name: 'youtube', url: 'https://youtube.com/c/ScolDev' },
+      { name: 'twitter', url: 'http://twitter.com/Scol_Dev' },
+      { name: 'email', url: 'mailto:yo@stevenscol.co' }
     ]
   },
   plugins: [
     "gatsby-plugin-sass",
     {
-      resolve: `gatsby-source-youtube-v2`,
+      resolve: `gatsby-source-youtube-v3`,
       options: {
         channelId: ['UCoCtdH3-_LtXtzbABowINiA'],
         apiKey: process.env.YOUTUBE_API_KEY,

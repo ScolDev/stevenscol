@@ -45,11 +45,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 async function getAllPosts (graphql) {
   return graphql(`
-    query {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+    {
+      allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
         edges {
           node {
             id
@@ -69,5 +66,6 @@ async function getAllPosts (graphql) {
           }
         }
       }
-    }`)
+    }
+  `)
 }
