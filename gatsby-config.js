@@ -10,7 +10,7 @@ module.exports = {
     author: 'Stevens Pineda',
     nickname: 'ScolDev',
     bio: 'Ingeniero Fullstack Javascript, Reverser y Autodidacta desde tiempos inmemorables. Apasionado por los bytes 🔥',
-    skills: 'Arquitectura de Software, liderazgo técnico, buenas prácticas en el desarrollo de software (Clean Code, TDD, Patrones de diseño). Principales tecnologías web Javascript (Nodejs, TypeScript, Angular, React). Gestión efectiva de proyectos mediante el control de versiones con Git y estrategias como Gitflow. Comunicación acertiva y apasionado por el aprendizaje y la enseñanza.',
+    skills: 'Arquitectura de Software, liderazgo técnico, buenas prácticas en el desarrollo de software (Clean Code, TDD, Patrones de diseño). Principales tecnologías web Javascript (Nodejs, TypeScript, Angular, React). Gestión efectiva de proyectos de software mediante el versionamiento con Git y estrategias como Gitflow. Comunicación asertiva y apasionado por el aprendizaje y la enseñanza.',
     experience: 'He estado en la industria desde 2011, desempeñando roles como desarrollador front-end y full-stack, líder técnico y recientemente como arquitecto de software; diseñando y construyendo múltiples aplicaciones web, haciendo uso de servicios en la nube con Amazon Web Services (AWS), desarrollo de aplicaciones móviles híbridas y nativas (Android).',
     description: 'Aquí reuno algunas de las cosas que me apasionan.',
     twitterID: '@Scol_Dev',
