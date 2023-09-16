@@ -129,8 +129,6 @@ export const pageQuery = graphql`
           videoId
           thumbnail {
             url
-            width
-            height
           }
           publishedAt
         }
