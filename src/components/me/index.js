@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import CV from "../../assets/cv_robert_stevens_pineda_marin.pdf";
 import "./me.sass";
@@ -16,7 +16,7 @@ const Me = ({ widget }) => {
           <section className={className.join(" ")}>
             <div className="Me-content">
               <div className="Me-photo">
-                <Img fluid={profilePhoto.childImageSharp.fluid} />
+                <GatsbyImage image={profilePhoto.childImageSharp.gatsbyImageData} />
               </div>
               <div className="Me-bio">
                 {!widget ? (
@@ -55,10 +55,9 @@ const Me = ({ widget }) => {
                       {skills.edges.map(({ node }) => {
                         return (
                           <div className="Me-skills-topics-item">
-                            <Img
-                              fluid={node.childImageSharp.fluid}
-                              className="Me-skills-topics-img"
-                            />
+                            <GatsbyImage
+                              image={node.childImageSharp.gatsbyImageData}
+                              className="Me-skills-topics-img" />
                           </div>
                         );
                       })}
@@ -89,35 +88,28 @@ Me.defaultProps = {
 export default Me;
 
 export const query = graphql`
-  query {
+  {
     site {
       siteMetadata {
         author
-        nickname,
+        nickname
         bio
         skills
         experience
       }
     }
-    profilePhoto: file(relativePath: { eq: "images/me.png" }) {
+    profilePhoto: file(relativePath: {eq: "images/me.png"}) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, layout: CONSTRAINED)
       }
     }
     skills: allFile(
-      filter: {
-        extension: { eq: "png" }
-        relativeDirectory: { eq: "images/skills" }
-      }
+      filter: {extension: {eq: "png"}, relativeDirectory: {eq: "images/skills"}}
     ) {
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 100, quality: 60) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 100, quality: 60, layout: CONSTRAINED)
           }
         }
       }

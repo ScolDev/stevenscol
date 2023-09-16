@@ -41,13 +41,16 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
-        social
         blogPostPrefixPath
         blogPostsPaginatePrefixPath
+        social {
+          name
+          url
+        }
       }
     }
     posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: {frontmatter: {date: DESC}}
       skip: $skip
       limit: $limit
     ) {
@@ -62,9 +65,11 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             image {
               childImageSharp {
-                fluid(maxWidth: 500, fit: INSIDE) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 500
+                  transformOptions: {fit: INSIDE}
+                  layout: CONSTRAINED
+                )
               }
             }
           }
@@ -72,4 +77,4 @@ export const pageQuery = graphql`
       }
     }
   }
-  `
+`

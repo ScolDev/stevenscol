@@ -6,7 +6,7 @@ import Header from '../header'
 import Footer from '../footer'
 import './layout.sass'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, noHeader }) => (
   <StaticQuery
     query={query}
     render={data => {
@@ -14,7 +14,7 @@ const Layout = ({ children }) => (
       return (
         <>
           <main className='Main'>
-            <Header title={title} />
+            { !noHeader ? <Header title={title} /> : null }
             <section className='Main-container'>
               {children}
             </section>
@@ -27,7 +27,12 @@ const Layout = ({ children }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  noHeader: PropTypes.bool
+}
+
+Layout.defaultProps = {
+  noHeader: false
 }
 
 const query = graphql`
@@ -35,7 +40,10 @@ const query = graphql`
     site {
       siteMetadata {
         title
-        social
+        social {
+          name
+          url
+        }
       }
     }
   }`

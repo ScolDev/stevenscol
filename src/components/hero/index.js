@@ -25,7 +25,7 @@ function Hero (props) {
   ].join(' ')
 
   const style = {
-    backgroundImage: `url(${ imageSrc || image?.childImageSharp?.fluid?.src })`
+    backgroundImage: `url(${ imageSrc || image })`
   }
 
   return (

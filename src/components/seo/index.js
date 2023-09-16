@@ -6,18 +6,18 @@ import { StaticQuery, graphql } from 'gatsby'
 import siteBanner from '../../assets/images/banner.jpg'
 
 function Seo (props) {
-  const { 
-    title, 
-    description, 
-    image, 
-    lang, 
-    meta, 
-    keywords, 
-    article 
+  const {
+    title,
+    description,
+    image,
+    lang,
+    meta,
+    keywords,
+    article
   } = props
 
   const heroImage = image || siteBanner
-  
+
   return (
     <StaticQuery
     query={detailsQuery}
@@ -26,8 +26,8 @@ function Seo (props) {
         const siteDescription = description || data.site.siteMetadata.description
 
         const ogTitle = `${title} | ${siteName}`
-        const ogImage = url + heroImage
-        
+        const ogImage = heroImage
+
         return (
           <Helmet
             htmlAttributes={{ lang }}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Hero from '../components/hero'
@@ -75,27 +75,29 @@ const IndexPage = ({ data, pageContext }) => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query {
-    profilePhoto: file(relativePath: { eq: "me.png" }) {
+  query pageHomescolsrcgitstevenscolsrcpagesindexJs1856938877 {
+    profilePhoto: file(relativePath: {eq: "me.png"}) {
       childImageSharp {
-        fluid(maxWidth: 400, fit: INSIDE) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(
+          width: 400
+          transformOptions: {fit: INSIDE}
+          layout: CONSTRAINED
+        )
       }
     }
     site {
       siteMetadata {
         author
         youtubeChannel
-        social
+        social {
+          name
+          url
+        }
         blogPostPrefixPath
         blogPostsPaginatePrefixPath
       }
     }
-    posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 3
-    ) {
+    posts: allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 3) {
       edges {
         node {
           id
@@ -107,9 +109,11 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             image {
               childImageSharp {
-                fluid(maxWidth: 500, fit: INSIDE) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 500
+                  transformOptions: {fit: INSIDE}
+                  layout: CONSTRAINED
+                )
               }
             }
           }
@@ -125,12 +129,10 @@ export const pageQuery = graphql`
           videoId
           thumbnail {
             url
-            width
-            height
           }
           publishedAt
         }
       }
     }
   }
-  `
+`

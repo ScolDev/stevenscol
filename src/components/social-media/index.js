@@ -12,7 +12,7 @@ function SocialMedia (props) {
       <div className='SocialMedia-content'>
         {
           social.map(item => {
-            const [name, url] = item.split('#')
+            const { name, url } = item
 
             return SVG[name]
               ? <IconButton
