@@ -7,21 +7,16 @@ import Container from '../../components/container'
 import Seo from '../../components/seo'
 import Hero from '../../components/hero'
 import '../../common/prism-monokai.css'
+import { PropTypes } from 'prop-types'
 
 import './blog-post.sass'
 
 const BlogPost = ({ data, pageContext }) => {
+  useEffect(() => { Prism.highlightAll() })
+
   const { contentPost, site } = data
   const { next, previous } = pageContext
-
-  const disqusConfig = {
-    url: `${site.siteMetadata.url}${typeof window !== 'undefined' ? window.location.pathname : ''}`,
-    identifier: `${contentPost.frontmatter.path}`,
-    title: contentPost.frontmatter.title
-  }
-
   const image = contentPost.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback.src
-  useEffect(() => {  Prism.highlightAll() })
 
   return <>
     <Seo
@@ -51,26 +46,32 @@ const BlogPost = ({ data, pageContext }) => {
               </div>
               <div className='BlogPost-tags-content'>
                 {
-                  contentPost.tags ? contentPost.tags.map(tag => (
-                    <a href='#'>{tag.name}</a>
-                  ))
+                  contentPost.tags
+                    ? contentPost.tags.map((tag, index) => (
+                    <a href='#' key={index}>{tag.name}</a>
+                    ))
                     : <i>No hay tags en este post.</i>
                 }
               </div>
             </article>
             <div className='BlogPost-footer'>
               <div className="BlogPost-footer-previousPost">
-                { previous.path ? ( <div><Link to={ previous.path }>Anterior</Link></div> ) : null }
+                { previous.path ? (<div><Link to={ previous.path }>Anterior</Link></div>) : null }
               </div>
               <div className="BlogPost-footer-nextPost">
-                { next.path ? ( <div><Link to={ next.path }>Siguiente</Link></div> ) : null }
+                { next.path ? (<div><Link to={ next.path }>Siguiente</Link></div>) : null }
               </div>
             </div>
           </div>
         </section>
       </Container>
     </Layout>
-  </>;
+  </>
+}
+
+BlogPost.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
 }
 
 export default BlogPost

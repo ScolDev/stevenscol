@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { GatsbyImage } from "gatsby-plugin-image";
 
 import './video-card.sass'
 
@@ -19,14 +18,14 @@ function VideoCard ({ video }) {
             </div>
             <div className='VideoCard-image'>
               {
-                thumbnail ? (
+                thumbnail
+                  ? (
                   <img
-                  style={{ height: "100%", width: "100%" }}
+                  style={{ height: '100%', width: '100%' }}
                     src={ thumbnail.url }
-                    objectFit="cover"
-                    objectPosition="50% 50%"
                     alt={ title } />
-                ) : <span>{title ? title.charAt(0) : '' }</span>
+                    )
+                  : <span>{title ? title.charAt(0) : '' }</span>
               }
             </div>
           </div>

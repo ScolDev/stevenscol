@@ -1,12 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import PropTypes, { number } from 'prop-types'
-import VideoCard from '../video-card';
+import PropTypes from 'prop-types'
+import VideoCard from '../video-card'
 
 import './video-list.sass'
 
 function VideoList ({ videos, ytChannel }) {
-
   return (
     <article className='VideoList justify-content-center'>
       <section className='VideoList-content'>

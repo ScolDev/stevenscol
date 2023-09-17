@@ -1,10 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StaticQuery, graphql, Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
-import CV from "../../assets/cv_robert_stevens_pineda_marin.pdf";
-import "./index.sass";
+import './index.sass'
 
 const Avatar = ({ widget }) => {
   return (
@@ -18,11 +17,15 @@ const Avatar = ({ widget }) => {
             <GatsbyImage image={childImageSharp.gatsbyImageData} />
           </article>
           </>
-        );
+        )
       }}
     />
-  );
-};
+  )
+}
+
+Avatar.propTypes = {
+  widget: PropTypes.bool
+}
 
 export default Avatar
 
@@ -34,4 +37,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

@@ -22,13 +22,13 @@ function Seo (props) {
     <StaticQuery
     query={detailsQuery}
     render={ data => {
-        const { title: siteName, url, twitterID } = data.site.siteMetadata
-        const siteDescription = description || data.site.siteMetadata.description
+      const { title: siteName, twitterID } = data.site.siteMetadata
+      const siteDescription = description || data.site.siteMetadata.description
 
-        const ogTitle = `${title} | ${siteName}`
-        const ogImage = heroImage
+      const ogTitle = `${title} | ${siteName}`
+      const ogImage = heroImage
 
-        return (
+      return (
           <Helmet
             htmlAttributes={{ lang }}
             title={ ogTitle }
@@ -46,15 +46,17 @@ function Seo (props) {
               { name: 'twitter:description', content: siteDescription }
             ]
               .concat(
-                keywords.length > 0 ? {
-                  name: 'keywords',
-                  content: keywords.join(', ')
-                } : []
+                keywords.length > 0
+                  ? {
+                      name: 'keywords',
+                      content: keywords.join(', ')
+                    }
+                  : []
               )
               .concat(meta)}
           />
-        )
-      }}
+      )
+    }}
     />
   )
 }
@@ -72,9 +74,8 @@ Seo.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
-  description: PropTypes.string,
   image: PropTypes.string,
-  article: PropTypes.bool,
+  article: PropTypes.bool
 }
 
 export default Seo

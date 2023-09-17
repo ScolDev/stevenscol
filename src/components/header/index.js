@@ -3,12 +3,11 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
 
 import IconButton from '../icon-button'
-import { SVG } from '../../common/constants'
 
 import './header.sass'
 
 const Header = ({ title }) => {
-  const [ theme, setTheme ] = useState('dark')
+  const [theme, setTheme] = useState('dark')
 
   const toggledark = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark'
@@ -18,7 +17,7 @@ const Header = ({ title }) => {
   }
 
   useEffect(() => {
-    let userTheme = window.localStorage.getItem('theme') || theme
+    const userTheme = window.localStorage.getItem('theme') || theme
     setTheme(userTheme)
 
     if (userTheme === 'dark') {

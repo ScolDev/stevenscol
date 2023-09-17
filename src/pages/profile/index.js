@@ -1,18 +1,14 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
-import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
-import Hero from '../../components/hero'
 import Me from '../../components/me'
-import PostList from '../../components/post-list'
 import Container from '../../components/container'
+import PropTypes from 'prop-types'
 
 import './index.sass'
 
 const ProfilePage = ({ data, pageContext }) => {
-  const { siteMetadata} = data.site
-
   return (
     <>
       <Seo title='Perfil' />
@@ -29,6 +25,11 @@ const ProfilePage = ({ data, pageContext }) => {
       </Layout>
     </>
   )
+}
+
+ProfilePage.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
 }
 
 export default ProfilePage

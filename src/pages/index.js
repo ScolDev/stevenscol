@@ -1,16 +1,15 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Hero from '../components/hero'
-import Me from '../components/me'
-import VideoList from '../components/video-list';
+import VideoList from '../components/video-list'
 import PostList from '../components/post-list'
 import Container from '../components/container'
 import defaultHero from '../assets/images/hero.jpg'
 
 import './index.sass'
+import { PropTypes } from 'prop-types'
 
 const IndexPage = ({ data, pageContext }) => {
   const { siteMetadata } = data.site
@@ -70,6 +69,11 @@ const IndexPage = ({ data, pageContext }) => {
       </Layout>
     </>
   )
+}
+
+IndexPage.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
 }
 
 export default IndexPage

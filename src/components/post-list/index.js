@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import PropTypes, { number } from 'prop-types'
+import PropTypes from 'prop-types'
 import PostCard from '../post-card'
 import Paginator from '../paginator'
 
 import './post-list.sass'
 
 function PostList ({ posts, pageContext }) {
-  const { previousPagePath, nextPagePath, pageNumber, numberOfPages } = pageContext
+  const { pageNumber, numberOfPages } = pageContext
 
   return (
     <article className='PostList row justify-content-center'>
@@ -16,7 +16,8 @@ function PostList ({ posts, pageContext }) {
           {posts.map(post => <PostCard key={post.node.id} post={post.node} />)}
         </div>
         {
-          numberOfPages ? (
+          numberOfPages
+            ? (
             <div style={{ textAlign: 'right' }}>
               <Link
                 style={{ textDecoration: 'line-through' }}
@@ -25,7 +26,8 @@ function PostList ({ posts, pageContext }) {
                   *Legacy Blog
               </Link>
             </div>
-          ) : null
+              )
+            : null
         }
         <Paginator
           pageNumber={pageNumber}
@@ -38,7 +40,7 @@ function PostList ({ posts, pageContext }) {
 
 PostList.propTypes = {
   posts: PropTypes.array.isRequired,
-  pageContext: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired
 }
 
 export default PostList

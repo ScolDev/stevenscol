@@ -6,9 +6,9 @@ import Seo from '../../components/seo'
 import PostList from '../../components/post-list'
 import Container from '../../components/container'
 import './blog.sass'
+import PropTypes from 'prop-types'
 
 const Blog = ({ data, pageContext }) => {
-  const { siteMetadata } = data.site
   const { pageNumber } = pageContext
   const posts = data.posts.edges
 
@@ -31,6 +31,11 @@ const Blog = ({ data, pageContext }) => {
       </Layout>
     </>
   )
+}
+
+Blog.propTypes = {
+  data: PropTypes.object,
+  pageContext: PropTypes.object
 }
 
 export default Blog
