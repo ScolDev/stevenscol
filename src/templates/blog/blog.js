@@ -16,7 +16,8 @@ const Blog = ({ data, pageContext }) => {
       title,
       image,
       date,
-      path
+      path,
+      id: node.id
     }
   })
 

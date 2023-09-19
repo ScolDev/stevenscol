@@ -5,21 +5,38 @@ import { StaticQuery, graphql } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
 
 function Seo (props) {
-  const { title, description, image, lang, keywords, type, author, date } =
-    props
+  const {
+    title,
+    description,
+    image,
+    lang,
+    keywords,
+    type,
+    author,
+    date
+  } = props
 
   return (
     <StaticQuery
       query={detailsQuery}
       render={({ site, bannerImage }) => {
+        function resolveImage () {
+          if (typeof image === 'object') {
+            return getImage(image)?.images.fallback?.src
+          }
+          if (typeof bannerImage === 'object') {
+            return getImage(bannerImage)?.images.fallback?.src
+          }
+          return ''
+        }
+
         const siteKeywords = keywords || site.siteMetadata.keywords
         const { title: siteName, twitterID } = site.siteMetadata
 
         const pageDescription = description || site.siteMetadata.description
         const pageTitle = `${title} | ${siteName}`
-        const pageImage = image
-          ? getImage(image)?.images.fallback?.src
-          : getImage(bannerImage)?.images.fallback?.src
+
+        const pageImage = resolveImage()
 
         return (
           <Helmet

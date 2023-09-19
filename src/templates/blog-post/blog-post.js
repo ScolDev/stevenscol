@@ -20,9 +20,7 @@ const BlogPost = ({ data, pageContext }) => {
 
   const { contentPost, site } = data
   const { next, previous } = pageContext
-  const image =
-    contentPost.frontmatter.image.childImageSharp.gatsbyImageData.images
-      .fallback.src
+  const image = contentPost.frontmatter.image
 
   return (
     <>

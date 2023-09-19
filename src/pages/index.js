@@ -21,7 +21,8 @@ const IndexPage = ({ data, pageContext }) => {
       title,
       image,
       date,
-      path
+      path,
+      id: node.id
     }
   })
   const videos = data.videos.edges.map(({ node }) => {
