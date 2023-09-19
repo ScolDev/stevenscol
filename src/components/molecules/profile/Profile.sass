@@ -1,0 +1,44 @@
+@import '../../../common/variables'
+
+$size: 700px
+$photoSize: 200px
+
+
+.Profile .Section
+  text-align: center
+.Profile
+  padding: 1rem
+  width: 100%
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__photo
+    width: 100%
+    max-width: $photoSize
+
+    img
+      width: $photoSize !important
+      height: $photoSize !important
+      color: $primary
+      border: 7px solid $bgColorDark
+      border-radius: calc($photoSize / 2)
+  &__bio
+    margin-top: 2rem
+    text-align: center
+
+  &__topics
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+  &__technology
+    margin-top: 20px
+
+  &__techImg
+    height: 55px
+    width: 55px
+    margin: 0 0.5rem
+

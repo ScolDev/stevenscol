@@ -1,0 +1,28 @@
+@import '../../../common/variables'
+
+body.dark
+  .BlogCard
+    border: unset
+
+.BlogCard
+  transition: transform .3s
+  box-sizing: border-box
+  width: 100%
+  margin-bottom: 1rem
+
+  &:hover
+    transform: scale(1.07)
+
+  &__wrapper
+    padding: 0rem
+    padding-bottom: 0
+    border-radius: 15px
+    box-sizing: border-box
+
+    @media (max-width: 991px)
+      padding: 0
+
+  &__content
+    display: grid
+    grid-template-columns: 100%
+

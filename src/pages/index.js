@@ -1,67 +1,108 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import PropTypes from 'prop-types'
+
 import Layout from '../components/layout'
-import Seo from '../components/seo'
-import Hero from '../components/hero'
+import Seo from '../components/molecules/seo/Seo'
+import Hero from '../components/organisms/hero/Hero'
 import VideoList from '../components/video-list'
-import PostList from '../components/post-list'
+import BlogList from '../components/organisms/blog-list/BlogList'
 import Container from '../components/container'
-import defaultHero from '../assets/images/hero.jpg'
 
 import './index.sass'
-import { PropTypes } from 'prop-types'
+import BaseLink from '../components/molecules/base-link/BaseLink'
 
 const IndexPage = ({ data, pageContext }) => {
   const { siteMetadata } = data.site
-  const posts = data.posts.edges
-  const videos = data.videos.edges
+  const youtubeChannel = siteMetadata.youtubeChannel ?? ''
+  const blogs = data.blogs.edges.map(({ node }) => {
+    const { title, image, date, path } = node.frontmatter
+    return {
+      title,
+      image,
+      date,
+      path
+    }
+  })
+  const videos = data.videos.edges.map(({ node }) => {
+    const { id, title, videoId, thumbnail } = node
+    return {
+      id,
+      title,
+      url: `https://youtube.com/watch?v=${videoId}`,
+      image: thumbnail.url
+    }
+  })
 
   return (
     <>
-      <Seo title='Inicio' />
+      <Seo title="Inicio" />
       <Layout>
-        <Hero
-          forHome
-          largeSize
-          imageSrc={ defaultHero }
-          { ...siteMetadata } />
+        <Hero />
         <Container>
           <main className="Home">
             <section className="Home-videos Section">
               <h2>Últimos Videos</h2>
-              <VideoList
-                videos={ videos }
-                ytChannel={ siteMetadata.youtubeChannel } />
+              <VideoList videos={videos} />
               <footer className="Home-posts-footer">
-                <Link to={ siteMetadata.youtubeChannel } className="round-button">Ir al Canal</Link>
+                <BaseLink
+                  to={youtubeChannel}
+                  className="round-button"
+                >
+                  Ir al Canal
+                </BaseLink>
               </footer>
             </section>
             <section className="Home-current Section">
               <h2>Proyecto Actual</h2>
               <p>👾👾👾</p>
               <article className="Home-current-info">
-                <p><strong>CaNES:</strong> Es un emulador de la NES <i>(Nintendo Entertainment System)</i> en Javascript y utilizando la metodología de desarrollo TDD <i>(Test Driven Development).</i></p>
-                <p>El proyecto surge como una iniciativa para reunir algunas de mis pasiones como la arquitectura de bajo nivel, la ingeniería inversa, los juegos retro y javascript (por supuesto ❤️).</p>
-                <p>He decidido utilizar la metodología de desarrollo TDD por dos razones principales, la primera es porqué me encuentro aprendiendo y descubriendo los beneficios detrás de su filosofía, y la segunda es porqué se ajusta perfectamente en el desarrollo de una arquitectura como la de un emulador, sin la necesidad de conocer de antemano el panorama general que esto conlleva, concentrandonos  en pequeñas piezas una por una que irán siendo probadas durante el proceso <i>(CPU, ALU, PPU, I/O, etc)</i>.</p>
+                <p>
+                  <strong>CaNES:</strong> Es un emulador de la NES{' '}
+                  <i>(Nintendo Entertainment System)</i> en Javascript y
+                  utilizando la metodología de desarrollo TDD{' '}
+                  <i>(Test Driven Development).</i>
+                </p>
+                <p>
+                  El proyecto surge como una iniciativa para reunir algunas de
+                  mis pasiones como la arquitectura de bajo nivel, la ingeniería
+                  inversa, los juegos retro y javascript (por supuesto ❤️).
+                </p>
+                <p>
+                  He decidido utilizar la metodología de desarrollo TDD por dos
+                  razones principales, la primera es porqué me encuentro
+                  aprendiendo y descubriendo los beneficios detrás de su
+                  filosofía, y la segunda es porqué se ajusta perfectamente en
+                  el desarrollo de una arquitectura como la de un emulador, sin
+                  la necesidad de conocer de antemano el panorama general que
+                  esto conlleva, concentrandonos en pequeñas piezas una por una
+                  que irán siendo probadas durante el proceso{' '}
+                  <i>(CPU, ALU, PPU, I/O, etc)</i>.
+                </p>
 
                 <div className="Home-current-project">
-                  <Link
-                    className="white-box"
+                  <BaseLink
                     to="https://github.com/StevensCol/canes"
-                    target="_blank">
-                    Ir a CaNES 👾
-                  </Link>
+                    className="round-button"
+                  >
+                    Ir a CaNES
+                  </BaseLink>
                 </div>
               </article>
             </section>
             <section className="Home-posts Section">
               <h2>Últimos Posts</h2>
-              <PostList
-                pageContext={ pageContext }
-                showPages={ false }
-                posts={ posts } />
+              <BlogList
+                pageContext={pageContext}
+                blogs={blogs}
+              />
               <footer className="Home-posts-footer">
-                <Link to='/blog' className="round-button">Ver todos</Link>
+                <Link
+                  to="/blog"
+                  className="round-button"
+                >
+                  Ver todos
+                </Link>
               </footer>
             </section>
           </main>
@@ -80,11 +121,16 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query pageHomescolsrcgitstevenscolsrcpagesindexJs1856938877 {
-    profilePhoto: file(relativePath: {eq: "me.png"}) {
+    heroImage: file(relativePath: { eq: "images/hero.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    profilePhoto: file(relativePath: { eq: "me.png" }) {
       childImageSharp {
         gatsbyImageData(
           width: 400
-          transformOptions: {fit: INSIDE}
+          transformOptions: { fit: INSIDE }
           layout: CONSTRAINED
         )
       }
@@ -101,7 +147,7 @@ export const pageQuery = graphql`
         blogPostsPaginatePrefixPath
       }
     }
-    posts: allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 3) {
+    blogs: allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 3) {
       edges {
         node {
           id
@@ -115,7 +161,7 @@ export const pageQuery = graphql`
               childImageSharp {
                 gatsbyImageData(
                   width: 500
-                  transformOptions: {fit: INSIDE}
+                  transformOptions: { fit: INSIDE }
                   layout: CONSTRAINED
                 )
               }

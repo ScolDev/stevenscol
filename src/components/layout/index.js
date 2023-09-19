@@ -2,19 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from '../header'
-import Footer from '../footer'
+import Header from '../organisms/header/Header'
+import Footer from '../organisms/footer/Footer'
+
 import './layout.sass'
 
 const Layout = ({ children, noHeader }) => (
   <StaticQuery
     query={query}
     render={data => {
-      const { title, social } = data.site.siteMetadata
+      const { social } = data.site.siteMetadata
       return (
         <>
           <main className='Main'>
-            { !noHeader ? <Header title={title} /> : null }
+            { !noHeader ? <Header /> : null }
             <section className='Main-container'>
               {children}
             </section>

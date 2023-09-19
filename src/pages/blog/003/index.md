@@ -7,11 +7,10 @@
   tags: ["personal"]
 ---
 > Este artículo es tercera parte de mi narración de los sucesos ocurridos durante el periodo en el cual perdí gran parte de mi capacidad visual.
-<br>
-<br>
-[Leer Primera Parte](/blog/001-viviendo-con-una-perdida-de-vision)
-<br>
-[Leer Segunda Parte](/blog/002-viviendo-con-una-perdida-de-vision-segunda-parte)
+> <br /><br />
+> [Leer Primera Parte](/blog/001-viviendo-con-una-perdida-de-vision)
+> <br/>
+> [Leer Segunda Parte](/blog/002-viviendo-con-una-perdida-de-vision-segunda-parte)
 
 Mi primer encuentro con el doctor Hector Miguel Mosquera se realizó en una tarde, cuando desempeñaba sus actividades de revisión a pacientes de neuro-cirugía en aquel entonces. Al entrar en la habitación donde me encontraba y preguntar sobre mi caso, los enfermeros que lo acompañaban lo pusieron al tanto de la situación y en adición a ello, manifesté mi punto de vista y todo lo que había transcurrido desde el primer día que ingresé al centro de salud y el motivo principal de atender el llamado de la punsión lumbar para determinar el estado de la presión intracraneal de aquel momento.
 

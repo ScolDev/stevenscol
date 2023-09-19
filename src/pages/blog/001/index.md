@@ -7,11 +7,10 @@ image: ./hero.jpg
 tags: ["personal"]
 ---
 > Este artículo es la primera parte de mi narración de los sucesos ocurridos durante el periodo en el cual perdí gran parte de mi capacidad visual.
-<br>
-<br>
-[Leer Segunda Parte](/blog/002-viviendo-con-una-perdida-de-vision-segunda-parte)
-<br>
-[Leer Tercera Parte](/blog/003-viviendo-con-una-perdida-de-vision-tercera-parte)
+> <br /><br />
+> [Leer Segunda Parte](/blog/002-viviendo-con-una-perdida-de-vision-segunda-parte)
+> <br>
+> [Leer Tercera Parte](/blog/003-viviendo-con-una-perdida-de-vision-tercera-parte)
 
 En un principio tenía planeado nombrar este primer artículo de mi blog, con el título de "¿Cómo superé mi pérdida de visión?" pero pensándolo un poco, podría parecer pretencioso y a la vez algo engañoso para mí mismo. Teniendo en cuenta que mi estado actual, que por momentos y situaciones de mi vida no ha sido superado en su totalidad, además, porque desconozco mi posible reacción a lo que el futuro me presente. Pues bien considero que una mejor palabra para acompañar este tíulo sea "viviendo" porque denota para mí, una lucha constante, donde siempre busco dar lo mejor de mí.
 
@@ -26,16 +25,16 @@ De niño siempre contaba con algún que otro sueño por cumplir y actualmente co
 Es aquí donde el hecho de tener siempre un ideal se convirtió en una de las fuerzas que impulsa mi día a día, junto con el apoyo intrínseco de toda mi familia y amigos más cercanos, para poder reponerme de la pérdida de mi capaciadad visual de casi un 70%, que represento un cambio drástico en mi vida emocional y profesional.
 
 > “Soñé que iba a ser ejecutado. De repente me di cuenta de que había muchas cosas que valía la pena que podía hacer, si me dieran un respiro"
-<br><br>
-Stephen Hawking
+> <br /><br />
+> Stephen Hawking
 
 Soy Robert Stevens y en mis últimos 15 años aproximadamente me he dedicado a ser desarrollador de software, primero motivado por una gran pasión y luego acompañado de una profesión. Soy Ingeniero de Sistemas y Computación, egresado de la Universidad del Quindio, logrando brindar mis conocimientos a la industria del software, ejerciendo cargos afines con esta profesión. Tengo el placer de contar con una mamá que supo darlo todo para sacar adelante a sus dos hijos y la cual siempre admiraré por su gran labor como madre, tengo un hermano mellizo al que admiro, respeto y al que literalmente por anécdotas de la vida, le debo la misma. Tengo un hermoso fiel amigo de cuatro patas 🐶 llamado Canelo y pertenezco a una gran familia, a la cual desde siempre he querido mucho.
 
 Si bien, en estos momentos desempeño normalmente mis actividades como Desarrollador de Sofrware, gracias a la resiliencia alcanzada hasta el momento que ha logrado levantarme de una etapa muy difícil en mi vida, marcada por el acontecimiento de haber perdido gran parte de mi capacidad visual.
 
 > “No son las cosas que nos pasan las que nos hacen sufrir, sino lo que nos decimos sobre estas cosas”.
-<br><br>
-Epícteto
+> <br /><br />
+> Epícteto
 
 ## Un agridulce 2016
 

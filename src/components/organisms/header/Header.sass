@@ -1,0 +1,62 @@
+@import '../../../common/variables'
+
+.Header
+  background-color: $bgColorLight
+  box-shadow: 5px 0 10px #131313d0
+  border-bottom: 2px $primary solid
+  color: inherit
+  height: $headerHeight
+  line-height: $headerHeight
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 500
+
+  &__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 15px
+    line-height: $headerHeight
+    height: inherit
+
+    h1
+      margin: 0
+    nav
+      display: flex
+      align-items: center
+      font-family: 'Exo', sans-serif
+      a
+        display: inline-block
+        text-decoration: none
+        font-size: 0.9rem
+        padding-right: 20px
+      a:hover
+        color: $primary
+        text-decoration: underline
+      *
+        cursor: pointer
+
+  &__logo
+    width: $logoWidth
+
+    .Icon:hover
+      color: $primary
+    .Icon
+      color: $fontColorForLight
+      padding: 8px 0
+      height: $headerHeight
+      width: 100%
+
+body.dark
+  .Header
+    background-color: $bgColorDark
+
+    nav
+      a, .Icon
+        color: $primary
+    .Icon
+      color: $fontColorForDark

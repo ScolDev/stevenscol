@@ -1,15 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import VideoCard from '../video-card'
+import VideoCard from '../molecules/video-card/VideoCard'
 
 import './video-list.sass'
 
-function VideoList ({ videos, ytChannel }) {
+function VideoList ({ videos }) {
   return (
-    <article className='VideoList justify-content-center'>
-      <section className='VideoList-content'>
-        <div className='VideoList-items'>
-          { videos.map(video => <VideoCard key={video.node.id} video={video.node } />) }
+    <article className="VideoList justify-content-center">
+      <section className="VideoList-content">
+        <div className="VideoList-items">
+          {videos.map((video) => (
+            <VideoCard
+              key={video.id}
+              video={video}
+            />
+          ))}
         </div>
       </section>
     </article>
@@ -17,8 +22,7 @@ function VideoList ({ videos, ytChannel }) {
 }
 
 VideoList.propTypes = {
-  videos: PropTypes.array.isRequired,
-  ytChannel: PropTypes.string.isRequired
+  videos: PropTypes.array.isRequired
 }
 
 export default VideoList

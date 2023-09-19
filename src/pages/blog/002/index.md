@@ -7,17 +7,12 @@
   tags: [""]
 ---
 > Este artículo es la continuación a mi narración de los sucesos ocurridos durante el periodo en el cual perdí gran parte de mi capacidad visual.
-<br>
-<br>
-[Leer Primera Parte](/blog/001-viviendo-con-una-perdida-de-vision)
-<br>
-[Leer Tercera Parte](/blog/003-viviendo-con-una-perdida-de-vision-tercera-parte)
+> <br /><br />
+> [Leer Primera Parte](/blog/001-viviendo-con-una-perdida-de-vision)
+> <br>
+> [Leer Tercera Parte](/blog/003-viviendo-con-una-perdida-de-vision-tercera-parte)
 
 Es inevitable no detenerme a recordar y dejar entre escritos, el camino que tuve que recorrer, desde los detalles más puntuales como lo fueron los procesos médicos y la búsqueda de noticias y respuestas alentadoras a la situación, así como esas pequeñas batallas mentales y retos técnicos vinculados al proceso de superación de esta crísis personal, o como lo veo hoy en día, mi salida a esta máquina criogénica en la que estuve encerrado alrededor de 4 años, para salir y enfrentarme a un nuevo mundo donde las cosas realmente cambiaron para mí, o al menos, la necesidad de enfrentarlas desde una perspectiva diferente.
-
-<p align="center">
-  <img alt="Congelado" src="https://media1.tenor.com/images/456033660a0b04e6eb4e127b6ed05214/tenor.gif" />
-</p>
 
 ## Entrada de emergencia
 
@@ -60,9 +55,8 @@ Jamás imaginé que la solicitud formal de una doctora ejerciendo su mas preciad
 La única acción que tomé al respecto, fue solicitar que aquel doctor no fuera asignado a revisar mi caso, una decisión muy personal, sin hacer alusión al evento ante el personal de la clínica. Posteriormente, cuando conseguí que me realizarán aquella resonancia magnética que estaba pendiente y ante su revisión por parte de aquel doctor que la había requerido, su conclusión fue la de darme de alta, debido a que no encontraba ningún tipo de anomalía en las imágenes. Mi reacción fue por supuesto de desconsuelo y más incredulidad. ¡Estaba perdiendo mi visión y no se lo tomaban en serio!
 
 > "... A la mierda con el futuro, que se espabile por su cuenta, no es responsabilidad mía. Que se joda la dirección del hospital, el gobierno y los patéticos políticos y sus chanchullos, y a la mierda los putos funcionarios del puto departamento de Sanidad. Que se joda el mundo entero»."
-<br>
-<br>
-Ante todo no hagas daño, Henry Marsh
+> <br /><br />
+> Ante todo no hagas daño, Henry Marsh
 
 ## Salida de emergencia
 

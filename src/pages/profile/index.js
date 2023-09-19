@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
-import Seo from '../../components/seo'
-import Me from '../../components/me'
+import Seo from '../../components/molecules/seo/Seo'
 import Container from '../../components/container'
 import PropTypes from 'prop-types'
+import Profile from '../../components/molecules/profile/Profile'
 
 import './index.sass'
 
@@ -17,7 +17,7 @@ const ProfilePage = ({ data, pageContext }) => {
           <main className="Profile">
             <section className="Profile-me Section">
               <article className="Profile-me-content">
-                <Me />
+                <Profile />
               </article>
             </section>
           </main>

@@ -1,26 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import IconButton from '../icon-button'
 
-import { SVG } from '../../common/constants'
 import './social-media.sass'
+import IconLink from '../molecules/icon-link/IconLink'
 
 function SocialMedia (props) {
   const { social } = props
   return (
     <div className='SocialMedia'>
-      <div className='SocialMedia-content'>
+      <div className='SocialMedia__content'>
         {
           social.map(item => {
             const { name, url } = item
 
-            return SVG[name]
-              ? <IconButton
+            return (
+              <IconLink
                 key={name}
-                external
+                icon={name}
                 to={url}
-                icon={name} />
-              : null
+              />
+            )
           })
         }
       </div>

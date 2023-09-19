@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import Container from '../../components/container'
-import Seo from '../../components/seo'
-import Avatar from '../../components/avatar'
-import Icon from '../../components/icon'
+import Seo from '../../components/molecules/seo/Seo'
+import Avatar from '../../components/atoms/avatar/Avatar'
+import Icon from '../../components/atoms/icon/Icon'
 
 import './index.sass'
 import PropTypes from 'prop-types'
@@ -15,21 +15,20 @@ const LinksPage = ({ data, pageContext }) => {
   return (
     <>
       <Seo title='Links' />
-      <Layout noHeader="true">
-        <Container>
+      <Layout noHeader={ true }>
         <main className="Links">
-          <section className="Links-content">
-            <header className="Links-profile">
-              <article className="Links-avatar">
-                <Avatar></Avatar>
+          <section className="Links__content">
+            <header className="Links__profile">
+              <article className="Links__avatar">
+                <Avatar />
               </article>
               <p>{ siteMetadata.nickname }</p>
             </header>
-            <section className="Links-content Section">
+            <section className="Links__content">
               {
                 siteMetadata.social.map(({ name, url }) => {
                   return (
-                  <Link className="Links-button white-box" to={ url } key={name}>
+                  <Link className="Links__button white-box" to={ url } key={name}>
                     <Icon icon={ name } />
                     <span>
                       { name }
@@ -41,7 +40,6 @@ const LinksPage = ({ data, pageContext }) => {
             </section>
           </section>
         </main>
-        </Container>
       </Layout>
     </>
   )
