@@ -12,17 +12,23 @@ const BaseImage = (props) => {
     ? (
     <img
       src={imageSrc}
-      alt="statica"
+      alt={title}
       loading="lazy"
       style={{ height: '100%', width: '100%', backgroundColor: imageSrc.backgroundColor }}
     />
       )
     : (
-    <GatsbyImage
-      image={imageSrc}
+    <img
+      src={imageSrc.images.fallback.src}
       alt={title}
+      loading="lazy"
       style={{ height: '100%', width: '100%', backgroundColor: imageSrc.backgroundColor }}
     />
+    // <GatsbyImage
+    //   image={imageSrc}
+    //   alt={title}
+    //   style={{ height: '100%', width: '100%', backgroundColor: imageSrc.backgroundColor }}
+    // />
       )
 }
 

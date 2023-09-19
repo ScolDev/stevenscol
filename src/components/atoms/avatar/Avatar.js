@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
+import BaseImage from '../base-image/BaseImage'
 
 import './Avatar.sass'
 
@@ -14,7 +15,7 @@ const Avatar = (props) => {
         return (
           <>
             <article className="Avatar">
-              <GatsbyImage
+              <BaseImage
                 className='Avatar__image Avatar__image--rounded'
                 image={ avatar }
                 alt="ScolDev"
