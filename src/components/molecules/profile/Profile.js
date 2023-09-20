@@ -84,6 +84,7 @@ export const query = graphql`
       publicURL
     }
     skills: allFile(
+      sort: { name: ASC}
       filter: {
         extension: { eq: "png" }
         relativeDirectory: { eq: "images/skills" }
