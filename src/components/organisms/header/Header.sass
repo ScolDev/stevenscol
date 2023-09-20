@@ -1,7 +1,7 @@
 @import '../../../common/variables'
 
 .Header
-  background-color: $bgColorLight
+  background-color: $bgColorDark
   box-shadow: 5px 0 10px #131313d0
   border-bottom: 2px $primary solid
   color: inherit
@@ -46,17 +46,17 @@
     .Icon:hover
       color: $primary
     .Icon
-      color: $fontColorForLight
+      color: $fontColorForDark
       padding: 8px 0
       height: $headerHeight
       width: 100%
 
-body.dark
+body.light
   .Header
-    background-color: $bgColorDark
+    background-color: $bgColorLight
 
     nav
       a, .Icon
         color: $primary
     .Icon
-      color: $fontColorForDark
+      color: $fontColorForLight

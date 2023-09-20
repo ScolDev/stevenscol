@@ -2,6 +2,17 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss'
 
 body
+  background-color: $bgColorDark
+  color: $fontColorForDark
+
+  .HighContrast
+    color: inherit
+    background-color: $bgColorDarkContrast
+
+  .Container
+    background-color: $bgColorDark
+
+body.light
   background-color: $bgColorLight
   color: $fontColorForLight
   min-height: 100vh
@@ -56,14 +67,3 @@ body
 
 .paginator-button
   @include paginator-button
-
-body.dark
-  background-color: $bgColorDark
-  color: $fontColorForDark
-
-  .HighContrast
-    color: inherit
-    background-color: $bgColorDarkContrast
-
-  .Container
-    background-color: $bgColorDark
