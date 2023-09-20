@@ -9,14 +9,14 @@ import BlogList from '../../components/organisms/blog-list/BlogList'
 import './blog.sass'
 
 const Blog = ({ data, pageContext }) => {
-  const { pageNumber } = pageContext
+  const { pageNumber, numberOfPages } = pageContext
   const blogs = data.blogs.edges.map(({ node }) => {
     const { title, image, date, path } = node.frontmatter
     return {
       title,
       image,
       date,
-      path,
+      to: `/blog${path}`,
       id: node.id
     }
   })
@@ -27,12 +27,13 @@ const Blog = ({ data, pageContext }) => {
       <PageLayout>
         <Container>
           <main className="Blog">
-            <section className="Blog-posts Section">
+            <section className="Blog-posts section">
               <header className="PostList-title">
                 <h1>Página {pageNumber + 1}</h1>
               </header>
               <BlogList
-                pageContext={pageContext}
+                pageNumber={pageNumber}
+                numOfPages={numberOfPages}
                 blogs={blogs}
               />
             </section>

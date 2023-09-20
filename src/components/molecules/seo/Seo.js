@@ -21,7 +21,7 @@ function Seo (props) {
       query={detailsQuery}
       render={({ site, bannerImage }) => {
         function resolveImage () {
-          const host = site.siteMetadata.url
+          const host = site.siteMetadata.siteUrl
 
           if (typeof image === 'object') {
             return `${host}/${getImage(image)?.images.fallback?.src}`
@@ -98,7 +98,7 @@ const detailsQuery = graphql`
         title
         description
         author
-        url
+        siteUrl
         twitterID
         keywords
       }

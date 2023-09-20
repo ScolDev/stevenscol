@@ -9,7 +9,7 @@ import './404.sass'
 const NotFoundPage = () => (
   <>
     <SingleLayout>
-      <section className="NotFound Section">
+      <section className="NotFound section">
         <Avatar />
         <article className="NotFound__info">
           <h1>No se encontró el recurso</h1>

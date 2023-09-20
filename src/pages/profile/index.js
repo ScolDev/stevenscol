@@ -15,7 +15,7 @@ const ProfilePage = ({ data, pageContext }) => {
       <PageLayout>
         <Container>
           <main className="Profile">
-            <section className="Profile-me Section">
+            <section className="Profile-me section">
               <article className="Profile-me-content">
                 <Profile />
               </article>

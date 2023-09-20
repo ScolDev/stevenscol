@@ -5,32 +5,14 @@ $bgColorLight: #eaeaea
 $bgColorDark: #161619
 $bgColorDarkContrast: #19191d
 $bgColorLightContrast: #e0e0e0
-
 $fontColorForDark: #e0e0e0e9
-$fontColorForLight: #352434ff
+$fontColorForLight: #200f0f
 
-$selectedTextColor: #eee
-$selectedTextBg: #40407080
-
-$iconWidth: 1em
 $headerHeight: 50px
-$logoWidth: 30px
-$footerHeight: 150px
 
-$heroHeight: 500px
-$heroLargeHeight: 75vh
-$heroMediumHeight: 500px
-$heroTextColor: #e2e2e2
-$heroContentWidth: 1000px
-$heroBackgroundColor: rgba(0, 0, 0, 0.3)
-
-$socialMediaHeroHeight: 40px
-$socialMediaHeroWidth: 300px
-
-$buttonMinWidth: 30px
 $buttonBorderSize: 2px
+$buttonMinWidth: 30px
 $buttonPaddingWidth: 10px
-$buttonPaddingHeight: 6px
 
 // Mixins
 
@@ -43,11 +25,10 @@ $buttonPaddingHeight: 6px
   h2::after
     content: " - "
 
-@mixin round-button ($color: $primary)
+@mixin button ($color: $primary)
   display: inline-block
-  border: $buttonBorderSize solid $color
-  border-radius: $buttonMinWidth - $buttonPaddingWidth
   color: $color
+  font-family: 'Exo'
   font-size: 1rem
   line-height: 1.5rem
   font-weight: bold
@@ -57,6 +38,14 @@ $buttonPaddingHeight: 6px
   text-align: center
   text-decoration: none
 
+  body.light &:hover
+    border-color: $color
+    background-color: $color
+    color: $secundary
+  body.light &-active
+    background-color: $color
+    color: $secundary
+
   &:hover
     border-color: $secundary
     color: $secundary
@@ -64,33 +53,24 @@ $buttonPaddingHeight: 6px
     background-color: $color
     color: $secundary
 
-a:hover
-  color: $primary
+@mixin round-button ($color: $primary)
+  @include button($color)
+  border: $buttonBorderSize solid $color
+  border-radius: $buttonMinWidth - $buttonPaddingWidth
 
 @mixin paginator-button ($color: $primary)
-  display: inline-block
   border: 2px solid $color
   border-radius: 5px
-  color: $color
-  font-size: 1rem
-  line-height: 1rem
-  font-weight: bold
-  margin: 0 5px
   min-width: 20px
   padding: 0.5rem
-  text-align: center
-  text-decoration: none
 
-  &:hover
-    border-color: $secundary
-    color: $secundary
-  &-active
-    background-color: $color
-    color: $secundary
+// Custom classes
 
-a:hover
-  color: $primary
+.round-button
+  @include round-button
 
+.paginator-button
+  @include paginator-button
 
 .white-box
   color: $bgColorDark
@@ -101,3 +81,27 @@ a:hover
   border: 5px solid $bgColorDark
   background-color: white
   padding: 0.7em
+
+.section
+  border-radius: 20px
+  display: flex
+  align-items: center
+  flex-direction: column
+  flex: 1
+  padding: 2rem
+  max-width: 1140px
+  margin: 0 auto
+  margin-top: 3rem
+
+  @media(max-width: 576px)
+    &
+      padding: 0px
+
+.section:first-child
+  margin-top: 5rem
+
+a
+  color: inherit
+  text-decoration: underline
+a:hover
+  color: $primary

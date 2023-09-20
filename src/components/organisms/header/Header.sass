@@ -23,40 +23,22 @@
     line-height: 100%
     height: inherit
 
-    h1
-      margin: 0
     nav
       display: flex
       align-items: center
       font-family: 'Exo', sans-serif
+      color: $primary
       a
-        display: inline-block
         text-decoration: none
         font-size: 0.9rem
         padding-right: 20px
-      a:hover
-        color: $primary
-        text-decoration: underline
-      *
-        cursor: pointer
 
   &__logo
-    width: $logoWidth
-
-    .Icon:hover
-      color: $primary
     .Icon
-      color: $fontColorForDark
-      padding: 8px 0
       height: $headerHeight
-      width: 100%
 
 body.light
   .Header
     background-color: $bgColorLight
-
     nav
-      a, .Icon
-        color: $primary
-    .Icon
       color: $fontColorForLight

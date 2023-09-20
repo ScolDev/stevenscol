@@ -112,7 +112,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        url
+        siteUrl
         author
         social {
           name

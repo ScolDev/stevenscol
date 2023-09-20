@@ -1,35 +1,17 @@
 @import '../../common/variables.sass'
-@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss'
 
 body
   background-color: $bgColorDark
   color: $fontColorForDark
 
-  .HighContrast
-    color: inherit
-    background-color: $bgColorDarkContrast
-
-  .Container
-    background-color: $bgColorDark
 
 body.light
   background-color: $bgColorLight
   color: $fontColorForLight
   min-height: 100vh
 
-  & *
-    color: inherit
-    &::selection
-      color: $selectedTextColor
-      background: $selectedTextBg
-
   p
     line-height: 1.8rem
-
-.HighContrast
-  color: inherit
-  background-color: $bgColorLightContrast
-
 
 .Main
   display: flex
@@ -45,25 +27,4 @@ body.light
   margin: 0 auto
   width: 100%
 
-.Section:first-child
-  margin-top: 5rem
-.Section
-  border-radius: 20px
-  display: flex
-  align-items: center
-  flex-direction: column
-  flex: 1
-  padding: 2rem
-  max-width: 1140px
-  margin: 0 auto
-  margin-top: 3rem
 
-  @media(max-width: 576px)
-    &
-      padding: 0px
-
-.round-button
-  @include round-button
-
-.paginator-button
-  @include paginator-button

@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import PageLayout from '../components/layouts/PageLayour'
@@ -22,16 +22,17 @@ const IndexPage = ({ data, pageContext }) => {
       title,
       image,
       date,
-      path,
+      to: `/blog${path}`,
       id: node.id
     }
   })
   const videos = data.videos.edges.map(({ node }) => {
-    const { id, title, videoId, thumbnail } = node
+    const { id, title, videoId, thumbnail, publishedAt } = node
     return {
       id,
       title,
-      url: `https://youtube.com/watch?v=${videoId}`,
+      date: new Date(publishedAt).toDateString(),
+      to: `https://youtube.com/watch?v=${videoId}`,
       image: thumbnail.url
     }
   })
@@ -43,7 +44,7 @@ const IndexPage = ({ data, pageContext }) => {
         <Hero />
         <Container>
           <main className="Home">
-            <section className="Home-videos Section">
+            <section className="Home-videos section">
               <h2>Últimos Videos</h2>
               <VideoList videos={videos} />
               <footer className="Home-posts-footer">
@@ -55,7 +56,7 @@ const IndexPage = ({ data, pageContext }) => {
                 </BaseLink>
               </footer>
             </section>
-            <section className="Home-current Section">
+            <section className="Home-current section">
               <h2>Proyecto Actual</h2>
               <p>👾👾👾</p>
               <article className="Home-current-info">
@@ -92,19 +93,20 @@ const IndexPage = ({ data, pageContext }) => {
                 </div>
               </article>
             </section>
-            <section className="Home-posts Section">
+            <section className="Home-posts section">
               <h2>Últimos Posts</h2>
               <BlogList
-                pageContext={pageContext}
+                pageNumber={pageContext.pageNumber}
+                numOfPages={pageContext.numberOfPages}
                 blogs={blogs}
               />
               <footer className="Home-posts-footer">
-                <Link
+                <BaseLink
                   to="/blog"
                   className="round-button"
                 >
                   Ver todos
-                </Link>
+                </BaseLink>
               </footer>
             </section>
           </main>

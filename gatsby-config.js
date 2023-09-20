@@ -3,7 +3,6 @@ require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: 'ScolDev',
-    url: 'https://stevenscol.co',
     siteUrl: 'https://stevenscol.co',
     youtubeChannel: 'https://youtube.com/c/ScolDev',
     heroTitle: '"Estúpido como un zorro."',
@@ -50,7 +49,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sharp',
       options: {
         defaults: {
-          formats: ['auto', 'jpg'],
+          formats: ['auto', 'webp'],
           placeholder: 'dominantColor',
           quality: 50,
           breakpoints: [750, 1080, 1366, 1920],

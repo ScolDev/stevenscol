@@ -32,7 +32,7 @@ const Profile = () => {
                   Descargar CV
                 </a>
               </div>
-              <div className="Profile__skills Section">
+              <div className="Profile__skills section">
                 <h2>Skills</h2>
                 <p>{site.siteMetadata.skills}</p>
                 <div className="Profile__topics">
@@ -54,7 +54,7 @@ const Profile = () => {
                   })}
                 </div>
                   <p>...entre otras más.</p>
-                <div className="Profile__skills Section">
+                <div className="Profile__skills section">
                 </div>
                 <h2>Experiencia</h2>
                 <p>{site.siteMetadata.experience}</p>

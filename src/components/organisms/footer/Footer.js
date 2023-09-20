@@ -10,7 +10,7 @@ const Footer = () => (
     render={({ site }) => {
       const { social } = site.siteMetadata
       return (
-        <footer className="Footer Section">
+        <footer className="Footer section">
           <div className="Footer__info">
             <span>Desarrollado con amor con Gatsby</span>
           </div>

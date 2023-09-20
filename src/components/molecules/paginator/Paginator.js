@@ -112,14 +112,16 @@ function getInterval ({ currentPage, numOfPages, pagesToShow }) {
 }
 
 Paginator.propTypes = {
-  currentPage: PropTypes.number.isRequired,
-  numOfPages: PropTypes.number.isRequired,
+  currentPage: PropTypes.number,
+  numOfPages: PropTypes.number,
   pagesToShow: PropTypes.number,
   cssButtonClass: PropTypes.string,
   cssActiveButtonClass: PropTypes.string
 }
 
 Paginator.defaultProps = {
+  currentPage: 0,
+  numOfPages: 0,
   pagesToShow: 5
 }
 

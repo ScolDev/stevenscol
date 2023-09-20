@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import VideoCard from '../../molecules/video-card/VideoCard'
+import Card from '../../molecules/card/Card'
 
 import './VideoList.sass'
 
-function VideoList ({ videos }) {
+const VideoList = ({ videos }) => {
   return (
     <article className="VideoList">
       <section className="VideoList__content">
         <div className="VideoList__videos">
           {videos.map((video) => (
-            <VideoCard
+            <Card
               key={video.id}
-              video={video}
+              item={video}
             />
           ))}
         </div>
