@@ -21,10 +21,10 @@ function Seo (props) {
       query={detailsQuery}
       render={({ site, bannerImage }) => {
         function resolveImage () {
-          const host = site.siteMetadata.siteUrl
+          const host = site.siteMetadata.url
 
           if (typeof image === 'object') {
-            return `${host}${getImage(image)?.images.fallback?.src}`
+            return `${host}/${getImage(image)?.images.fallback?.src}`
           }
           if (typeof bannerImage === 'object') {
             return `${host}${getImage(bannerImage)?.images.fallback?.src}`
@@ -101,7 +101,6 @@ const detailsQuery = graphql`
         url
         twitterID
         keywords
-        siteUrl
       }
     }
     bannerImage: file(relativePath: { eq: "images/banner.jpg" }) {

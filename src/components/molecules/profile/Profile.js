@@ -53,8 +53,9 @@ const Profile = () => {
                     )
                   })}
                 </div>
-              </div>
-              <div className="Profile__skills Section">
+                  <p>...entre otras más.</p>
+                <div className="Profile__skills Section">
+                </div>
                 <h2>Experiencia</h2>
                 <p>{site.siteMetadata.experience}</p>
               </div>
