@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../../components/layout'
+import PageLayout from '../../components/layouts/PageLayour'
 import Seo from '../../components/molecules/seo/Seo'
 import Container from '../../components/container'
 import PropTypes from 'prop-types'
@@ -12,7 +12,7 @@ const ProfilePage = ({ data, pageContext }) => {
   return (
     <>
       <Seo title='Perfil' />
-      <Layout>
+      <PageLayout>
         <Container>
           <main className="Profile">
             <section className="Profile-me Section">
@@ -22,7 +22,7 @@ const ProfilePage = ({ data, pageContext }) => {
             </section>
           </main>
         </Container>
-      </Layout>
+      </PageLayout>
     </>
   )
 }

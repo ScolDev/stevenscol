@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import IconLink from '../../molecules/icon-link/IconLink'
 
-import './social-media.sass'
-import IconLink from '../molecules/icon-link/IconLink'
+import './SocialMedia.sass'
 
 function SocialMedia (props) {
   const { social } = props

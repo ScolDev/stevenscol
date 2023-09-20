@@ -1,10 +1,10 @@
 import React from 'react'
 import { getImage } from 'gatsby-plugin-image'
-import SocialMedia from '../../social-media'
-
-import './Hero.sass'
 import { StaticQuery, graphql } from 'gatsby'
+
+import SocialMedia from '../../molecules/social-media/SocialMedia'
 import ProfileWidget from '../../molecules/profile-widget/ProfileWidget'
+import './Hero.sass'
 
 function Hero () {
   return (

@@ -1,5 +1,5 @@
 $primary: #FF4500
-$secundary: #47536a
+$secundary: #eaeaea
 
 $bgColorLight: #eaeaea
 $bgColorDark: #161619
@@ -66,6 +66,31 @@ $buttonPaddingHeight: 6px
 
 a:hover
   color: $primary
+
+@mixin paginator-button ($color: $primary)
+  display: inline-block
+  border: 2px solid $color
+  border-radius: 5px
+  color: $color
+  font-size: 1rem
+  line-height: 1rem
+  font-weight: bold
+  margin: 0 5px
+  min-width: 20px
+  padding: 0.5rem
+  text-align: center
+  text-decoration: none
+
+  &:hover
+    border-color: $secundary
+    color: $secundary
+  &-active
+    background-color: $color
+    color: $secundary
+
+a:hover
+  color: $primary
+
 
 .white-box
   color: $bgColorDark

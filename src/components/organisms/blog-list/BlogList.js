@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import Paginator from '../../paginator'
 import BlogCard from '../../molecules/blog-card/BlogCard'
+import Paginator from '../../molecules/paginator/Paginator'
 
 import './BlogList.sass'
 
@@ -30,8 +30,10 @@ function BlogList ({ blogs, pageContext }) {
             : null
         }
         <Paginator
-          pageNumber={pageNumber}
-          numberOfPages={numberOfPages}
+          currentPage={pageNumber}
+          numOfPages={numberOfPages}
+          cssButtonClass="paginator-button"
+          cssActiveButtonClass="paginator-button-active"
         />
       </section>
     </article>

@@ -2,14 +2,15 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import Layout from '../components/layout'
+import PageLayout from '../components/layouts/PageLayour'
 import Seo from '../components/molecules/seo/Seo'
 import Hero from '../components/organisms/hero/Hero'
-import VideoList from '../components/video-list'
+import VideoList from '../components/organisms/video-list/VideoList'
 import BlogList from '../components/organisms/blog-list/BlogList'
 import Container from '../components/container'
 
 import './index.sass'
+
 import BaseLink from '../components/molecules/base-link/BaseLink'
 
 const IndexPage = ({ data, pageContext }) => {
@@ -38,7 +39,7 @@ const IndexPage = ({ data, pageContext }) => {
   return (
     <>
       <Seo title="Inicio" />
-      <Layout>
+      <PageLayout>
         <Hero />
         <Container>
           <main className="Home">
@@ -108,7 +109,7 @@ const IndexPage = ({ data, pageContext }) => {
             </section>
           </main>
         </Container>
-      </Layout>
+      </PageLayout>
     </>
   )
 }

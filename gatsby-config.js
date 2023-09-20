@@ -2,7 +2,7 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: 'StevensCol',
+    title: 'ScolDev',
     url: 'https://stevenscol.co',
     siteUrl: 'https://stevenscol.co',
     youtubeChannel: 'https://youtube.com/c/ScolDev',

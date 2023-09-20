@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import Seo from '../../components/molecules/seo/Seo'
+import PageLayout from '../../components/layouts/PageLayour'
 import Container from '../../components/container'
-import Layout from '../../components/layout'
+import Seo from '../../components/molecules/seo/Seo'
 import BlogList from '../../components/organisms/blog-list/BlogList'
 
 import './blog.sass'
@@ -24,7 +24,7 @@ const Blog = ({ data, pageContext }) => {
   return (
     <>
       <Seo title="Blog" />
-      <Layout>
+      <PageLayout>
         <Container>
           <main className="Blog">
             <section className="Blog-posts Section">
@@ -38,7 +38,7 @@ const Blog = ({ data, pageContext }) => {
             </section>
           </main>
         </Container>
-      </Layout>
+      </PageLayout>
     </>
   )
 }

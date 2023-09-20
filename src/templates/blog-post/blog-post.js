@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Prism from 'prismjs'
 
-import Layout from '../../components/layout'
+import PageLayout from '../../components/layouts/PageLayour'
 import Container from '../../components/container'
 import Seo from '../../components/molecules/seo/Seo'
 import BaseImage from '../../components/atoms/base-image/BaseImage'
@@ -11,7 +11,6 @@ import BaseImage from '../../components/atoms/base-image/BaseImage'
 import '../../common/prism-monokai.css'
 
 import './blog-post.sass'
-import Hero from '../../components/organisms/hero/Hero'
 
 const BlogPost = ({ data, pageContext }) => {
   useEffect(() => {
@@ -31,7 +30,7 @@ const BlogPost = ({ data, pageContext }) => {
         image={image}
       />
 
-      <Layout>
+      <PageLayout>
         <Container>
           <section className="BlogPost justify-content-center">
             <BaseImage
@@ -96,7 +95,7 @@ const BlogPost = ({ data, pageContext }) => {
             </div>
           </section>
         </Container>
-      </Layout>
+      </PageLayout>
     </>
   )
 }

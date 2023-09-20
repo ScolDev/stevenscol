@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import VideoCard from '../molecules/video-card/VideoCard'
+import VideoCard from '../../molecules/video-card/VideoCard'
 
-import './video-list.sass'
+import './VideoList.sass'
 
 function VideoList ({ videos }) {
   return (
-    <article className="VideoList justify-content-center">
-      <section className="VideoList-content">
-        <div className="VideoList-items">
+    <article className="VideoList">
+      <section className="VideoList__content">
+        <div className="VideoList__videos">
           {videos.map((video) => (
             <VideoCard
               key={video.id}

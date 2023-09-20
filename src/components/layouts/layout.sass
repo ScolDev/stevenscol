@@ -29,16 +29,10 @@ body
   padding-top: $headerHeight
   width: 100%
 
-.Main-container
+.Main__container
   height: 100%
   margin: 0 auto
   width: 100%
-
-.Container
-  background-color: $bgColorLight
-
-  .container
-    padding: 0
 
 .Section:first-child
   margin-top: 5rem
@@ -59,6 +53,9 @@ body
 
 .round-button
   @include round-button
+
+.paginator-button
+  @include paginator-button
 
 body.dark
   background-color: $bgColorDark
