@@ -24,7 +24,7 @@ function Seo (props) {
           const host = site.siteMetadata.siteUrl
 
           if (typeof image === 'object') {
-            return `${host}/${getImage(image)?.images.fallback?.src}`
+            return `${host}${getImage(image)?.images.fallback?.src}`
           }
           if (typeof bannerImage === 'object') {
             return `${host}${getImage(bannerImage)?.images.fallback?.src}`
