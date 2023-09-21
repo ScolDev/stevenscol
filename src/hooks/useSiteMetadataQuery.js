@@ -8,6 +8,7 @@ const useSiteMetadataQuery = () => {
           author
           bio
           nickname
+          siteName
           siteUrl
           skills
           title

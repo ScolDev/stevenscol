@@ -7,6 +7,7 @@ module.exports = {
     youtubeChannel: 'https://youtube.com/c/ScolDev',
     heroTitle: '"Estúpido como un zorro."',
     author: 'Stevens Pineda',
+    siteName: 'StevensCol',
     nickname: '@ScolDev',
     bio: 'Ingeniero Fullstack Javascript, Reverser y Autodidacta desde tiempos inmemorables. Apasionado por los bytes 🔥',
     skills: 'Arquitectura de Software, liderazgo técnico, buenas prácticas en el desarrollo de software (Clean Code, TDD, Patrones de diseño). Principales tecnologías web Javascript (Nodejs, TypeScript, Angular, React). Gestión efectiva de proyectos de software mediante el versionamiento con Git y estrategias como Gitflow. Comunicación asertiva y apasionado por el aprendizaje y la enseñanza.',
