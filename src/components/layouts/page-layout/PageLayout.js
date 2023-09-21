@@ -1,21 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Footer from '../organisms/footer/Footer'
+import Header from '../../organisms/header/Header'
+import Footer from '../../organisms/footer/Footer'
 
-import './layout.sass'
+import '../layout.sass'
 
-const SingleLayout = ({ children }) => (
+const PageLayout = ({ children }) => (
   <>
     <main className="Main">
+      <Header />
       <section className="Main__container">{children}</section>
       <Footer />
     </main>
   </>
 )
 
-SingleLayout.propTypes = {
+PageLayout.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default SingleLayout
+export default PageLayout

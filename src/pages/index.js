@@ -1,42 +1,17 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import PageLayout from '../components/layouts/PageLayour'
+import PageLayout from '../components/layouts/page-layout/PageLayout'
+import Container from '../components/layouts/container/Container'
+import BaseLink from '../components/molecules/base-link/BaseLink'
 import Seo from '../components/molecules/seo/Seo'
 import Hero from '../components/organisms/hero/Hero'
-import VideoList from '../components/organisms/video-list/VideoList'
-import BlogList from '../components/organisms/blog-list/BlogList'
-import Container from '../components/container'
+import LastVideos from '../components/organisms/last-videos/LastVideos'
+import LastBlogPosts from '../components/organisms/last-blog-posts/LastBlogPosts'
 
 import './index.sass'
 
-import BaseLink from '../components/molecules/base-link/BaseLink'
-
 const IndexPage = ({ data, pageContext }) => {
-  const { siteMetadata } = data.site
-  const youtubeChannel = siteMetadata.youtubeChannel ?? ''
-  const blogs = data.blogs.edges.map(({ node }) => {
-    const { title, image, date, path } = node.frontmatter
-    return {
-      title,
-      image,
-      date,
-      to: `/blog${path}`,
-      id: node.id
-    }
-  })
-  const videos = data.videos.edges.map(({ node }) => {
-    const { id, title, videoId, thumbnail, publishedAt } = node
-    return {
-      id,
-      title,
-      date: new Date(publishedAt).toDateString(),
-      to: `https://youtube.com/watch?v=${videoId}`,
-      image: thumbnail.url
-    }
-  })
-
   return (
     <>
       <Seo title="Inicio" />
@@ -46,15 +21,7 @@ const IndexPage = ({ data, pageContext }) => {
           <main className="Home">
             <section className="Home-videos section">
               <h2>Últimos Videos</h2>
-              <VideoList videos={videos} />
-              <footer className="Home-posts-footer">
-                <BaseLink
-                  to={youtubeChannel}
-                  className="round-button"
-                >
-                  Ir al Canal
-                </BaseLink>
-              </footer>
+              <LastVideos />
             </section>
             <section className="Home-current section">
               <h2>Proyecto Actual</h2>
@@ -83,7 +50,7 @@ const IndexPage = ({ data, pageContext }) => {
                   <i>(CPU, ALU, PPU, I/O, etc)</i>.
                 </p>
 
-                <div className="Home-current-project">
+                <div className="Home-current-project cta">
                   <BaseLink
                     to="https://github.com/StevensCol/canes"
                     className="round-button"
@@ -95,19 +62,7 @@ const IndexPage = ({ data, pageContext }) => {
             </section>
             <section className="Home-posts section">
               <h2>Últimos Posts</h2>
-              <BlogList
-                pageNumber={pageContext.pageNumber}
-                numOfPages={pageContext.numberOfPages}
-                blogs={blogs}
-              />
-              <footer className="Home-posts-footer">
-                <BaseLink
-                  to="/blog"
-                  className="round-button"
-                >
-                  Ver todos
-                </BaseLink>
-              </footer>
+              <LastBlogPosts />
             </section>
           </main>
         </Container>
@@ -122,71 +77,3 @@ IndexPage.propTypes = {
 }
 
 export default IndexPage
-
-export const pageQuery = graphql`
-  query pageHomescolsrcgitstevenscolsrcpagesindexJs1856938877 {
-    heroImage: file(relativePath: { eq: "images/hero.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
-      }
-    }
-    profilePhoto: file(relativePath: { eq: "me.png" }) {
-      childImageSharp {
-        gatsbyImageData(
-          width: 400
-          transformOptions: { fit: INSIDE }
-          layout: CONSTRAINED
-        )
-      }
-    }
-    site {
-      siteMetadata {
-        author
-        youtubeChannel
-        social {
-          name
-          url
-        }
-        blogPostPrefixPath
-        blogPostsPaginatePrefixPath
-      }
-    }
-    blogs: allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 3) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            path
-            status
-            title
-            date(formatString: "MMMM DD, YYYY")
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 500
-                  transformOptions: { fit: INSIDE }
-                  layout: CONSTRAINED
-                )
-              }
-            }
-          }
-        }
-      }
-    }
-    videos: allYoutubeVideo {
-      edges {
-        node {
-          id
-          title
-          description
-          videoId
-          thumbnail {
-            url
-          }
-          publishedAt
-        }
-      }
-    }
-  }
-`

@@ -3,21 +3,23 @@ import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Prism from 'prismjs'
 
-import PageLayout from '../../components/layouts/PageLayour'
-import Container from '../../components/container'
+import PageLayout from '../../components/layouts/page-layout/PageLayout'
+import Container from '../../components/layouts/container/Container'
+import Avatar from '../../components/atoms/avatar/Avatar'
 import Seo from '../../components/molecules/seo/Seo'
 import BaseImage from '../../components/atoms/base-image/BaseImage'
+import useSiteMetadataQuery from '../../hooks/useSiteMetadataQuery'
 
 import '../../common/prism-monokai.css'
-
 import './blog-post.sass'
 
 const BlogPost = ({ data, pageContext }) => {
+  const { author } = useSiteMetadataQuery()
   useEffect(() => {
     Prism.highlightAll()
   })
 
-  const { contentPost, site } = data
+  const { contentPost } = data
   const { next, previous } = pageContext
   const image = contentPost.frontmatter.image
 
@@ -32,30 +34,33 @@ const BlogPost = ({ data, pageContext }) => {
 
       <PageLayout>
         <Container>
-          <section className="BlogPost justify-content-center">
+          <section className="BlogPost">
             <BaseImage
               title={contentPost.frontmatter.title}
               image={image}
             />
-            <div className="BlogPost-content">
-              <section className="BlogPost-postinfo">
+            <div className="BlogPost__content">
+              <section className="BlogPost__header">
                 <h1>{contentPost.frontmatter.title}</h1>
-                <div>
-                  <em>Por: {site.siteMetadata.author}</em>
-                </div>
-                <div>
-                  <em>Fecha: {contentPost.frontmatter.date}</em>
+                <div className="BlogPost__info">
+                  <div className="BlogPost__avatar">
+                    <Avatar />
+                  </div>
+                  <div className="BlogPost__publisher">
+                    <em>Por: {author}</em>
+                    <em>Fecha: {contentPost.frontmatter.date}</em>
+                  </div>
                 </div>
               </section>
               <article
-                className="BlogPost-content-html"
+                className="BlogPost__body"
                 dangerouslySetInnerHTML={{ __html: contentPost.html }}
               />
-              <article className="BlogPost-tags col-lg-12">
+              <article className="BlogPost__tags">
                 <div>
                   <h3>Tags:</h3>
                 </div>
-                <div className="BlogPost-tags-content">
+                <div className="BlogPost__tagsContent">
                   {contentPost.tags
                     ? (
                         contentPost.tags.map((tag, index) => (
@@ -72,8 +77,8 @@ const BlogPost = ({ data, pageContext }) => {
                       )}
                 </div>
               </article>
-              <div className="BlogPost-footer">
-                <div className="BlogPost-footer-previousPost">
+              <div className="BlogPost__footer">
+                <div className="BlogPost__previousPost">
                   {previous.path
                     ? (
                     <div>
@@ -82,7 +87,7 @@ const BlogPost = ({ data, pageContext }) => {
                       )
                     : null}
                 </div>
-                <div className="BlogPost-footer-nextPost">
+                <div className="BlogPost__nextPost">
                   {next.path
                     ? (
                     <div>
@@ -109,31 +114,9 @@ export default BlogPost
 
 export const pageQuery = graphql`
   query BlogPost($path_: String!) {
-    site {
-      siteMetadata {
-        title
-        siteUrl
-        author
-        social {
-          name
-          url
-        }
-      }
-    }
     contentPost: markdownRemark(frontmatter: { path: { eq: $path_ } }) {
-      id
-      excerpt
       html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        title
-        image {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-          }
-        }
-      }
+      ...BlogPostFragment
     }
   }
 `

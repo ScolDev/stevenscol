@@ -59,10 +59,14 @@ $buttonPaddingWidth: 10px
   border-radius: $buttonMinWidth - $buttonPaddingWidth
 
 @mixin paginator-button ($color: $primary)
+  @include button($color)
   border: 2px solid $color
-  border-radius: 5px
-  min-width: 20px
-  padding: 0.5rem
+  border-radius: 10px
+
+@mixin align-center
+  display: flex
+  align-items: center
+  justify-content: center
 
 // Custom classes
 
@@ -71,6 +75,7 @@ $buttonPaddingWidth: 10px
 
 .paginator-button
   @include paginator-button
+  border: none
 
 .white-box
   color: $bgColorDark
@@ -99,6 +104,12 @@ $buttonPaddingWidth: 10px
 
 .section:first-child
   margin-top: 5rem
+
+.cta
+  @include align-center
+  box-sizing: border-box
+  margin: 2rem 0
+  width: 100%
 
 a
   color: inherit

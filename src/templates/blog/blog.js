@@ -1,25 +1,17 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import PageLayout from '../../components/layouts/PageLayour'
-import Container from '../../components/container'
+import PageLayout from '../../components/layouts/page-layout/PageLayout'
+import Container from '../../components/layouts/container/Container'
 import Seo from '../../components/molecules/seo/Seo'
 import BlogList from '../../components/organisms/blog-list/BlogList'
+import { getBlogs } from '../../hooks/useLastBlogPostsQuery'
 
 import './blog.sass'
 
 const Blog = ({ data, pageContext }) => {
   const { pageNumber, numberOfPages } = pageContext
-  const blogs = data.blogs.edges.map(({ node }) => {
-    const { title, image, date, path } = node.frontmatter
-    return {
-      title,
-      image,
-      date,
-      to: `/blog${path}`,
-      id: node.id
-    }
-  })
+  const blogs = getBlogs(data.blogs)
 
   return (
     <>
@@ -53,18 +45,6 @@ export default Blog
 
 export const pageQuery = graphql`
   query ($skip: Int!, $limit: Int!) {
-    site {
-      siteMetadata {
-        title
-        author
-        blogPostPrefixPath
-        blogPostsPaginatePrefixPath
-        social {
-          name
-          url
-        }
-      }
-    }
     blogs: allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
       skip: $skip
@@ -72,23 +52,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          id
-          excerpt
-          frontmatter {
-            path
-            title
-            status
-            date(formatString: "MMMM DD, YYYY")
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 500
-                  transformOptions: { fit: INSIDE }
-                  layout: CONSTRAINED
-                )
-              }
-            }
-          }
+          ...BlogPostFragment
         }
       }
     }

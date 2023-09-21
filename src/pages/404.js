@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SingleLayout from '../components/layouts/SingleLayour'
+import SingleLayout from '../components/layouts/single-layout/SingleLayout'
 import Avatar from '../components/atoms/avatar/Avatar'
 import BaseLink from '../components/molecules/base-link/BaseLink'
 

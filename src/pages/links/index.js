@@ -1,15 +1,17 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import SingleLayout from '../../components/layouts/SingleLayour'
+
+import Icon from '../../components/atoms/icon/Icon'
+import SingleLayout from '../../components/layouts/single-layout/SingleLayout'
+import BaseLink from '../../components/molecules/base-link/BaseLink'
 import Seo from '../../components/molecules/seo/Seo'
 import Avatar from '../../components/atoms/avatar/Avatar'
-import Icon from '../../components/atoms/icon/Icon'
+import useSiteMetadataQuery from '../../hooks/useSiteMetadataQuery'
 
 import './index.sass'
 
-const LinksPage = ({ data, pageContext }) => {
-  const { siteMetadata } = data.site
+const LinksPage = ({ pageContext }) => {
+  const { nickname, social } = useSiteMetadataQuery()
 
   return (
     <>
@@ -21,19 +23,19 @@ const LinksPage = ({ data, pageContext }) => {
               <article className="Links__avatar">
                 <Avatar />
               </article>
-              <p>{siteMetadata.nickname}</p>
+              <p>{nickname}</p>
             </header>
             <section className="Links__content">
-              {siteMetadata.social.map(({ name, url }) => {
+              {social.map(({ name, url }) => {
                 return (
-                  <Link
+                  <BaseLink
                     className="Links__button white-box"
                     to={url}
                     key={name}
                   >
                     <Icon icon={name} />
                     <span>{name}</span>
-                  </Link>
+                  </BaseLink>
                 )
               })}
             </section>
@@ -50,26 +52,3 @@ LinksPage.propTypes = {
 }
 
 export default LinksPage
-
-export const pageQuery = graphql`
-  {
-    profilePhoto: file(relativePath: { eq: "images/me.png" }) {
-      childImageSharp {
-        gatsbyImageData(width: 400, layout: CONSTRAINED)
-      }
-    }
-    site {
-      siteMetadata {
-        title
-        nickname
-        author
-        social {
-          name
-          url
-        }
-        blogPostPrefixPath
-        blogPostsPaginatePrefixPath
-      }
-    }
-  }
-`

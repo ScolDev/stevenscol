@@ -1,23 +1,18 @@
-.BlogList
+.LastVideos
   padding: 2rem 0
   width: 100%
 
-  &__blogs
+  &__videos
     display: grid
     grid-template-columns: repeat(2, 1fr)
     grid-gap: 2rem
 
-  &__paginator
-    margin-top: 5rem
-    padding: 2rem
-
   @media(max-width: 820px)
-    &__blogs
+    &__videos
       grid-template-columns: 50% 50%
-      grid-gap: .5rem
 
   @media(max-width: 576px)
-    &__blogs
+    &__videos
       grid-template-columns: 100%
       grid-gap: unset
 

@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { getImage } from 'gatsby-plugin-image'
 
+import './BaseImage.sass'
+
 const BaseImage = (props) => {
   const { image, title } = props
   const imageSrc = typeof image === 'object'
@@ -14,7 +16,7 @@ const BaseImage = (props) => {
       src={imageSrc}
       alt={title}
       loading="lazy"
-      style={{ height: '100%', width: '100%', backgroundColor: imageSrc.backgroundColor }}
+      {...props}
     />
       )
     : (
@@ -22,7 +24,7 @@ const BaseImage = (props) => {
       src={imageSrc.images.fallback.src}
       alt={title}
       loading="lazy"
-      style={{ height: '100%', width: '100%' }}
+      {...props}
     />
     // <GatsbyImage
     //   image={imageSrc}

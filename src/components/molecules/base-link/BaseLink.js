@@ -29,6 +29,7 @@ const BaseLInk = ({ to, children, className }) => {
 BaseLInk.propTypes = {
   to: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  style: PropTypes.object,
   className: PropTypes.string
 }
 

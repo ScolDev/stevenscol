@@ -1,9 +1,5 @@
 @import '../../common/variables.sass'
 
-:root
-  --postSidePadding: 130px
-  --postCodeBgColor: #0a0a1dd5
-  --postCodeForegroundColor: #d5d5d575
 
 body.light
   .BlogPost
@@ -14,27 +10,45 @@ body.light
   max-width: 1100px
   margin: 0 auto
 
-  &-content
+  &__info
+    display: flex
+    align-items: center
+    padding: 2rem 0
+  &__avatar
+    display: flex
+    align-items: center
+    margin-right: 1rem
+    width: 50px
+    height: 50px
+  &__publisher
+    display: flex
+    flex-direction: column
+    font-size: 0.9rem
+
+  &__content
     padding: 1.5em 0.8em
     margin-top: 2rem
 
     @media (min-width: 992px)
       padding: 1em 6em
 
-    &-html
-      margin-top: 4rem
+  &__body
+    margin-top: 4rem
+    img
+      height: auto
+      width: auto
 
-    &-html > p:first-of-type::first-letter
-      float: left
-      font-weight: bold
-      font-size: 7rem
-      line-height: 4rem
-      height: 4rem
-      text-transform: uppercase
-      padding-right: 10px
-      padding-right: 10px
+  &__body > p:first-of-type::first-letter
+    float: left
+    font-weight: bold
+    font-size: 7rem
+    line-height: 4rem
+    height: 4rem
+    text-transform: uppercase
+    padding-right: 10px
+    padding-right: 10px
 
-  &-tags
+  &__tags
     margin-bottom: 1em
     padding-left: 0
     padding-right: 0
@@ -50,22 +64,23 @@ body.light
     margin: 3rem 0
     color: inherit
 
-  &-footer
+  &__footer
     display: flex
     justify-content: space-between
     margin: 2em 0
     width: 100%
 
-    &-previousPost,
-    &-nextPost
-      a
-        @include round-button
+  &__previousPost,
+  &__nextPost
+    a
+      @include round-button
 
-  &-comments
+  &__comments
     width: 100%
 
   h2, h3
     margin-top: 3rem
+
 
 p code
   color: $primary

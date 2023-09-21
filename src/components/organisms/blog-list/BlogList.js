@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Card from '../../molecules/card/Card'
 import Paginator from '../../molecules/paginator/Paginator'
 
 import './BlogList.sass'
+import BaseLink from '../../molecules/base-link/BaseLink'
 
 function BlogList ({ blogs, pageNumber, numOfPages }) {
   return (
@@ -18,25 +18,22 @@ function BlogList ({ blogs, pageNumber, numOfPages }) {
             />
           ))}
         </div>
-        {numOfPages
-          ? (
-          <div style={{ textAlign: 'right' }}>
-            <Link
-              style={{ textDecoration: 'line-through' }}
-              to="https://amerikanocls.blogspot.com"
-              target="_blank"
-            >
-              *Legacy Blog
-            </Link>
-          </div>
-            )
-          : null}
-        <Paginator
-          currentPage={pageNumber}
-          numOfPages={numOfPages}
-          cssButtonClass="paginator-button"
-          cssActiveButtonClass="paginator-button-active"
-        />
+        <div style={{ textAlign: 'right' }}>
+          <BaseLink
+            style={{ textDecoration: 'line-through' }}
+            to="https://amerikanocls.blogspot.com"
+          >
+            *Legacy Blog
+          </BaseLink>
+        </div>
+        <section className="BlogList__paginator">
+          <Paginator
+            currentPage={pageNumber}
+            numOfPages={numOfPages}
+            cssButtonClass="paginator-button"
+            cssActiveButtonClass="paginator-button-active"
+          />
+        </section>
       </section>
     </article>
   )

@@ -1,14 +1,13 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import PageLayout from '../../components/layouts/PageLayour'
-import Seo from '../../components/molecules/seo/Seo'
-import Container from '../../components/container'
 import PropTypes from 'prop-types'
+import PageLayout from '../../components/layouts/page-layout/PageLayout'
+import Container from '../../components/layouts/container/Container'
+import Seo from '../../components/molecules/seo/Seo'
 import Profile from '../../components/molecules/profile/Profile'
 
 import './index.sass'
 
-const ProfilePage = ({ data, pageContext }) => {
+const ProfilePage = () => {
   return (
     <>
       <Seo title='Perfil' />
@@ -33,18 +32,3 @@ ProfilePage.propTypes = {
 }
 
 export default ProfilePage
-
-export const pageQuery = graphql`{
-  site {
-    siteMetadata {
-      title
-      author
-      social {
-        name
-        url
-      }
-      blogPostPrefixPath
-      blogPostsPaginatePrefixPath
-    }
-  }
-}`

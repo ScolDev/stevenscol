@@ -14,8 +14,6 @@ module.exports = {
     description: 'Aquí reuno algunas de las cosas que me apasionan.',
     keywords: ['ScolDev', 'javascript', 'typescript', 'fronted', 'backend', 'arquitectura de software', 'ndoejs', 'stevenscol', 'stevens pineda', 'robert pineda', 'blog', 'fullstack developer'],
     twitterID: '@Scol_Dev',
-    blogPostPrefixPath: '/blog',
-    blogPostsPaginatePrefixPath: '/blog/page',
     slogan: '¡Estúpido como un zorro!',
     social: [
       { name: 'github', url: 'https://github.com/ScolDev' },
