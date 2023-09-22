@@ -18,7 +18,7 @@ module.exports = {
     slogan: '¡Estúpido como un zorro!',
     social: [
       { name: 'github', url: 'https://github.com/ScolDev' },
-      { name: 'linkedin', url: 'https://www.linkedin.com/in/robert-stevens-pineda-mar%C3%ADn-19403248/' },
+      { name: 'linkedin', url: 'https://www.linkedin.com/in/robert-pineda' },
       { name: 'youtube', url: 'https://youtube.com/c/ScolDev' },
       { name: 'twitch', url: 'https://twitch.tv/ScolDev' },
       { name: 'tiktok', url: 'https://www.tiktok.com/@scol.dev' },
