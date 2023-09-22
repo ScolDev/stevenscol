@@ -5,8 +5,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   const prefixBlogPostUrl = '/blog'
-  const blogTemplate = path.resolve('src/templates/blog/blog.js')
-  const postTemplate = path.resolve('src/templates/blog-post/blog-post.js')
+  const BlogTemplate = path.resolve('src/templates/blog/Blog.js')
+  const BlogPostTemplate = path.resolve('src/templates/blog-post/BlogPost.js')
 
   const result = await getAllPosts(graphql)
 
@@ -16,13 +16,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
   const posts = result.data.allMarkdownRemark.edges
 
-  // Create all blog pages with paginator
   paginate({
     createPage,
     items: posts,
     itemsPerPage: 8,
     pathPrefix: ({ pageNumber, numberOfPages }) => pageNumber === 0 ? prefixBlogPostUrl : `${prefixBlogPostUrl}/page`,
-    component: blogTemplate
+    component: BlogTemplate
   })
 
   posts.forEach((post, index) => {
@@ -31,7 +30,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     // Create all individuals post pages
     const config = {
       path: path.join(prefixBlogPostUrl, node.frontmatter.path),
-      component: postTemplate,
+      component: BlogPostTemplate,
       context: {
         id: node.id,
         path_: node.frontmatter.path,
