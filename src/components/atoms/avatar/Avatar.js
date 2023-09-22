@@ -8,14 +8,14 @@ const Avatar = (props) => {
   const avatar = useAvatarImageQuery()
 
   return (
-    <article className="Avatar">
+    <picture className="Avatar">
       <BaseImage
         className="Avatar__image Avatar__image--rounded"
         image={avatar}
         alt="ScolDev"
         {...props}
       />
-    </article>
+    </picture>
   )
 }
 

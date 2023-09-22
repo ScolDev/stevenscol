@@ -36,6 +36,7 @@ const BlogPost = ({ data, pageContext }) => {
         <Container>
           <section className="BlogPost">
             <BaseImage
+              className="BlogPost__headerImage"
               title={contentPost.frontmatter.title}
               image={image}
             />
