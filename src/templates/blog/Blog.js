@@ -7,7 +7,7 @@ import Seo from '../../components/molecules/seo/Seo'
 import BlogList from '../../components/organisms/blog-list/BlogList'
 import { getBlogs } from '../../hooks/useLastBlogPostsQuery'
 
-import './blog.sass'
+import './Blog.sass'
 
 const Blog = ({ data, pageContext }) => {
   const { pageNumber, numberOfPages } = pageContext
@@ -19,8 +19,8 @@ const Blog = ({ data, pageContext }) => {
       <PageLayout>
         <Container>
           <main className="Blog">
-            <section className="Blog-posts section">
-              <header className="PostList-title">
+            <section className="Blog__posts section">
+              <header className="">
                 <h1>Página {pageNumber + 1}</h1>
               </header>
               <BlogList

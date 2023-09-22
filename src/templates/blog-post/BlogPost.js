@@ -11,7 +11,7 @@ import BaseImage from '../../components/atoms/base-image/BaseImage'
 import useSiteMetadataQuery from '../../hooks/useSiteMetadataQuery'
 
 import '../../common/prism-monokai.css'
-import './blog-post.sass'
+import './BlogPost.sass'
 
 const BlogPost = ({ data, pageContext }) => {
   const { author } = useSiteMetadataQuery()
