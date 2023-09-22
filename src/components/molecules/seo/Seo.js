@@ -6,8 +6,8 @@ import useSiteMetadataQuery from '../../../hooks/useSiteMetadataQuery'
 import useBannerImageFileQuery from '../../../hooks/useBannerImageFileQuery'
 
 function Seo (props) {
-  const bannerImage = useBannerImageFileQuery()
   const { title, keywords, description, image, lang, type, author, date } = props
+  const bannerImage = useBannerImageFileQuery()
   const siteMetadata = useSiteMetadataQuery()
 
   function resolveImage () {
