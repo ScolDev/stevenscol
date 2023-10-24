@@ -4,7 +4,10 @@ const useYoutubeVideosQuery = () => {
   const youtubeBaseUrl = 'https://youtube.com/watch?v='
   const { videos } = useStaticQuery(graphql`
     {
-      videos: allYoutubeVideo(limit: 4) {
+      videos: allYoutubeVideo(
+        limit: 4
+        sort: { publishedAt: DESC }
+        ) {
         edges {
           node {
             id
